@@ -1,0 +1,10 @@
+.vs
+EvoApp/bin
+EvoApp/bin/*
+EvoApp/bin/**
+EvoApp/bin/**/*
+EvoApp/obj
+EvoApp/obj/*
+EvoApp/obj/**
+EvoApp/obj/**/*
+
