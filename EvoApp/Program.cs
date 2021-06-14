@@ -8,6 +8,8 @@ namespace EvoApp
 {
     static class Program
     {
+        public static EvoAppForm appForm = null;
+        public static App app = new App();
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
@@ -16,7 +18,9 @@ namespace EvoApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new EvoAppForm());
+
+            appForm = new EvoAppForm();
+            Application.Run(appForm);
         }
     }
 }
