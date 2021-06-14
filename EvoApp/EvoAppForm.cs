@@ -104,5 +104,10 @@ namespace EvoApp
             btnStart.Enabled = true;
             btnStop.Enabled = true;
         }
+
+        public void SetCellCount(int count) 
+        {
+            this.lblCellCount.Text = "количество ячеек: " + Convert.ToString(count);
+        }
     }
 }

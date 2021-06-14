@@ -55,6 +55,7 @@ namespace EvoApp
             this.btnStart = new System.Windows.Forms.Button();
             this.btnStop = new System.Windows.Forms.Button();
             this.lblinit = new System.Windows.Forms.Label();
+            this.lblCellCount = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -243,11 +244,17 @@ namespace EvoApp
             this.lblinit.ForeColor = System.Drawing.Color.Red;
             this.lblinit.Name = "lblinit";
             // 
+            // lblCellCount
+            // 
+            resources.ApplyResources(this.lblCellCount, "lblCellCount");
+            this.lblCellCount.Name = "lblCellCount";
+            // 
             // EvoAppForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
+            this.Controls.Add(this.lblCellCount);
             this.Controls.Add(this.lblinit);
             this.Controls.Add(this.btnStop);
             this.Controls.Add(this.btnStart);
@@ -316,6 +323,7 @@ namespace EvoApp
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Button btnStop;
         private System.Windows.Forms.Label lblinit;
+        private System.Windows.Forms.Label lblCellCount;
     }
 }
 

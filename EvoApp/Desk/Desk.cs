@@ -15,21 +15,27 @@ namespace EvoApp
             
         }
         //инициализация ячеек игрового поля 1000*1000
-        public void Init()
+        public int Init()
         {
             cellLst = new List<List<DeskCell>>();
+            int counter = 0;
+            int i = 0;
+            int j = 0;
 
-            for (int i = 0; i < 1000; i++)
+            for (i = 0; i < 1000; i++)
             {
                 List<DeskCell> cell = new List<DeskCell>();
                 cellLst.Add(cell);
                 
-                for (int j = 0; j < 1000; j++)
+                for (j = 0; j < 1000; j++)
                 {
                     DeskCell dc = new DeskCell();
                     cell.Add(dc);
                 }
             }
+
+            counter = i * j;
+            return counter;
         }
     }
 }
