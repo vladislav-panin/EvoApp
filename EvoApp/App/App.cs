@@ -9,29 +9,52 @@ namespace EvoApp
 {
     public class App
     {
-        protected Desk desk = new Desk();
+        // имя объекта, который будем использовать для лока разделяемого между потоками объекта - оно может быть произвольным
+        static object lockerObjWithSomeName = new object();
 
-        public void Init()
-        {
-            Thread threadInit = new Thread(() => DoThreadInit(this)); // () => DoThreadInit(this) - это определение лямбда функции для порождения объекта с использованием функционального интерфейса
-            threadInit.Start();
-        }
+        public Desk desk { get; set; } = new Desk();
 
-        public static void DoThreadInit(App app)
+        // демонстрация и лока и геттеров/сеттеров свойств  *****************************************************
+                protected EvoSpeed evo_speed = EvoSpeed.Hi;
+
+                public EvoSpeed evoSpeed
+                { 
+                    get 
+                    {
+                        return evo_speed;
+                    }
+                    set 
+                    {
+                        lock (lockerObjWithSomeName)
+                        {
+                            evo_speed = value;
+                        }
+                    }
+                }
+        // ******************************************************************************************************
+
+        public AppInitResult Init()
         {
-            
-            int counter = app.desk.Init();
-            Console.WriteLine("! ------- инициализация игрового поля завершена");
+            AppInitResult res = new AppInitResult();
+
+            int cellCount = this.desk.Init();
+            Console.WriteLine("! ------- инициализация игрового поля завершена, количество инициированных ячеек равно " + cellCount);
+            res.cellCount = cellCount;
+
+
+            int entityCount = 0;
+            Console.WriteLine("! ------- инициализация сущностей завершена, количество инициированных сущностей равно " + entityCount);
+            res.entityCount = entityCount;
 
             Thread.Sleep(100);
-
-            Program.appForm.InitAppIndikator();
-            Program.appForm.SetCellCount(counter);
+            return res;
         }
 
         public void Run()
         {
             Console.WriteLine("! ---------------- игра запущена");
         }
+
+
     }
 }
