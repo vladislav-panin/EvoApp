@@ -82,7 +82,7 @@ namespace EvoApp
         // этот метод будет выполнятся асинхронно (в другом потоке?) на объекте bgWorkerForInit
         private void bgWorkerForInit_DoWork(object sender, DoWorkEventArgs e)
         {
-            AppInitResult res = InitGame(); 
+            AppInitResult res = this.InitGame(); 
             e.Result = res;
         }
 
@@ -122,6 +122,14 @@ namespace EvoApp
             btnStop.Enabled = true;
 
             this.lblCellCount.Text = "количество ячеек: " + Convert.ToString(res.cellCount);
+
+            
+            this.panelEvoBig.Invalidate();
+            this.panelEvoBig.Update();
+
+            
+            this.panelEvoSmall.Invalidate();
+            this.panelEvoSmall.Update();
 
             this.Invalidate();
             this.Update();

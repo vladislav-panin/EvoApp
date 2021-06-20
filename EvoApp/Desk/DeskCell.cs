@@ -52,7 +52,7 @@ namespace EvoApp
 
             canvasGraph.FillRectangle(land.brush, this.cellRect);
 
-            cellPainter.signCell(canvasGraph, sign, originX_OnBigPanel_inPixels, originY_OnBigPanel_inPixels);
+            cellPainter.signCell(canvasGraph, this.land.textBrush, sign, originX_OnBigPanel_inPixels, originY_OnBigPanel_inPixels) ;
             cellPainter.paintCell(canvasGraph, this.cellRect);
         }
         // ****************************************************************************************

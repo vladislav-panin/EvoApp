@@ -18,10 +18,10 @@ namespace EvoApp
 
         // ****************************************************************************************
         // int originX_inPixels, int originY_inPixels - это координаты точки на панели, в пикселях, откуда начинаем писать
-        virtual public void signCell(Graphics canvasGraph, String sign, int originX_inPixels, int originY_inPixels)
+        virtual public void signCell(Graphics canvasGraph,Brush txtBrush, String sign, int originX_inPixels, int originY_inPixels)
         {
             if (PainterBigEvoPanel.isCoordRequired)
-                canvasGraph.DrawString(sign, fnt, Brushes.Blue, txtOrigin.X + originX_inPixels, txtOrigin.Y + originY_inPixels);
+                canvasGraph.DrawString(sign, fnt, txtBrush, txtOrigin.X + originX_inPixels, txtOrigin.Y + originY_inPixels);
         }
 
         // ****************************************************************************************

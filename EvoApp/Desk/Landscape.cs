@@ -62,6 +62,7 @@ namespace EvoApp
     // **********************************************************************************************************
     public class Landscape
     {
+        public Brush textBrush { get; }
         public Color color { get; }
         public SolidBrush brush { get; }
         public ELandscape elandscape { get; }
@@ -70,6 +71,7 @@ namespace EvoApp
         public Landscape(ELandscape land)
         {
             elandscape = land;
+            textBrush = Brushes.Blue;
 
             switch (land)
             {
@@ -79,6 +81,7 @@ namespace EvoApp
 
                 case ELandscape.Sea:
                     color = Color.MediumBlue;
+                    textBrush = Brushes.White;
                     break;
 
                 case ELandscape.Mountains:
@@ -100,6 +103,8 @@ namespace EvoApp
             }
 
             brush = new SolidBrush(color);
+
+            
         }
 
     }
