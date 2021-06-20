@@ -46,7 +46,6 @@ namespace EvoApp
             Console.WriteLine("! ------- инициализация сущностей завершена, количество инициированных сущностей равно " + entityCount);
             res.entityCount = entityCount;
 
-            Thread.Sleep(100);
             return res;
         }
 

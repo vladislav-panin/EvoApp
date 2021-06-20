@@ -63,6 +63,7 @@ namespace EvoApp
     public class Landscape
     {
         public Color color { get; }
+        public SolidBrush brush { get; }
         public ELandscape elandscape { get; }
 
         // **********************************************************************************************************
@@ -97,6 +98,8 @@ namespace EvoApp
                     color = Color.DarkGreen;
                     break;
             }
+
+            brush = new SolidBrush(color);
         }
 
     }

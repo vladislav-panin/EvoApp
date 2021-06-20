@@ -32,8 +32,6 @@ namespace EvoApp
         }
 
         // ****************************************************************************************
-        // Здесь формируется двумерный массив ячеек;
-        // в этом случае мы оформляем его как список списков ячеек.
         public int CreateCells()
         {
             cellTable = new List<List<DeskCell>>();
@@ -49,7 +47,7 @@ namespace EvoApp
 
                 for (idxColumn = 0; idxColumn < geoEx.colCount; idxColumn++)
                 {
-                    DeskCell cell = new DeskCell(idxRow, idxColumn);
+                    DeskCell cell = new DeskCell(idxRow, idxColumn);                    
                     cellRow.Add(cell);
                 }
             }

@@ -62,11 +62,10 @@
     <Compile Include="EvoAppForm.Designer.cs">
       <DependentUpon>EvoAppForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Paint\PaintCell.cs" />
+    <Compile Include="Paint\CellPainter.cs" />
+    <Compile Include="Paint\PainterBase.cs" />
     <Compile Include="Paint\PainterBigEvoPanel.cs" />
-    <Compile Include="Paint\DrawBase.cs" />
     <Compile Include="Paint\PainterSmallEvoPanel.cs" />
-    <Compile Include="Paint\DrawCell.cs" />
     <Compile Include="Population\Entity.cs" />
     <Compile Include="Population\Population.cs" />
     <Compile Include="Population\BaseEntity.cs" />

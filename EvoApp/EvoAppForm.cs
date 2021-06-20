@@ -7,6 +7,8 @@ namespace EvoApp
 {
     public partial class EvoAppForm : Form
     {
+        private bool isAppInited = false;
+
         private BackgroundWorker bgWorkerForInit;
         private PainterBigEvoPanel painterBigEvoPanel = new PainterBigEvoPanel();
         private PainterSmallEvoPanel painterSmallEvoPanel = new PainterSmallEvoPanel();
@@ -33,15 +35,36 @@ namespace EvoApp
             painterSmallEvoPanel.Init (panelEvoSmall.Width, panelEvoSmall.Height);
             painterBigEvoPanel.  Init (panelEvoBig.  Width, panelEvoBig.  Height);
 
+            InitSliders();
+            InitCommonGUI_vars();
+        }
+
+        // ****************************************************************************************
+        protected void InitCommonGUI_vars()
+        {
+            int cellWidthPx_onBigPanel  = panelEvoBig.Width / PainterBase.colCount;
+            int cellHeightPx_onBigPanel = panelEvoBig.Height / PainterBase.rowCount;
+
+            DeskCell.InitCell(cellWidthPx_onBigPanel, cellHeightPx_onBigPanel);
+        }
+        // ****************************************************************************************
+        protected void InitSliders()
+        {
             hSlider.Minimum = 0;
             hSlider.Maximum = painterBigEvoPanel.hSlider_xTickCount - 1;
             hSlider.Value = 0;
             hSlider.LargeChange = 1;
 
+            painterBigEvoPanel.HSlider_Val = 0; // одновременно будет инициирован оффсет
+            painterBigEvoPanel.VSlider_Val = 0; // одновременно будет инициирован оффсет
+
             vSlider.Minimum = 0;
             vSlider.Maximum = painterBigEvoPanel.vSlider_yTickCount - 1;
             vSlider.Value = vSlider.Maximum;
             vSlider.LargeChange = 1;
+
+            painterSmallEvoPanel.HSlider_Val = 0; // одновременно будет инициирован оффсет
+            painterSmallEvoPanel.VSlider_Val = 0; // одновременно будет инициирован оффсет
         }
 
         // ****************************************************************************************
@@ -91,12 +114,17 @@ namespace EvoApp
         // ****************************************************************************************
         public void SetAppIsInited (AppInitResult res)
         {
+            isAppInited = true;
+
             lblinit.Text = "игра запущена!";
             lblinit.ForeColor = Color.Green;
             btnStart.Enabled = true;
             btnStop.Enabled = true;
 
             this.lblCellCount.Text = "количество ячеек: " + Convert.ToString(res.cellCount);
+
+            this.Invalidate();
+            this.Update();
         }
 
         // ****************************************************************************************
@@ -126,48 +154,43 @@ namespace EvoApp
         // ****************************************************************************************       
         private void vSlider_Scroll(object sender, EventArgs e)
         {
-            // текущее положение вертикального слайдера, между минимом и максимумом  
+            // обновляем текущее положение вертикального слайдера в большой и малой панелях,
+            // одновременно там автоматически будет установлен idxColsOffset (перерассчитан оффсет)
+            painterSmallEvoPanel.VSlider_Val = vSlider.Value;
             painterBigEvoPanel.VSlider_Val = vSlider.Value;
+
             lblOffset.Text = painterBigEvoPanel.GetOffsetString();
-
-            panelEvoBig.Invalidate();
-            panelEvoBig.Update();
-
-            int xColsOffset = painterBigEvoPanel.getIdxColsOffset ();
-            int yRowsOffset = painterBigEvoPanel.getIdxRowsOffset ();
-            
-            painterSmallEvoPanel.setScreenIndicator(xColsOffset, yRowsOffset);
 
             panelEvoSmall.Invalidate();
             panelEvoSmall.Update();
+
+            panelEvoBig.Invalidate();
+            panelEvoBig.Update();
         }
 
         private void hSlider_Scroll(object sender, EventArgs e)
         {
-            // текущее положение горизонтального слайдера, между минимом и максимумом  
+            // обновляем текущее положение горизонтального  слайдера в большой и малой панелях,
+            // одновременно там автоматически будет установлен idxColsOffset (перерассчитан оффсет)
+            painterSmallEvoPanel.HSlider_Val = hSlider.Value;
             painterBigEvoPanel.HSlider_Val = hSlider.Value;
+
             lblOffset.Text = painterBigEvoPanel.GetOffsetString();
-
-            panelEvoBig.Invalidate();
-            panelEvoBig.Update();
-
-            int xColsOffset = painterBigEvoPanel.getIdxColsOffset();
-            int yRowsOffset = painterBigEvoPanel.getIdxRowsOffset();
-
-            painterSmallEvoPanel.setScreenIndicator(xColsOffset, yRowsOffset);
 
             panelEvoSmall.Invalidate();
             panelEvoSmall.Update();
-        }
 
+            panelEvoBig.Invalidate();
+            panelEvoBig.Update();
+        }
         // ****************************************************************************************       
         private void chkShowGrid_CheckedChanged(object sender, EventArgs e)
         {
             CheckBox chkBox = (CheckBox)sender;
             if (chkBox.Checked)
-                this.painterBigEvoPanel.SwitchShowGrid(true);
+                PainterBigEvoPanel.isGridRequired = true;
             else
-                this.painterBigEvoPanel.SwitchShowGrid(false);
+                PainterBigEvoPanel.isGridRequired = false;
 
             panelEvoBig.Invalidate();
             panelEvoBig.Update();
@@ -177,9 +200,9 @@ namespace EvoApp
         {
             CheckBox chkBox = (CheckBox)sender;
             if (chkBox.Checked)
-                this.painterBigEvoPanel.SwitchShowCoo(true);
+                PainterBigEvoPanel.isCoordRequired = true;
             else
-                this.painterBigEvoPanel.SwitchShowCoo(false);
+                PainterBigEvoPanel.isCoordRequired = false;            
 
             panelEvoBig.Invalidate();
             panelEvoBig.Update();
@@ -206,18 +229,35 @@ namespace EvoApp
             }
         }
 
+        static int countOfDummyPaintBigPanel = 0;
+        static int countOfDummyPaintSmallPanel = 0;
+
         // ****************************************************************************************       
         private void panelSmallGame_Paint(object sender, PaintEventArgs e)
         {
-            Graphics canvasGraph = e.Graphics;
-            this.painterSmallEvoPanel.panelPaint(canvasGraph);
+            if (!isAppInited)
+            {
+                countOfDummyPaintSmallPanel++;
+                Console.WriteLine("*** countOfDummyPaintSmallPanel= " + countOfDummyPaintSmallPanel);
+                return;
+            }                
+
+            Graphics panelCanvasGraph = e.Graphics;
+            this.painterSmallEvoPanel.panelPaint(panelCanvasGraph);
         }
         
         // ****************************************************************************************       
         private void panelBigGame_Paint(object sender, PaintEventArgs e)
         {
-            Graphics canvasGraph = e.Graphics;
-            this.painterBigEvoPanel.panelPaint(canvasGraph);
+            if (!isAppInited)
+            {
+                countOfDummyPaintBigPanel++;
+                Console.WriteLine("*** countOfDummyPaintBigPanel  = " + countOfDummyPaintBigPanel);
+                return;
+            }
+
+            Graphics panelCanvasGraph = e.Graphics;
+            this.painterBigEvoPanel.panelPaint(panelCanvasGraph);
         }        
         // ****************************************************************************************       
     }

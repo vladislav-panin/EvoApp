@@ -7,17 +7,19 @@ using System.Threading.Tasks;
 
 namespace EvoApp
 {
+    // ячейка на поле игры
     public class DeskCell
     {
-        static protected int width = -1; // в пикселях
-        static protected int height = -1; // в пикселях
+        static public int cellWidth { get; set; }  = -1; // в пикселях
+        static public int cellHeight { get; set; } = -1; // в пикселях
 
         public int idxCol { get; set; }
         public int idxRow { get; set; }        
 
         public String cooIdxsTxt { get; set; }
         public Landscape land { get; set; }
-        public PaintCell painter { get; set; }
+
+        Rectangle cellRect = new Rectangle();
 
         // ****************************************************************************************
         public DeskCell(int idxRow, int idxColumn)
@@ -29,18 +31,29 @@ namespace EvoApp
         }
 
         // ****************************************************************************************
-        virtual public void Init()
+        static public void InitCell (int cell_width, int cell_height)
         {
-            // DeskCell.width = PaintCell.cellWidthPx;
-            //DeskCell.height = PaintCell.cellHeightPx;
+            DeskCell.cellWidth = cell_width;
+            DeskCell.cellHeight = cell_height;
         }
 
         // ****************************************************************************************
-        public void paint (Graphics canvasGraph, int originX, int originY)
+        public void paint (Graphics canvasGraph, CellPainter cellPainter, int xCellIdx, int yCellIdx)
         {
             String sign = this.cooIdxsTxt;
 
-            painter.paintCell(canvasGraph, originX, originY, DeskCell.width, DeskCell.height);
+            int originX_OnBigPanel_inPixels = xCellIdx * DeskCell.cellWidth; 
+            int originY_OnBigPanel_inPixels = yCellIdx * DeskCell.cellHeight;
+
+            this.cellRect.X = originX_OnBigPanel_inPixels;
+            this.cellRect.Y = originY_OnBigPanel_inPixels;
+            this.cellRect.Width = DeskCell.cellWidth;
+            this.cellRect.Height = DeskCell.cellHeight;
+
+            canvasGraph.FillRectangle(land.brush, this.cellRect);
+
+            cellPainter.signCell(canvasGraph, sign, originX_OnBigPanel_inPixels, originY_OnBigPanel_inPixels);
+            cellPainter.paintCell(canvasGraph, this.cellRect);
         }
         // ****************************************************************************************
     }

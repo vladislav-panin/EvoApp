@@ -196,7 +196,7 @@
     <value>18, 249</value>
   </data>
   <data name="panelEvoSmall.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 200</value>
+    <value>200, 160</value>
   </data>
   <data name="panelEvoSmall.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -214,7 +214,7 @@
     <value>28</value>
   </data>
   <data name="pbLandDesert.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 564</value>
+    <value>54, 442</value>
   </data>
   <data name="pbLandDesert.Size" type="System.Drawing.Size, System.Drawing">
     <value>27, 13</value>
@@ -238,7 +238,7 @@
     <value>NoControl</value>
   </data>
   <data name="pbLandSea.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 580</value>
+    <value>54, 458</value>
   </data>
   <data name="pbLandSea.Size" type="System.Drawing.Size, System.Drawing">
     <value>27, 13</value>
@@ -262,7 +262,7 @@
     <value>NoControl</value>
   </data>
   <data name="pbLandLake.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 594</value>
+    <value>54, 472</value>
   </data>
   <data name="pbLandLake.Size" type="System.Drawing.Size, System.Drawing">
     <value>27, 13</value>
@@ -286,7 +286,7 @@
     <value>NoControl</value>
   </data>
   <data name="pbLandMountains.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 609</value>
+    <value>54, 487</value>
   </data>
   <data name="pbLandMountains.Size" type="System.Drawing.Size, System.Drawing">
     <value>27, 13</value>
@@ -313,7 +313,7 @@
     <value>Georgia, 12pt, style=Italic, Underline</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 534</value>
+    <value>14, 412</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 18</value>
@@ -343,7 +343,7 @@
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 563</value>
+    <value>87, 441</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 13</value>
@@ -373,7 +373,7 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 579</value>
+    <value>87, 457</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 13</value>
@@ -403,7 +403,7 @@
     <value>NoControl</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 593</value>
+    <value>87, 471</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 13</value>
@@ -433,7 +433,7 @@
     <value>NoControl</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 608</value>
+    <value>87, 486</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>33, 13</value>
@@ -466,7 +466,7 @@
     <value>NoControl</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 686</value>
+    <value>8, 564</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>169, 18</value>
@@ -499,7 +499,7 @@
     <value>Низкая</value>
   </data>
   <data name="comboEvoSpeed.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 707</value>
+    <value>11, 585</value>
   </data>
   <data name="comboEvoSpeed.Size" type="System.Drawing.Size, System.Drawing">
     <value>186, 21</value>
@@ -523,7 +523,7 @@
     <value>True</value>
   </data>
   <data name="chkShowGrid.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 734</value>
+    <value>11, 612</value>
   </data>
   <data name="chkShowGrid.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 17</value>
@@ -655,7 +655,7 @@
     <value>False</value>
   </data>
   <data name="btnStart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 850</value>
+    <value>12, 728</value>
   </data>
   <data name="btnStart.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -685,7 +685,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnStop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>113, 850</value>
+    <value>112, 728</value>
   </data>
   <data name="btnStop.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -772,7 +772,7 @@
     <value>NoControl</value>
   </data>
   <data name="pbLandGrass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 640</value>
+    <value>54, 518</value>
   </data>
   <data name="pbLandGrass.Size" type="System.Drawing.Size, System.Drawing">
     <value>27, 13</value>
@@ -799,7 +799,7 @@
     <value>NoControl</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 639</value>
+    <value>87, 517</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
     <value>38, 13</value>
@@ -826,7 +826,7 @@
     <value>NoControl</value>
   </data>
   <data name="pbLandTrees.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 624</value>
+    <value>54, 502</value>
   </data>
   <data name="pbLandTrees.Size" type="System.Drawing.Size, System.Drawing">
     <value>27, 13</value>
@@ -853,7 +853,7 @@
     <value>NoControl</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 623</value>
+    <value>87, 501</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>52, 13</value>
@@ -1003,7 +1003,7 @@
     <value>NoControl</value>
   </data>
   <data name="chkShowCoo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 757</value>
+    <value>11, 635</value>
   </data>
   <data name="chkShowCoo.Size" type="System.Drawing.Size, System.Drawing">
     <value>137, 17</value>

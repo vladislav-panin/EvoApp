@@ -1,48 +1,35 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Drawing;
 
 namespace EvoApp
 {
-    public class PainterSmallEvoPanel
+    public class PainterSmallEvoPanel : PainterBase
     {
-        int widthPx = -1;  // ширина панели в пикселях
-        int heightPx = -1; // высота панели в пикселях
+        int rowsCountInBigPainter = 0;
+        int colsCountInBigPainter = 0;
 
-        int rowsCountInBigPainter = -1; // количество строк на панели BigEvoPanel
-        int colsCountInBigPainter = -1; // количество колонок на панели BigEvoPanel
+        double oneColWidthPx;
+        double oneRowHeightPx;
 
-        double oneColWidthPx = -1.0f; // ширина колонки в пикселях на маленькой панели игры. Сильно меньше еденицы, поэтому double
-        double oneRowHeightPx = -1.0d; // высота  колонки в пикселях на маленькой панели игры. Сильно меньше еденицы, поэтому double
+        int widthBigPanelAreaPx;
+        int heightBigPanelAreaPx;
 
-        int widthBigPanelAreaPx; // ширина в пикселях большой панели игры
-        int heightBigPanelAreaPx; // высота в пикселях большой панели игры
+        SolidBrush indicatorBbrush = null;
+        Rectangle indicatorRect = new Rectangle (0, 0, 0, 0);
 
-        GeoEx geoEx;
+        // bkGround - здесь буду использовать под карта мира без индикатора
+        private Bitmap bkGround_withScreenIndicator = null; // карта мира с индикатором
+        private Graphics graphObj_for_bkGround_withScreenIndicator = null;
 
-        Pen pen;
-        SolidBrush brush;
-
-        private Bitmap bkGround = null;
-        private Bitmap bkGround_withScreenIndicator = null;
-
-        // **************************************************************************************************
-
+        // **************************************************************************************************        
         public PainterSmallEvoPanel()
         {
-
         }
 
         // **************************************************************************************************
-        public void Init(int widthPx, int heightPx)
+        // int widthPx, heightPx  - ширина и высота (в пикселях) панели, на которой буду рисовать
+        override public void InitDimensions (int widthPx, int heightPx)
         {
-            this.geoEx = Program.app.desk.geoEx;
-
-            this.widthPx = widthPx;
-            this.heightPx = heightPx;
+            base.InitDimensions (widthPx, heightPx);
 
             this.oneColWidthPx = (double)widthPx / (double)geoEx.colCount;
             this.oneRowHeightPx = (double)heightPx / (double)geoEx.rowCount;
@@ -52,52 +39,80 @@ namespace EvoApp
 
             this.widthBigPanelAreaPx = (int)(oneColWidthPx * this.colsCountInBigPainter);
             this.heightBigPanelAreaPx = (int)(oneRowHeightPx * this.rowsCountInBigPainter);
-
-            MakeBitmaps();
         }
 
         // **************************************************************************************************
-        private void MakeBitmaps()
+        override protected void InitBitmaps()
         {
-            bkGround = this.geoEx.ResizeBitmap(this.geoEx.etalonMap, this.widthPx, this.heightPx);
+            this.bkGround = this.geoEx.ResizeBitmap(this.geoEx.etalonMap, this.widthPx, this.heightPx);
+            this.graphfObj_for_bkGround = Graphics.FromImage(this.bkGround);
 
-            // --------------
-            bkGround_withScreenIndicator = new Bitmap(bkGround);
-            Graphics graphObj = Graphics.FromImage(bkGround_withScreenIndicator);
+            this.bkGround_withScreenIndicator = new Bitmap(bkGround);
+            this.graphObj_for_bkGround_withScreenIndicator = Graphics.FromImage(this.bkGround_withScreenIndicator);
 
-            Rectangle rect = new Rectangle(0, 0, this.widthBigPanelAreaPx, this.heightBigPanelAreaPx);
+            this.indicatorRect.X = 0;
+            this.indicatorRect.Y = 0;
+            this.indicatorRect.Width = this.widthBigPanelAreaPx;
+            this.indicatorRect.Height = this.heightBigPanelAreaPx;
 
-            SolidBrush brush = new SolidBrush(Color.Red);
-            graphObj.FillRectangle(brush, rect);
-
-            //pen = new Pen(Color.Red);
-            //graphObj.DrawRectangle(pen, rect);
+            this.indicatorBbrush = new SolidBrush(Color.Red);
+            this.graphObj_for_bkGround_withScreenIndicator.FillRectangle(this.indicatorBbrush, this.indicatorRect);
         }
 
         // **************************************************************************************************
-        public void panelPaint(Graphics canvasGraph)
+        // canvasGraph - это Graphics панели, на которой рисуем по событию Paint этой панели
+        override public void panelPaint(Graphics panelCanvasGraph)
         {
-            canvasGraph.DrawImage(bkGround_withScreenIndicator, 0, 0);
+            // весь битмап копируем на всю панель. 
+            panelCanvasGraph.DrawImage(this.bkGround_withScreenIndicator, 0, 0);
         }
 
         // **************************************************************************************************
-        public void setScreenIndicator (int xColsOffset, int yRowsOffset)
+        /*  Подробная область мира (ПОМ) (отображаемая на большой панели) сдвинулось на новое место.
+            В полях this.idxColsOffset и this.idxRowsOffset -  уже установлены новые индексы смещения 
+         
+            Теперь ячейка левого верхнего угла области ПОМ, имеет индекс [this.idxColsOffset, this.idxRowsOffset]
+
+            Маленькая панель - это карта всего мира, на котором красным квадратиком отмечаем положение области ПОМ,
+            и эта картинка хранится в битмапе bkGround_withScreenIndicator.
+            Значит, теперь этот битмап нужно перерисовать - это и делаем здесь
+        */
+        override public void offsetCanged ()        
         {
-            bkGround_withScreenIndicator.Dispose();
-            bkGround_withScreenIndicator = new Bitmap(bkGround);
+            // считаем смещение в пикселях на панели
+            int xOrigin = (int)( ((double)this.idxColsOffset) * this.oneColWidthPx); 
+            int yOrigin = (int)( ((double)this.idxRowsOffset) * this.oneRowHeightPx);
 
-            int xOrigin = (int)((double)xColsOffset * this.oneColWidthPx);
-            int yOrigin = (int)((double)yRowsOffset * this.oneRowHeightPx);
+            // ширину и высоту индикатора не присваиваем, они прежними, изменилась только точка, откуда рисуем прямоугольник
+            this.indicatorRect.X = xOrigin;
+            this.indicatorRect.Y = yOrigin;
 
-            Graphics graphObj = Graphics.FromImage(bkGround_withScreenIndicator);
-            Rectangle rect = new Rectangle(xOrigin, yOrigin, this.widthBigPanelAreaPx, this.heightBigPanelAreaPx);
-
-            brush = new SolidBrush(Color.Red);
-            graphObj.FillRectangle(brush, rect);
-
-            //pen = new Pen(Color.Red);
-            //graphObj.DrawRectangle(pen, rect);
+            this.graphObj_for_bkGround_withScreenIndicator.DrawImage(bkGround, 0, 0); // Копируем карту мира без индикатора на битмап с индикатором
+            this.graphObj_for_bkGround_withScreenIndicator.FillRectangle(this.indicatorBbrush, this.indicatorRect); // заливаем индикатор
         }
+
+        // **************************************************************************************************
+                        /* метод SetOffsetOriginIdx_OLD(int xColsOffset, int yRowsOffset) не используется
+                         * оставлен здесь для примера нерационального использования памяти
+                         */
+                        public void SetOffsetOriginIdx_OLD(int xColsOffset, int yRowsOffset)
+                        {
+                            int xOrigin = (int)( ((double)xColsOffset) * this.oneColWidthPx);
+                            int yOrigin = (int)( ((double)yRowsOffset) * this.oneRowHeightPx);
+                       
+                            // ниже код, не рациональный по памяти - при каждой перерисовсе будет создаваться новый битмап
+
+                            bkGround_withScreenIndicator.Dispose();  // освобождаем память занятое битмапом
+                            bkGround_withScreenIndicator = new Bitmap(bkGround); // создаем новый пустой битмап
+
+                            // чтобы рисовать на битмапе, связываем его с объектом Graphics, который умеет это делать
+                            Graphics graphObj = Graphics.FromImage(bkGround_withScreenIndicator); 
+
+                            // создаем прямоугольник, соответствующий красному индикатору
+                            Rectangle rect = new Rectangle(xOrigin, yOrigin, this.widthBigPanelAreaPx, this.heightBigPanelAreaPx);
+
+                            graphObj.FillRectangle(this.indicatorBbrush, rect); // заливаем этот прямоугольник кистью this.indicatorBbrush
+                        }
 
         // **************************************************************************************************
     }
