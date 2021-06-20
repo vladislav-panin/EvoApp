@@ -89,18 +89,18 @@ namespace EvoApp
         {
             Point[] topSeePoints = 
             { 
-                new Point(0,                       0), 
-                new Point(colCount - 1,            0), 
-                new Point(colCount - 1 - widthSea, widthSea - 1),
-                new Point(widthSea - 1,            widthSea - 1)
+                new Point(0,                   0), 
+                new Point(colCount,            0), 
+                new Point(colCount - widthSea, widthSea),
+                new Point(widthSea,            widthSea)
             };
 
             Point[] bottomSeePoints =
             {
-                new Point(0,                       rowCount - 1),
-                new Point(colCount - 1,            rowCount - 1),
-                new Point(colCount - 1 - widthSea, rowCount - 1 - widthSea),
-                new Point(widthSea - 1,            rowCount - 1 - widthSea)
+                new Point(0,                   rowCount),
+                new Point(colCount,            rowCount),
+                new Point(colCount - widthSea, rowCount - widthSea),
+                new Point(widthSea,            rowCount - widthSea)
             };
 
             // Pen pen = new Pen(Color.White);
@@ -118,18 +118,18 @@ namespace EvoApp
         {
             Point[] topSeePoints =
             {
-                new Point(0,                  0),
-                new Point(0,                  rowCount - 1),
-                new Point(widthMountains - 1, rowCount - 1 - widthMountains),
-                new Point(widthMountains - 1, widthMountains - 1)
+                new Point(0,              0),
+                new Point(0,              rowCount),
+                new Point(widthMountains, rowCount - widthMountains),
+                new Point(widthMountains, widthMountains)
             };
 
             Point[] bottomSeePoints =
             {
-                new Point(colCount - 1,                  0),
-                new Point(colCount - 1,                  rowCount - 1),
-                new Point(colCount - 1 - widthMountains, rowCount - 1 - widthMountains),
-                new Point(colCount - 1 - widthMountains, widthMountains - 1)
+                new Point(colCount,                  0),
+                new Point(colCount,                  rowCount),
+                new Point(colCount - widthMountains, rowCount - widthMountains),
+                new Point(colCount - widthMountains, widthMountains)
             };
 
             // Pen pen = new Pen(Color.White);
