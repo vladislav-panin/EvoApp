@@ -56,7 +56,9 @@ namespace EvoApp
             hSlider.LargeChange = 1;
 
             painterBigEvoPanel.HSlider_Val = 0; // одновременно будет инициирован оффсет
-            painterBigEvoPanel.VSlider_Val = 0; // одновременно будет инициирован оффсет
+            //painterBigEvoPanel.VSlider_Val = vSlider.Maximum; // одновременно будет инициирован оффсет
+            painterBigEvoPanel.VSlider_Val = 0;
+
 
             vSlider.Minimum = 0;
             vSlider.Maximum = painterBigEvoPanel.vSlider_yTickCount - 1;
@@ -114,6 +116,9 @@ namespace EvoApp
         // ****************************************************************************************
         public void SetAppIsInited (AppInitResult res)
         {
+            painterBigEvoPanel.VSlider_Val = vSlider.Maximum; // одновременно будет инициирован оффсет
+            painterSmallEvoPanel.VSlider_Val = vSlider.Maximum; // одновременно будет инициирован оффсет
+            
             isAppInited = true;
 
             lblinit.Text = "игра запущена!";
@@ -243,13 +248,9 @@ namespace EvoApp
         // ****************************************************************************************       
         private void panelSmallGame_Paint(object sender, PaintEventArgs e)
         {
-            if (!isAppInited)
-            {
-                countOfDummyPaintSmallPanel++;
-                Console.WriteLine("*** countOfDummyPaintSmallPanel= " + countOfDummyPaintSmallPanel);
+            if (!isAppInited)    
                 return;
-            }                
-
+                   
             Graphics panelCanvasGraph = e.Graphics;
             this.painterSmallEvoPanel.panelPaint(panelCanvasGraph);
         }
@@ -258,12 +259,8 @@ namespace EvoApp
         private void panelBigGame_Paint(object sender, PaintEventArgs e)
         {
             if (!isAppInited)
-            {
-                countOfDummyPaintBigPanel++;
-                Console.WriteLine("*** countOfDummyPaintBigPanel  = " + countOfDummyPaintBigPanel);
                 return;
-            }
-
+            
             Graphics panelCanvasGraph = e.Graphics;
             this.painterBigEvoPanel.panelPaint(panelCanvasGraph);
         }        

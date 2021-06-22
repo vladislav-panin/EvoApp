@@ -39,8 +39,8 @@ namespace EvoApp
     */
     public class GeoEx
     {        
-        public int rowCount { get; } = 1000; // количество строк на поле программы 
-        public int colCount { get; } = 1000; // количество столбцов на поле программы 
+        public int rowCount { get; } = 1000; // количество строк (ячеек всей игры) на поле программы 
+        public int colCount { get; } = 1000; // количество столбцов(ячеек всей игры) на поле программы 
 
 
         public int widthSea       { get; set; } = 50; // ширина полосы моря
@@ -78,7 +78,7 @@ namespace EvoApp
         // ****************************************************************************************
         protected void DrawDesert()
         {
-            Rectangle rect = new Rectangle (0, 0, rowCount, colCount);
+            Rectangle rect = new Rectangle (0, 0, colCount, rowCount);
             SolidBrush brush = new SolidBrush(Lands.Desert.color);
 
             grafObj.FillRectangle (brush, rect);
@@ -89,18 +89,18 @@ namespace EvoApp
         {
             Point[] topSeePoints = 
             { 
-                new Point(0,                       0), 
-                new Point(colCount - 1,            0), 
-                new Point(colCount - 1 - widthSea, widthSea - 1),
-                new Point(widthSea - 1,            widthSea - 1)
+                new Point(0,                   0), 
+                new Point(colCount,            0), 
+                new Point(colCount - widthSea, widthSea),
+                new Point(widthSea,            widthSea)
             };
 
             Point[] bottomSeePoints =
             {
-                new Point(0,                       rowCount - 1),
-                new Point(colCount - 1,            rowCount - 1),
-                new Point(colCount - 1 - widthSea, rowCount - 1 - widthSea),
-                new Point(widthSea - 1,            rowCount - 1 - widthSea)
+                new Point(0,                   rowCount),
+                new Point(colCount,            rowCount),
+                new Point(colCount - widthSea, rowCount - widthSea),
+                new Point(widthSea,            rowCount - widthSea)
             };
 
             // Pen pen = new Pen(Color.White);
@@ -119,17 +119,17 @@ namespace EvoApp
             Point[] topSeePoints =
             {
                 new Point(0,                  0),
-                new Point(0,                  rowCount - 1),
-                new Point(widthMountains - 1, rowCount - 1 - widthMountains),
-                new Point(widthMountains - 1, widthMountains - 1)
+                new Point(0,                  rowCount),
+                new Point(widthMountains, rowCount - widthMountains),
+                new Point(widthMountains, widthMountains)
             };
 
             Point[] bottomSeePoints =
             {
-                new Point(colCount - 1,                  0),
-                new Point(colCount - 1,                  rowCount - 1),
-                new Point(colCount - 1 - widthMountains, rowCount - 1 - widthMountains),
-                new Point(colCount - 1 - widthMountains, widthMountains - 1)
+                new Point(colCount,                  0),
+                new Point(colCount,                  rowCount),
+                new Point(colCount - widthMountains, rowCount - widthMountains),
+                new Point(colCount - widthMountains, widthMountains)
             };
 
             // Pen pen = new Pen(Color.White);

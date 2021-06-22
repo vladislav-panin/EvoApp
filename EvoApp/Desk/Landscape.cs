@@ -99,6 +99,7 @@ namespace EvoApp
 
                 case ELandscape.Wood:
                     color = Color.DarkGreen;
+                    textBrush = Brushes.White;
                     break;
             }
 
