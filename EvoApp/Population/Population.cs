@@ -8,41 +8,50 @@ namespace EvoApp
 {
     public class Population
     {
-        //public Dictionary<List<DeskCell>> cellLst { get; set; } = null;
-
-        public int rowCount = 1000;
-        public int columnCount = 1000;
-
+        public static int entityMax { get; set; } = 10000;
+       
+        public Dictionary<int, DeskCell> entityLocations { get; set; } = new Dictionary<int, DeskCell>();
+        public int EntityCount()
+        {
+            return entityLocations.Count;
+        }
         public Population()
         {
-
+            Init();
         }
 
         //инициализация ячеек игрового поля 1000*1000
-        public int Init()
-        {/*
-            cellLst = new List<List<DeskCell>>();
-            int counter = 0;
+        public void Init()
+        {
+            int entityId = 0;
 
-            int idxRow = 0;
-            int idxColumn = 0;
-
-            for (idxRow = 0; idxRow < rowCount; idxRow++)
+            for (entityId = 0; entityId < entityMax; entityId++)
             {
-                List<DeskCell> cell = new List<DeskCell>();
-                cellLst.Add(cell);
-
-                for (idxColumn = 0; idxColumn < columnCount; idxColumn++)
-                {
-                    DeskCell dc = new DeskCell(idxRow, idxColumn);
-                    cell.Add(dc);
-                }
+                
             }
 
-            counter = idxRow * idxColumn;
-            return counter;
-            */
-            return 0;
+            List<List<DeskCell>> lst = Program.app.desk.cellTable;
+
+            int rowCount = Program.app.desk.geoEx.rowCount;
+            int colCount = Program.app.desk.geoEx.colCount;
+     
+            for (int idxRow = 0; idxRow < rowCount; idxRow++)
+            {               
+
+                for (int idxColumn = 0; idxColumn < colCount; idxColumn++)
+                {
+                    DeskCell dc = lst[idxRow][idxColumn];
+                    
+                    if(idxColumn > 80 && idxColumn < 500)
+                    {
+                        Entity entity = new Entity(entityId);
+                        entityLocations.Add(entityId++, dc);
+                    
+                    if (entityId > entityMax)
+                        break;
+                    }
+                }
+            }
         }
     }
 }

@@ -11,7 +11,7 @@ namespace EvoApp
     {
         public IBehavior behavior { get; set; }
 
-        public Entity (IBehavior beh) : base ()
+        public Entity (int entityId) : base (entityId)
         {
 
         }
