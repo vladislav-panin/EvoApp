@@ -263,7 +263,12 @@ namespace EvoApp
             
             Graphics panelCanvasGraph = e.Graphics;
             this.painterBigEvoPanel.panelPaint(panelCanvasGraph);
-        }        
+        }
+
+        public void btnStart_Click(object sender, EventArgs e)
+        {
+             
+        }
         // ****************************************************************************************       
     }
 }

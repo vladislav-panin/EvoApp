@@ -66,6 +66,7 @@
     <Compile Include="Paint\PainterBase.cs" />
     <Compile Include="Paint\PainterBigEvoPanel.cs" />
     <Compile Include="Paint\PainterSmallEvoPanel.cs" />
+    <Compile Include="Population\Herbivore.cs" />
     <Compile Include="Population\Entity.cs" />
     <Compile Include="Population\Population.cs" />
     <Compile Include="Population\BaseEntity.cs" />

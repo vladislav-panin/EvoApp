@@ -85,6 +85,24 @@ namespace EvoApp
             }
         }
 
+        public void CalcNextTick()
+        {
+            Color clr;
+            int idxRow;
+            int idxColumn;
+            List<DeskCell> cellRow;
+
+            for (idxRow = 0; idxRow < geoEx.rowCount; idxRow++)
+            {
+                cellRow = cellTable[idxRow];
+
+                for (idxColumn = 0; idxColumn < geoEx.colCount; idxColumn++)
+                {
+                    cellRow[idxColumn].EntityMoveAll();
+                }
+            }
+        }
+
         // ****************************************************************************************       
     }
 }

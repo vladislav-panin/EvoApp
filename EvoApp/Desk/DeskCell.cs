@@ -21,6 +21,31 @@ namespace EvoApp
 
         Rectangle cellRect = new Rectangle();
 
+         protected List<Entity> lstEntity { get; set; } = new List<Entity>();
+
+        public void EntityAdd(Entity ent)
+        {
+            lstEntity.Add(ent);
+        }
+
+        public void EntityRemove(Entity ent)
+        {
+            lstEntity.Remove(ent);
+        }
+
+        public void EntityRemoveAll()
+        {
+            lstEntity.Clear();
+        }
+
+        public void EntityMoveAll()
+        {
+            for (int i = 0; i < lstEntity.Count; i++)
+            {
+                lstEntity[i].Move();
+            }
+        }
+
         // ****************************************************************************************
         public DeskCell(int idxRow, int idxColumn)
         {

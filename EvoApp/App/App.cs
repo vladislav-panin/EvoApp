@@ -13,7 +13,7 @@ namespace EvoApp
         static object lockerObjWithSomeName = new object();
 
         public Desk desk { get; set; } = new Desk();
-
+        public Population population = new Population();
         // демонстрация и лока и геттеров/сеттеров свойств  *****************************************************
                 protected EvoSpeed evo_speed = EvoSpeed.Hi;
 
@@ -42,7 +42,7 @@ namespace EvoApp
             res.cellCount = cellCount;
 
 
-            int entityCount = 0;
+            int entityCount = population.Generate();
             Console.WriteLine("! ------- инициализация сущностей завершена, количество инициированных сущностей равно " + entityCount);
             res.entityCount = entityCount;
 
@@ -52,6 +52,7 @@ namespace EvoApp
         public void Run()
         {
             Console.WriteLine("! ---------------- игра запущена");
+            desk.CalcNextTick();
         }
 
 

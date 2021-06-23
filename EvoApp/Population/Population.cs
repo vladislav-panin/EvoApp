@@ -17,11 +17,11 @@ namespace EvoApp
         }
         public Population()
         {
-            Init();
+
         }
 
         //инициализация ячеек игрового поля 1000*1000
-        public void Init()
+        public int Generate()
         {
             int entityId = 0;
 
@@ -46,12 +46,16 @@ namespace EvoApp
                     {
                         Entity entity = new Entity(entityId);
                         entityLocations.Add(entityId++, dc);
-                    
+
+                        Program.app.desk.cellTable[idxRow][idxColumn].EntityAdd(entity);
+
+
                     if (entityId > entityMax)
                         break;
                     }
                 }
             }
+            return entityId;
         }
     }
 }
