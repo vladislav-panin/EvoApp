@@ -59,7 +59,6 @@ namespace EvoApp
             //painterBigEvoPanel.VSlider_Val = vSlider.Maximum; // одновременно будет инициирован оффсет
             painterBigEvoPanel.VSlider_Val = 0;
 
-
             vSlider.Minimum = 0;
             vSlider.Maximum = painterBigEvoPanel.vSlider_yTickCount - 1;
             vSlider.Value = vSlider.Maximum;
@@ -116,9 +115,10 @@ namespace EvoApp
         // ****************************************************************************************
         public void SetAppIsInited (AppInitResult res)
         {
+            // "переворачиваю" вертикальный слайдер, в соответствии с вертикальной нумерацией ячеек - она растет сверху вниз
             painterBigEvoPanel.VSlider_Val = vSlider.Maximum; // одновременно будет инициирован оффсет
             painterSmallEvoPanel.VSlider_Val = vSlider.Maximum; // одновременно будет инициирован оффсет
-            
+
             isAppInited = true;
 
             lblinit.Text = "игра запущена!";
@@ -127,17 +127,13 @@ namespace EvoApp
             btnStop.Enabled = true;
 
             this.lblCellCount.Text = "количество ячеек: " + Convert.ToString(res.cellCount);
+            this.lblOffset.Text = painterBigEvoPanel.GetOffsetString();
 
-            
             this.panelEvoBig.Invalidate();
             this.panelEvoBig.Update();
-
-            
+                        
             this.panelEvoSmall.Invalidate();
             this.panelEvoSmall.Update();
-
-            this.Invalidate();
-            this.Update();
         }
 
         // ****************************************************************************************
@@ -241,9 +237,6 @@ namespace EvoApp
                     break;
             }
         }
-
-        static int countOfDummyPaintBigPanel = 0;
-        static int countOfDummyPaintSmallPanel = 0;
 
         // ****************************************************************************************       
         private void panelSmallGame_Paint(object sender, PaintEventArgs e)

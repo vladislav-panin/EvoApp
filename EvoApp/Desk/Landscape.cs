@@ -86,6 +86,7 @@ namespace EvoApp
 
                 case ELandscape.Mountains:
                     color = Color.DimGray;
+                    textBrush = Brushes.White;
                     break;
 
                 case ELandscape.Lake:
@@ -103,9 +104,7 @@ namespace EvoApp
                     break;
             }
 
-            brush = new SolidBrush(color);
-
-            
+            brush = new SolidBrush(color);            
         }
 
     }
