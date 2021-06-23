@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Drawing;
 
 namespace EvoApp
 {
@@ -39,8 +34,8 @@ namespace EvoApp
     */
     public class GeoEx
     {        
-        public int rowCount { get; } = 1000; // количество строк на поле программы 
-        public int colCount { get; } = 1000; // количество столбцов на поле программы 
+        public int rowCount { get; } = 1000; // количество строк (ячеек всей игры) на поле программы 
+        public int colCount { get; } = 1000; // количество столбцов(ячеек всей игры) на поле программы 
 
 
         public int widthSea       { get; set; } = 50; // ширина полосы моря
@@ -78,7 +73,7 @@ namespace EvoApp
         // ****************************************************************************************
         protected void DrawDesert()
         {
-            Rectangle rect = new Rectangle (0, 0, rowCount, colCount);
+            Rectangle rect = new Rectangle (0, 0, colCount, rowCount);
             SolidBrush brush = new SolidBrush(Lands.Desert.color);
 
             grafObj.FillRectangle (brush, rect);
@@ -103,14 +98,10 @@ namespace EvoApp
                 new Point(widthSea,            rowCount - widthSea)
             };
 
-            // Pen pen = new Pen(Color.White);
             SolidBrush brush = new SolidBrush(Lands.Sea.color);
 
             grafObj.FillPolygon(brush, topSeePoints);
             grafObj.FillPolygon(brush, bottomSeePoints);
-
-            // grafObj.DrawPolygon(pen, topSeePoints);
-            // grafObj.DrawPolygon(pen, bottomSeePoints);
         }
 
         // ****************************************************************************************
@@ -132,14 +123,10 @@ namespace EvoApp
                 new Point(colCount - widthMountains, widthMountains)
             };
 
-            // Pen pen = new Pen(Color.White);
             SolidBrush brush = new SolidBrush(Lands.Mountains.color);
 
             grafObj.FillPolygon(brush, topSeePoints);
             grafObj.FillPolygon(brush, bottomSeePoints);
-
-            // grafObj.DrawPolygon(pen, topSeePoints);
-            // grafObj.DrawPolygon(pen, bottomSeePoints);
         }
 
         // ****************************************************************************************
@@ -157,25 +144,6 @@ namespace EvoApp
         // ****************************************************************************************
         protected void DrawWood()
         {
-            /*
-            int xCenter = (colCount / 2) - 1;
-            int yCenter = (rowCount / 2) - 1;
-
-            Rectangle rect = new Rectangle
-                (
-                    xCenter - (widthWood / 2),
-                    yCenter - (widthWood / 2),
-                    widthWood,
-                    widthWood
-                );
-
-            Pen pen = new Pen(Color.White);
-            SolidBrush brush = new SolidBrush(Lands.Wood.color);
-
-            grafObj.FillEllipse(brush, rect);
-            // grafObj.DrawEllipse(pen, rect);
-            */
-
             int xCenter = (colCount / 2) - 1;
             int yCenter = (rowCount / 2) - 1;
 

@@ -56,8 +56,8 @@ namespace EvoApp
             hSlider.LargeChange = 1;
 
             painterBigEvoPanel.HSlider_Val = 0; // одновременно будет инициирован оффсет
-            painterBigEvoPanel.VSlider_Val = 0; // одновременно будет инициирован оффсет
-            // painterBigEvoPanel.VSlider_Val = vSlider.Maximum; // одновременно будет инициирован оффсет
+            //painterBigEvoPanel.VSlider_Val = vSlider.Maximum; // одновременно будет инициирован оффсет
+            painterBigEvoPanel.VSlider_Val = 0;
 
             vSlider.Minimum = 0;
             vSlider.Maximum = painterBigEvoPanel.vSlider_yTickCount - 1;
@@ -238,19 +238,12 @@ namespace EvoApp
             }
         }
 
-        static int countOfDummyPaintBigPanel = 0;
-        static int countOfDummyPaintSmallPanel = 0;
-
         // ****************************************************************************************       
         private void panelSmallGame_Paint(object sender, PaintEventArgs e)
         {
-            if (!isAppInited)
-            {
-                countOfDummyPaintSmallPanel++;
-                Console.WriteLine("*** countOfDummyPaintSmallPanel= " + countOfDummyPaintSmallPanel);
+            if (!isAppInited)    
                 return;
-            }                
-
+                   
             Graphics panelCanvasGraph = e.Graphics;
             this.painterSmallEvoPanel.panelPaint(panelCanvasGraph);
         }
@@ -259,12 +252,8 @@ namespace EvoApp
         private void panelBigGame_Paint(object sender, PaintEventArgs e)
         {
             if (!isAppInited)
-            {
-                countOfDummyPaintBigPanel++;
-                Console.WriteLine("*** countOfDummyPaintBigPanel  = " + countOfDummyPaintBigPanel);
                 return;
-            }
-
+            
             Graphics panelCanvasGraph = e.Graphics;
             this.painterBigEvoPanel.panelPaint(panelCanvasGraph);
         }        

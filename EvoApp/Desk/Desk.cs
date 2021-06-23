@@ -10,7 +10,11 @@ namespace EvoApp
     public class Desk
     {
         public List<List<DeskCell>> cellTable { get; set;  }  = null;
-        public GeoEx geoEx { get; set; } = null;
+        public GeoEx geoEx 
+        {
+            get; 
+            set; 
+        } = null;
 
         // ****************************************************************************************
         public Desk()
@@ -75,6 +79,7 @@ namespace EvoApp
                 for (idxColumn = 0; idxColumn < geoEx.colCount; idxColumn++)
                 {
                     clr = geoEx.etalonMap.GetPixel(idxColumn, idxRow);
+                    //cellTable[idxRow][idxColumn].land = Lands.GetLandscape(clr, idxColumn, idxRow);
                     cellRow[idxColumn].land = Lands.GetLandscape(clr, idxColumn, idxRow);
                 }            
             }
