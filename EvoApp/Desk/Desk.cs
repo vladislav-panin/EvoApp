@@ -1,15 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EvoApp
 {
     public class Desk
     {
-        public List<List<DeskCell>> cellTable { get; set;  }  = null;
+        // ****************************************************************************************
+        public List<List<DeskCell>> cellTable 
+        { 
+            get; 
+            set; 
+        } = null;
+        
         public GeoEx geoEx 
         {
             get; 
@@ -27,9 +29,7 @@ namespace EvoApp
         //инициализация ячеек игрового поля 1000*1000
         public int Init()
         {
-            int cellCount = 
-
-            CreateCells();
+            int cellCount =  CreateCells();
             SetLandscape();
 
             return cellCount;
@@ -39,7 +39,7 @@ namespace EvoApp
         public int CreateCells()
         {
             cellTable = new List<List<DeskCell>>();
-            int counter = 0;
+            int counter;
 
             int idxRow = 0;
             int idxColumn = 0;
@@ -85,20 +85,15 @@ namespace EvoApp
             }
         }
 
+        // ****************************************************************************************  
+        // вызывается в потоке App.evoThread
         public void CalcNextTick()
         {
-            Color clr;
-            int idxRow;
-            int idxColumn;
-            List<DeskCell> cellRow;
-
-            for (idxRow = 0; idxRow < geoEx.rowCount; idxRow++)
+            for (int idxRow = 0; idxRow < geoEx.rowCount; idxRow++)
             {
-                cellRow = cellTable[idxRow];
-
-                for (idxColumn = 0; idxColumn < geoEx.colCount; idxColumn++)
+                for (int idxColumn = 0; idxColumn < geoEx.colCount; idxColumn++)
                 {
-                    cellRow[idxColumn].EntityMoveAll();
+                    cellTable [idxRow] [idxColumn]. EntityMoveAll ();
                 }
             }
         }

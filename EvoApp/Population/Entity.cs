@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using EvoApp.Properties;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Resources;
 
 namespace EvoApp
 {
@@ -16,30 +13,46 @@ namespace EvoApp
             new Point(+2,+1), new Point(-2,+1),
             new Point(+1,+2), new Point(-1,+2),
         };
-        // *************************************************************************************************************************************************
-
-        override public Point[] getStepShift()
-        {
+        
+        override public Point[] getStepShift() {
             return stepEntity;
         }
 
-        public IBehavior behavior { get; set; }
+        // *************************************************************************************************************************************************
+        static private SolidBrush paint_brush = new SolidBrush(Color.FromArgb(255, 255, 255, 255));
 
-
-        ///////////////////
-       
-        public Entity (int entityId) : base (entityId)
-        {
-
+        override public Brush getBrush() {
+            return paint_brush;
         }
-
-        //инициализация ячеек игрового поля 1000*1000
-        virtual public int Paint (Graphics canvasGraph, DeskCell cell)
-        {
-            return 0;
+        // *************************************************************************************************************************************************
+        // *************************************************************************************************************************************************
+        public Entity (long entityId) : base (entityId) {
         }
+        // *************************************************************************************************************************************************
+        public Entity(long entityId, int cellX, int cellY) : base(entityId) {
+            this.position.X = cellX;
+            this.position.Y = cellY;
+        }
+        // *************************************************************************************************************************************************        
+        // Rectangle rect - это координаты прямоугольникаи на панели, в пикселях, где рисуем
+        /*
+        override protected void drawOnRect(Graphics canvasGraph, int xOriginGlobal, int yOriginGlobal, int width, int height)
+        {
+            //base.drawOnRect(canvasGraph, xOriginGlobal, yOriginGlobal, width, height);
 
-        ///////////////////
+            canvasGraph.FillEllipse (
+                getBrush(),
+                xOriginGlobal,
+                yOriginGlobal,
+                width,
+                height);
+        }
+        */
+        override protected void drawOnRect(Graphics canvasGraph, int xOriginGlobal, int yOriginGlobal, int width, int height)
+        {
+            canvasGraph.DrawImage(Population.bmpEntity, xOriginGlobal, yOriginGlobal);
+        }
+        // *************************************************************************************************************************************************
         override public void Move()
         {
             int idxStep = rndStepIndexGenerator.Next(0, 7);
@@ -53,6 +66,6 @@ namespace EvoApp
             Cells()[indCellY][indCellX].EntityRemove(this);
             Cells()[indCellY][indCellX].EntityAdd(this);
         }
-        ///////////////////
+        // *************************************************************************************************************************************************
     }
 }

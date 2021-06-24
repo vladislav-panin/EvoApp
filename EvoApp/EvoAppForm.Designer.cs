@@ -31,59 +31,60 @@ namespace EvoApp
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EvoAppForm));
-            this.panelEvoBig = new System.Windows.Forms.Panel();
             this.hSlider = new System.Windows.Forms.TrackBar();
             this.vSlider = new System.Windows.Forms.TrackBar();
-            this.panelEvoSmall = new System.Windows.Forms.Panel();
-            this.pbLandDesert = new System.Windows.Forms.PictureBox();
-            this.pbLandSea = new System.Windows.Forms.PictureBox();
-            this.pbLandLake = new System.Windows.Forms.PictureBox();
-            this.pbLandMountains = new System.Windows.Forms.PictureBox();
+            this.lbDisertPict = new System.Windows.Forms.PictureBox();
+            this.lbSeaPict = new System.Windows.Forms.PictureBox();
+            this.lbLakePict = new System.Windows.Forms.PictureBox();
+            this.lbMountainsPict = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.comboEvoSpeed = new System.Windows.Forms.ComboBox();
+            this.lbDisert = new System.Windows.Forms.Label();
+            this.lbSea = new System.Windows.Forms.Label();
+            this.lbLake = new System.Windows.Forms.Label();
+            this.lbMountains = new System.Windows.Forms.Label();
             this.chkShowGrid = new System.Windows.Forms.CheckBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.evoTitlePanel2 = new System.Windows.Forms.Panel();
+            this.evoTitlePanel = new System.Windows.Forms.Panel();
+            this.evoTitleVersion = new System.Windows.Forms.Label();
+            this.evoTitle = new System.Windows.Forms.Label();
             this.btnStart = new System.Windows.Forms.Button();
             this.btnStop = new System.Windows.Forms.Button();
             this.lblinit = new System.Windows.Forms.Label();
-            this.lblCellCount = new System.Windows.Forms.Label();
-            this.pbLandGrass = new System.Windows.Forms.PictureBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.pbLandTrees = new System.Windows.Forms.PictureBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.bigGamePaintTimer = new System.Windows.Forms.Timer(this.components);
-            this.lblOffsetCaption = new System.Windows.Forms.Label();
+            this.lbCellCount = new System.Windows.Forms.Label();
+            this.lbGrassPict = new System.Windows.Forms.PictureBox();
+            this.lbGrass = new System.Windows.Forms.Label();
+            this.lbTreesPict = new System.Windows.Forms.PictureBox();
+            this.lbTrees = new System.Windows.Forms.Label();
+            this.bigEvoPaintTimer = new System.Windows.Forms.Timer(this.components);
             this.lblOffset = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lbCurrOffsetPict = new System.Windows.Forms.PictureBox();
+            this.lbCurrOffset = new System.Windows.Forms.Label();
             this.chkShowCoo = new System.Windows.Forms.CheckBox();
+            this.lbEvoTickTime = new System.Windows.Forms.Label();
+            this.lblEvoStep = new System.Windows.Forms.Label();
+            this.richTimerInfo = new System.Windows.Forms.RichTextBox();
+            this.lbEntityCount = new System.Windows.Forms.Label();
+            this.lblEntityCount = new System.Windows.Forms.Label();
+            this.lbEvoTickCount = new System.Windows.Forms.Label();
+            this.lbEvoInitTime = new System.Windows.Forms.Label();
+            this.evoPanelBig = new System.Windows.Forms.PictureBox();
+            this.evoPanelSmall = new System.Windows.Forms.PictureBox();
+            this.lbTimerInterval = new System.Windows.Forms.Label();
+            this.lbEvoFriquency = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.hSlider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vSlider)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLandDesert)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLandSea)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLandLake)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLandMountains)).BeginInit();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLandGrass)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLandTrees)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbDisertPict)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbSeaPict)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbLakePict)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbMountainsPict)).BeginInit();
+            this.evoTitlePanel2.SuspendLayout();
+            this.evoTitlePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lbGrassPict)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbTreesPict)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbCurrOffsetPict)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.evoPanelBig)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.evoPanelSmall)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panelEvoBig
-            // 
-            this.panelEvoBig.BackColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.panelEvoBig, "panelEvoBig");
-            this.panelEvoBig.Name = "panelEvoBig";
-            this.panelEvoBig.Paint += new System.Windows.Forms.PaintEventHandler(this.panelBigGame_Paint);
             // 
             // hSlider
             // 
@@ -103,41 +104,33 @@ namespace EvoApp
             this.vSlider.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
             this.vSlider.Scroll += new System.EventHandler(this.vSlider_Scroll);
             // 
-            // panelEvoSmall
+            // lbDisertPict
             // 
-            this.panelEvoSmall.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panelEvoSmall.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.panelEvoSmall, "panelEvoSmall");
-            this.panelEvoSmall.Name = "panelEvoSmall";
-            this.panelEvoSmall.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSmallGame_Paint);
+            this.lbDisertPict.BackColor = System.Drawing.Color.PaleGoldenrod;
+            resources.ApplyResources(this.lbDisertPict, "lbDisertPict");
+            this.lbDisertPict.Name = "lbDisertPict";
+            this.lbDisertPict.TabStop = false;
             // 
-            // pbLandDesert
+            // lbSeaPict
             // 
-            this.pbLandDesert.BackColor = System.Drawing.Color.PaleGoldenrod;
-            resources.ApplyResources(this.pbLandDesert, "pbLandDesert");
-            this.pbLandDesert.Name = "pbLandDesert";
-            this.pbLandDesert.TabStop = false;
+            this.lbSeaPict.BackColor = System.Drawing.Color.MediumBlue;
+            resources.ApplyResources(this.lbSeaPict, "lbSeaPict");
+            this.lbSeaPict.Name = "lbSeaPict";
+            this.lbSeaPict.TabStop = false;
             // 
-            // pbLandSea
+            // lbLakePict
             // 
-            this.pbLandSea.BackColor = System.Drawing.Color.MediumBlue;
-            resources.ApplyResources(this.pbLandSea, "pbLandSea");
-            this.pbLandSea.Name = "pbLandSea";
-            this.pbLandSea.TabStop = false;
+            this.lbLakePict.BackColor = System.Drawing.Color.Aqua;
+            resources.ApplyResources(this.lbLakePict, "lbLakePict");
+            this.lbLakePict.Name = "lbLakePict";
+            this.lbLakePict.TabStop = false;
             // 
-            // pbLandLake
+            // lbMountainsPict
             // 
-            this.pbLandLake.BackColor = System.Drawing.Color.Aqua;
-            resources.ApplyResources(this.pbLandLake, "pbLandLake");
-            this.pbLandLake.Name = "pbLandLake";
-            this.pbLandLake.TabStop = false;
-            // 
-            // pbLandMountains
-            // 
-            this.pbLandMountains.BackColor = System.Drawing.Color.DimGray;
-            resources.ApplyResources(this.pbLandMountains, "pbLandMountains");
-            this.pbLandMountains.Name = "pbLandMountains";
-            this.pbLandMountains.TabStop = false;
+            this.lbMountainsPict.BackColor = System.Drawing.Color.DimGray;
+            resources.ApplyResources(this.lbMountainsPict, "lbMountainsPict");
+            this.lbMountainsPict.Name = "lbMountainsPict";
+            this.lbMountainsPict.TabStop = false;
             // 
             // label1
             // 
@@ -145,46 +138,29 @@ namespace EvoApp
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Name = "label1";
             // 
-            // label3
+            // lbDisert
             // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.ForeColor = System.Drawing.Color.Gold;
-            this.label3.Name = "label3";
+            resources.ApplyResources(this.lbDisert, "lbDisert");
+            this.lbDisert.ForeColor = System.Drawing.Color.Gold;
+            this.lbDisert.Name = "lbDisert";
             // 
-            // label2
+            // lbSea
             // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label2.Name = "label2";
+            resources.ApplyResources(this.lbSea, "lbSea");
+            this.lbSea.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.lbSea.Name = "lbSea";
             // 
-            // label4
+            // lbLake
             // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.ForeColor = System.Drawing.Color.Aqua;
-            this.label4.Name = "label4";
+            resources.ApplyResources(this.lbLake, "lbLake");
+            this.lbLake.ForeColor = System.Drawing.Color.Aqua;
+            this.lbLake.Name = "lbLake";
             // 
-            // label5
+            // lbMountains
             // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.ForeColor = System.Drawing.Color.BurlyWood;
-            this.label5.Name = "label5";
-            // 
-            // label7
-            // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Name = "label7";
-            // 
-            // comboEvoSpeed
-            // 
-            this.comboEvoSpeed.FormattingEnabled = true;
-            this.comboEvoSpeed.Items.AddRange(new object[] {
-            resources.GetString("comboEvoSpeed.Items"),
-            resources.GetString("comboEvoSpeed.Items1"),
-            resources.GetString("comboEvoSpeed.Items2")});
-            resources.ApplyResources(this.comboEvoSpeed, "comboEvoSpeed");
-            this.comboEvoSpeed.Name = "comboEvoSpeed";
-            this.comboEvoSpeed.SelectedValueChanged += new System.EventHandler(this.comboEvoSpeed_SelectedValueChanged);
+            resources.ApplyResources(this.lbMountains, "lbMountains");
+            this.lbMountains.ForeColor = System.Drawing.Color.BurlyWood;
+            this.lbMountains.Name = "lbMountains";
             // 
             // chkShowGrid
             // 
@@ -195,45 +171,50 @@ namespace EvoApp
             this.chkShowGrid.UseVisualStyleBackColor = true;
             this.chkShowGrid.CheckedChanged += new System.EventHandler(this.chkShowGrid_CheckedChanged);
             // 
-            // panel3
+            // evoTitlePanel2
             // 
-            this.panel3.BackColor = System.Drawing.Color.SeaShell;
-            this.panel3.Controls.Add(this.panel4);
-            resources.ApplyResources(this.panel3, "panel3");
-            this.panel3.Name = "panel3";
+            this.evoTitlePanel2.BackColor = System.Drawing.Color.SeaShell;
+            this.evoTitlePanel2.Controls.Add(this.evoTitlePanel);
+            resources.ApplyResources(this.evoTitlePanel2, "evoTitlePanel2");
+            this.evoTitlePanel2.Name = "evoTitlePanel2";
             // 
-            // panel4
+            // evoTitlePanel
             // 
-            this.panel4.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel4.Controls.Add(this.label9);
-            this.panel4.Controls.Add(this.label8);
-            resources.ApplyResources(this.panel4, "panel4");
-            this.panel4.Name = "panel4";
+            this.evoTitlePanel.BackColor = System.Drawing.Color.SteelBlue;
+            this.evoTitlePanel.Controls.Add(this.evoTitleVersion);
+            this.evoTitlePanel.Controls.Add(this.evoTitle);
+            resources.ApplyResources(this.evoTitlePanel, "evoTitlePanel");
+            this.evoTitlePanel.Name = "evoTitlePanel";
             // 
-            // label9
+            // evoTitleVersion
             // 
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.ForeColor = System.Drawing.SystemColors.Control;
-            this.label9.Name = "label9";
+            resources.ApplyResources(this.evoTitleVersion, "evoTitleVersion");
+            this.evoTitleVersion.ForeColor = System.Drawing.SystemColors.Control;
+            this.evoTitleVersion.Name = "evoTitleVersion";
             // 
-            // label8
+            // evoTitle
             // 
-            resources.ApplyResources(this.label8, "label8");
-            this.label8.ForeColor = System.Drawing.SystemColors.Control;
-            this.label8.Name = "label8";
+            resources.ApplyResources(this.evoTitle, "evoTitle");
+            this.evoTitle.ForeColor = System.Drawing.SystemColors.Control;
+            this.evoTitle.Name = "evoTitle";
             // 
             // btnStart
             // 
+            this.btnStart.BackColor = System.Drawing.Color.SteelBlue;
             resources.ApplyResources(this.btnStart, "btnStart");
+            this.btnStart.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnStart.Name = "btnStart";
-            this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.UseVisualStyleBackColor = false;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // btnStop
             // 
+            this.btnStop.BackColor = System.Drawing.Color.SteelBlue;
             resources.ApplyResources(this.btnStop, "btnStop");
+            this.btnStop.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnStop.Name = "btnStop";
-            this.btnStop.UseVisualStyleBackColor = true;
+            this.btnStop.UseVisualStyleBackColor = false;
+            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
             // 
             // lblinit
             // 
@@ -241,46 +222,40 @@ namespace EvoApp
             this.lblinit.ForeColor = System.Drawing.Color.Red;
             this.lblinit.Name = "lblinit";
             // 
-            // lblCellCount
+            // lbCellCount
             // 
-            resources.ApplyResources(this.lblCellCount, "lblCellCount");
-            this.lblCellCount.Name = "lblCellCount";
+            resources.ApplyResources(this.lbCellCount, "lbCellCount");
+            this.lbCellCount.Name = "lbCellCount";
             // 
-            // pbLandGrass
+            // lbGrassPict
             // 
-            this.pbLandGrass.BackColor = System.Drawing.Color.MediumSeaGreen;
-            resources.ApplyResources(this.pbLandGrass, "pbLandGrass");
-            this.pbLandGrass.Name = "pbLandGrass";
-            this.pbLandGrass.TabStop = false;
+            this.lbGrassPict.BackColor = System.Drawing.Color.MediumSeaGreen;
+            resources.ApplyResources(this.lbGrassPict, "lbGrassPict");
+            this.lbGrassPict.Name = "lbGrassPict";
+            this.lbGrassPict.TabStop = false;
             // 
-            // label10
+            // lbGrass
             // 
-            resources.ApplyResources(this.label10, "label10");
-            this.label10.ForeColor = System.Drawing.Color.DarkSeaGreen;
-            this.label10.Name = "label10";
+            resources.ApplyResources(this.lbGrass, "lbGrass");
+            this.lbGrass.ForeColor = System.Drawing.Color.DarkSeaGreen;
+            this.lbGrass.Name = "lbGrass";
             // 
-            // pbLandTrees
+            // lbTreesPict
             // 
-            this.pbLandTrees.BackColor = System.Drawing.Color.DarkGreen;
-            resources.ApplyResources(this.pbLandTrees, "pbLandTrees");
-            this.pbLandTrees.Name = "pbLandTrees";
-            this.pbLandTrees.TabStop = false;
+            this.lbTreesPict.BackColor = System.Drawing.Color.DarkGreen;
+            resources.ApplyResources(this.lbTreesPict, "lbTreesPict");
+            this.lbTreesPict.Name = "lbTreesPict";
+            this.lbTreesPict.TabStop = false;
             // 
-            // label11
+            // lbTrees
             // 
-            resources.ApplyResources(this.label11, "label11");
-            this.label11.ForeColor = System.Drawing.Color.LimeGreen;
-            this.label11.Name = "label11";
+            resources.ApplyResources(this.lbTrees, "lbTrees");
+            this.lbTrees.ForeColor = System.Drawing.Color.LimeGreen;
+            this.lbTrees.Name = "lbTrees";
             // 
-            // bigGamePaintTimer
+            // bigEvoPaintTimer
             // 
-            this.bigGamePaintTimer.Tick += new System.EventHandler(this.bigGamePaintTimer_Tick);
-            // 
-            // lblOffsetCaption
-            // 
-            resources.ApplyResources(this.lblOffsetCaption, "lblOffsetCaption");
-            this.lblOffsetCaption.ForeColor = System.Drawing.Color.Silver;
-            this.lblOffsetCaption.Name = "lblOffsetCaption";
+            this.bigEvoPaintTimer.Tick += new System.EventHandler(this.bigEvoPaintTimer_Tick);
             // 
             // lblOffset
             // 
@@ -288,18 +263,18 @@ namespace EvoApp
             this.lblOffset.ForeColor = System.Drawing.Color.Silver;
             this.lblOffset.Name = "lblOffset";
             // 
-            // pictureBox1
+            // lbCurrOffsetPict
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Red;
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
+            this.lbCurrOffsetPict.BackColor = System.Drawing.Color.Red;
+            resources.ApplyResources(this.lbCurrOffsetPict, "lbCurrOffsetPict");
+            this.lbCurrOffsetPict.Name = "lbCurrOffsetPict";
+            this.lbCurrOffsetPict.TabStop = false;
             // 
-            // label6
+            // lbCurrOffset
             // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Name = "label6";
+            resources.ApplyResources(this.lbCurrOffset, "lbCurrOffset");
+            this.lbCurrOffset.ForeColor = System.Drawing.Color.Red;
+            this.lbCurrOffset.Name = "lbCurrOffset";
             // 
             // chkShowCoo
             // 
@@ -310,40 +285,109 @@ namespace EvoApp
             this.chkShowCoo.UseVisualStyleBackColor = true;
             this.chkShowCoo.CheckedChanged += new System.EventHandler(this.chkShowCoo_CheckedChanged);
             // 
+            // lbEvoTickTime
+            // 
+            resources.ApplyResources(this.lbEvoTickTime, "lbEvoTickTime");
+            this.lbEvoTickTime.Name = "lbEvoTickTime";
+            // 
+            // lblEvoStep
+            // 
+            resources.ApplyResources(this.lblEvoStep, "lblEvoStep");
+            this.lblEvoStep.Name = "lblEvoStep";
+            // 
+            // richTimerInfo
+            // 
+            this.richTimerInfo.BackColor = System.Drawing.Color.SteelBlue;
+            this.richTimerInfo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.richTimerInfo, "richTimerInfo");
+            this.richTimerInfo.Name = "richTimerInfo";
+            // 
+            // lbEntityCount
+            // 
+            resources.ApplyResources(this.lbEntityCount, "lbEntityCount");
+            this.lbEntityCount.Name = "lbEntityCount";
+            // 
+            // lblEntityCount
+            // 
+            resources.ApplyResources(this.lblEntityCount, "lblEntityCount");
+            this.lblEntityCount.Name = "lblEntityCount";
+            // 
+            // lbEvoTickCount
+            // 
+            resources.ApplyResources(this.lbEvoTickCount, "lbEvoTickCount");
+            this.lbEvoTickCount.Name = "lbEvoTickCount";
+            // 
+            // lbEvoInitTime
+            // 
+            resources.ApplyResources(this.lbEvoInitTime, "lbEvoInitTime");
+            this.lbEvoInitTime.Name = "lbEvoInitTime";
+            // 
+            // evoPanelBig
+            // 
+            this.evoPanelBig.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.evoPanelBig, "evoPanelBig");
+            this.evoPanelBig.Name = "evoPanelBig";
+            this.evoPanelBig.TabStop = false;
+            this.evoPanelBig.Paint += new System.Windows.Forms.PaintEventHandler(this.pictBigEvoPanel_Paint);
+            // 
+            // evoPanelSmall
+            // 
+            this.evoPanelSmall.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.evoPanelSmall, "evoPanelSmall");
+            this.evoPanelSmall.Name = "evoPanelSmall";
+            this.evoPanelSmall.TabStop = false;
+            this.evoPanelSmall.Paint += new System.Windows.Forms.PaintEventHandler(this.pictSmallEvoPanel_Paint);
+            // 
+            // lbTimerInterval
+            // 
+            resources.ApplyResources(this.lbTimerInterval, "lbTimerInterval");
+            this.lbTimerInterval.Name = "lbTimerInterval";
+            // 
+            // lbEvoFriquency
+            // 
+            resources.ApplyResources(this.lbEvoFriquency, "lbEvoFriquency");
+            this.lbEvoFriquency.Name = "lbEvoFriquency";
+            // 
             // EvoAppForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.Controls.Add(this.panelEvoBig);
+            this.Controls.Add(this.evoPanelBig);
+            this.Controls.Add(this.evoPanelSmall);
+            this.Controls.Add(this.richTimerInfo);
+            this.Controls.Add(this.lblEntityCount);
+            this.Controls.Add(this.lblEvoStep);
+            this.Controls.Add(this.lbEvoInitTime);
+            this.Controls.Add(this.lbTimerInterval);
+            this.Controls.Add(this.lbEvoFriquency);
+            this.Controls.Add(this.lbEvoTickCount);
+            this.Controls.Add(this.lbEntityCount);
+            this.Controls.Add(this.lbEvoTickTime);
             this.Controls.Add(this.vSlider);
             this.Controls.Add(this.lblOffset);
-            this.Controls.Add(this.lblOffsetCaption);
-            this.Controls.Add(this.lblCellCount);
+            this.Controls.Add(this.lbCellCount);
             this.Controls.Add(this.lblinit);
             this.Controls.Add(this.btnStop);
             this.Controls.Add(this.btnStart);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.evoTitlePanel2);
             this.Controls.Add(this.chkShowCoo);
             this.Controls.Add(this.chkShowGrid);
-            this.Controls.Add(this.comboEvoSpeed);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.pbLandTrees);
-            this.Controls.Add(this.pbLandGrass);
+            this.Controls.Add(this.lbTrees);
+            this.Controls.Add(this.lbGrass);
+            this.Controls.Add(this.lbMountains);
+            this.Controls.Add(this.lbLake);
+            this.Controls.Add(this.lbCurrOffset);
+            this.Controls.Add(this.lbSea);
+            this.Controls.Add(this.lbDisert);
+            this.Controls.Add(this.lbTreesPict);
+            this.Controls.Add(this.lbGrassPict);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pbLandMountains);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pbLandLake);
-            this.Controls.Add(this.pbLandSea);
-            this.Controls.Add(this.pbLandDesert);
-            this.Controls.Add(this.panelEvoSmall);
+            this.Controls.Add(this.lbMountainsPict);
+            this.Controls.Add(this.lbCurrOffsetPict);
+            this.Controls.Add(this.lbLakePict);
+            this.Controls.Add(this.lbSeaPict);
+            this.Controls.Add(this.lbDisertPict);
             this.Controls.Add(this.hSlider);
             this.MaximizeBox = false;
             this.Name = "EvoAppForm";
@@ -351,57 +395,64 @@ namespace EvoApp
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.EvoAppForm_Paint);
             ((System.ComponentModel.ISupportInitialize)(this.hSlider)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vSlider)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLandDesert)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLandSea)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLandLake)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLandMountains)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLandGrass)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLandTrees)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbDisertPict)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbSeaPict)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbLakePict)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbMountainsPict)).EndInit();
+            this.evoTitlePanel2.ResumeLayout(false);
+            this.evoTitlePanel.ResumeLayout(false);
+            this.evoTitlePanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lbGrassPict)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbTreesPict)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbCurrOffsetPict)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.evoPanelBig)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.evoPanelSmall)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panelEvoBig;
-        private System.Windows.Forms.Panel panelEvoSmall;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel evoTitlePanel2;
+        private System.Windows.Forms.Panel evoTitlePanel;
         private System.Windows.Forms.TrackBar hSlider;
         private System.Windows.Forms.TrackBar vSlider;
-        private System.Windows.Forms.PictureBox pbLandDesert;
-        private System.Windows.Forms.PictureBox pbLandSea;
-        private System.Windows.Forms.PictureBox pbLandLake;
-        private System.Windows.Forms.PictureBox pbLandMountains;
-        private System.Windows.Forms.PictureBox pbLandGrass;
-        private System.Windows.Forms.PictureBox pbLandTrees;
-        private System.Windows.Forms.ComboBox comboEvoSpeed;
+        private System.Windows.Forms.PictureBox lbDisertPict;
+        private System.Windows.Forms.PictureBox lbSeaPict;
+        private System.Windows.Forms.PictureBox lbLakePict;
+        private System.Windows.Forms.PictureBox lbMountainsPict;
+        private System.Windows.Forms.PictureBox lbGrassPict;
+        private System.Windows.Forms.PictureBox lbTreesPict;
         private System.Windows.Forms.CheckBox chkShowGrid;
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Button btnStop;
         private System.Windows.Forms.Label lblinit;
-        private System.Windows.Forms.Label lblCellCount;
+        private System.Windows.Forms.Label lbCellCount;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;        
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Timer bigGamePaintTimer;
-        private System.Windows.Forms.Label lblOffsetCaption;
+        private System.Windows.Forms.Label lbDisert;
+        private System.Windows.Forms.Label lbSea;
+        private System.Windows.Forms.Label lbLake;
+        private System.Windows.Forms.Label lbMountains;
+        private System.Windows.Forms.Label evoTitle;
+        private System.Windows.Forms.Label evoTitleVersion;
+        private System.Windows.Forms.Label lbGrass;        
+        private System.Windows.Forms.Label lbTrees;
+        private System.Windows.Forms.Timer bigEvoPaintTimer;
         private System.Windows.Forms.Label lblOffset;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox lbCurrOffsetPict;
+        private System.Windows.Forms.Label lbCurrOffset;
         private System.Windows.Forms.CheckBox chkShowCoo;
+        private System.Windows.Forms.Label lbEvoTickTime;
+        private System.Windows.Forms.Label lblEvoStep;
+        private System.Windows.Forms.RichTextBox richTimerInfo;
+        private System.Windows.Forms.Label lbEntityCount;
+        private System.Windows.Forms.Label lblEntityCount;
+        private System.Windows.Forms.Label lbEvoTickCount;
+        private System.Windows.Forms.Label lbEvoInitTime;
+        private System.Windows.Forms.PictureBox evoPanelBig;
+        private System.Windows.Forms.PictureBox evoPanelSmall;
+        private System.Windows.Forms.Label lbTimerInterval;
+        private System.Windows.Forms.Label lbEvoFriquency;
     }
 }
 

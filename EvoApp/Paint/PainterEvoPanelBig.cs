@@ -4,7 +4,7 @@ using System.Drawing;
 
 namespace EvoApp
 {
-    public class PainterBigEvoPanel: PainterBase
+    public class PainterEvoPanelBig: PainterBase
     {
         static public bool isGridRequired { get; set; } = true;
         static public bool isCoordRequired  { get; set; } = true;
@@ -29,7 +29,7 @@ namespace EvoApp
             this.bkGround = new Bitmap (this.widthPx, this.heightPx);
             this.graphfObj_for_bkGround = Graphics.FromImage(this.bkGround);
 
-            PainterBigEvoPanel.cellPainter = new CellPainter();
+            PainterEvoPanelBig.cellPainter = new CellPainter();
         }
 
         // ****************************************************************************************
@@ -61,7 +61,7 @@ namespace EvoApp
 
             for (rowIdx = 0; rowIdx < rowCount; rowIdx++)
             {
-                List<DeskCell> row = this.gameDesk.cellTable[rowIdx + idxRowsOffset];
+                List<DeskCell> row = Program.app.getDesk().cellTable[rowIdx + idxRowsOffset];
 
                 for (columnIdx = 0; columnIdx < colCount; columnIdx++)
                 {

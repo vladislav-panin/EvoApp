@@ -46,12 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App\AppThreadInfo.cs" />
+    <Compile Include="App\AppInitInfo.cs" />
     <Compile Include="App\EvoSpeed.cs" />
-    <Compile Include="App\AppInitResult.cs" />
     <Compile Include="App\App.cs" />
-    <Compile Include="Behavior\BehaviorEntity.cs" />
-    <Compile Include="Behavior\EDirection.cs" />
-    <Compile Include="Behavior\IBehavior.cs" />
+    <Compile Include="Population\EDirection.cs" />
     <Compile Include="Desk\DeskCell.cs" />
     <Compile Include="Desk\Desk.cs" />
     <Compile Include="Geo\GeoEx.cs" />
@@ -64,8 +63,8 @@
     </Compile>
     <Compile Include="Paint\CellPainter.cs" />
     <Compile Include="Paint\PainterBase.cs" />
-    <Compile Include="Paint\PainterBigEvoPanel.cs" />
-    <Compile Include="Paint\PainterSmallEvoPanel.cs" />
+    <Compile Include="Paint\PainterEvoPanelBig.cs" />
+    <Compile Include="Paint\PainterEvoPanelSmall.cs" />
     <Compile Include="Population\Herbivore.cs" />
     <Compile Include="Population\Entity.cs" />
     <Compile Include="Population\Population.cs" />
@@ -87,6 +86,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -101,6 +101,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\digger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dolly.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

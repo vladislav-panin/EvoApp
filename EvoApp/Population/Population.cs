@@ -1,61 +1,92 @@
-﻿using System;
+﻿using EvoApp.Properties;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Drawing;
+using System.Resources;
 
 namespace EvoApp
 {
     public class Population
     {
-        public static int entityMax { get; set; } = 10000;
-       
-        public Dictionary<int, DeskCell> entityLocations { get; set; } = new Dictionary<int, DeskCell>();
-        public int EntityCount()
-        {
+        public static int entityMaxCount { get; set; } = 10000;             
+        public Dictionary<long, DeskCell> entityLocations { get; set; } = new Dictionary<long, DeskCell>();
+        // ***********************************************************************************************************************************
+
+        public static Bitmap bmpEntity { get; set; } = null;
+        public static Bitmap bmpHerbivore { get; set; } = null;        
+        // ***********************************************************************************************************************************
+
+        public int EntityCount() {
             return entityLocations.Count;
         }
-        public Population()
-        {
 
+        public Population() {
         }
 
-        //инициализация ячеек игрового поля 1000*1000
+        // ***********************************************************************************************************************************
+        public static GeoEx geo ()
+        {
+            return Program.app.getDesk().geoEx;
+        }
+        public static List<List<DeskCell>> Cells()
+        {
+            return Program.app.getDesk().cellTable;
+        }
+        // ***********************************************************************************************************************************
         public int Generate()
         {
-            int entityId = 0;
+            CreateInhabitansBitmaps();
 
-            for (entityId = 0; entityId < entityMax; entityId++)
+            long entityId = 0;
+            for (int idxRow = 0; idxRow < geo().rowCount; idxRow++)
             {
-                
-            }
-
-            List<List<DeskCell>> lst = Program.app.desk.cellTable;
-
-            int rowCount = Program.app.desk.geoEx.rowCount;
-            int colCount = Program.app.desk.geoEx.colCount;
-     
-            for (int idxRow = 0; idxRow < rowCount; idxRow++)
-            {               
-
-                for (int idxColumn = 0; idxColumn < colCount; idxColumn++)
+                for (int idxColumn = 0; idxColumn < geo().colCount; idxColumn++)
                 {
-                    DeskCell dc = lst[idxRow][idxColumn];
-                    
-                    if(idxColumn > 80 && idxColumn < 500)
-                    {
-                        Entity entity = new Entity(entityId);
-                        entityLocations.Add(entityId++, dc);
+                    if (entityId >= entityMaxCount)
+                        return entityLocations.Count;
 
-                        Program.app.desk.cellTable[idxRow][idxColumn].EntityAdd(entity);
+                    DeskCell cell = Cells() [idxRow][idxColumn];
 
+                    if (idxColumn >=100)
+                        continue;
 
-                    if (entityId > entityMax)
-                        break;
-                    }
+                    // Console.WriteLine("Сущность порождена и будет помещена в ячейку X =" + idxColumn + "; Y = " + idxRow);
+
+                    Entity entity = new Entity(entityId, idxColumn, idxRow);
+                    entityLocations.Add(entityId++, cell);
+
+                    Cells() [idxRow][idxColumn].EntityAdd(entity);                    
                 }
             }
-            return entityId;
+
+            // в левую верхнюю колонку помещаем второго ентити
+            Entity ent = new Entity(entityId, 0, 0); 
+
+            Cells()[0][0].EntityAdd(ent);
+            entityLocations.Add(entityId++, Cells()[0][0]);
+
+            // в левую верхнюю колонку помещаем третьего ентити
+            ent = new Entity(entityId, 0, 0); 
+
+            Cells()[0][0].EntityAdd(ent);
+            entityLocations.Add(entityId++, Cells()[0][0]);
+
+
+
+            return entityLocations.Count;
         }
+        // ***********************************************************************************************************************************
+        void CreateInhabitansBitmaps()
+        {
+            Bitmap pic;
+            ResourceManager rm = Resources.ResourceManager;
+
+            pic = (Bitmap)rm.GetObject("digger");
+            bmpEntity = new Bitmap(pic, 20, 20);
+
+            pic = (Bitmap)rm.GetObject("dolly");
+            bmpHerbivore = new Bitmap(pic, 20, 20);
+    }
+        // ***********************************************************************************************************************************
     }
 }

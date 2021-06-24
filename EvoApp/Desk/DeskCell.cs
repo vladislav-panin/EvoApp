@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EvoApp
 {
@@ -20,7 +17,6 @@ namespace EvoApp
         public Landscape land { get; set; }
 
         Rectangle cellRect = new Rectangle();
-
          protected List<Entity> lstEntity { get; set; } = new List<Entity>();
 
         public void EntityAdd(Entity ent)
@@ -78,7 +74,16 @@ namespace EvoApp
             canvasGraph.FillRectangle(land.brush, this.cellRect);
 
             cellPainter.signCell(canvasGraph, this.land.textBrush, sign, originX_OnBigPanel_inPixels, originY_OnBigPanel_inPixels) ;
-            cellPainter.paintCell(canvasGraph, this.cellRect);
+            cellPainter.paintCellBackground (canvasGraph, this.cellRect);
+
+            Entity ent;
+            // Здесь прорисовываются обитатели ячейки, видимой на большой панели
+            // originX_inPixels, originY_inPixels - это координаты точки на панели, в пикселях, откуда начинаем рисовать
+            for (int i = 0; i < lstEntity.Count; i++)
+            {
+                ent = lstEntity[i];
+                ent. Paint (canvasGraph, i, this, this.cellRect);
+            }
         }
         // ****************************************************************************************
     }

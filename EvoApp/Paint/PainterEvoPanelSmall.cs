@@ -2,16 +2,16 @@
 
 namespace EvoApp
 {
-    public class PainterSmallEvoPanel : PainterBase
+    public class PainterEvoPanelSmall : PainterBase
     {
-        int rowsCountInBigPainter = 0;
-        int colsCountInBigPainter = 0;
+        int rowsBigPanel = 0;
+        int colsBigPanel = 0;
 
         double oneColWidthPx;
         double oneRowHeightPx;
 
-        int widthBigPanelAreaPx;
-        int heightBigPanelAreaPx;
+        int widthAreaPx;
+        int heightAreaPx;
 
         SolidBrush indicatorBbrush = null;
         Rectangle indicatorRect = new Rectangle (0, 0, 0, 0);
@@ -21,7 +21,7 @@ namespace EvoApp
         private Graphics graphObj_for_bkGround_withScreenIndicator = null;
 
         // **************************************************************************************************        
-        public PainterSmallEvoPanel()
+        public PainterEvoPanelSmall()
         {
         }
 
@@ -31,20 +31,20 @@ namespace EvoApp
         {
             base.InitDimensions (widthPx, heightPx);
 
-            this.oneColWidthPx = (double)widthPx / (double)geoEx.colCount;
-            this.oneRowHeightPx = (double)heightPx / (double)geoEx.rowCount;
+            this.oneColWidthPx = (double)widthPx / (double)Program.app.getDesk().geoEx.colCount;
+            this.oneRowHeightPx = (double)heightPx / (double)Program.app.getDesk().geoEx.rowCount;
 
-            this.colsCountInBigPainter = PainterBigEvoPanel.colCount;
-            this.rowsCountInBigPainter = PainterBigEvoPanel.rowCount;
+            this.colsBigPanel = PainterEvoPanelBig.colCount;
+            this.rowsBigPanel = PainterEvoPanelBig.rowCount;
 
-            this.widthBigPanelAreaPx = (int)(oneColWidthPx * this.colsCountInBigPainter);
-            this.heightBigPanelAreaPx = (int)(oneRowHeightPx * this.rowsCountInBigPainter);
+            this.widthAreaPx = (int)(oneColWidthPx * this.colsBigPanel);
+            this.heightAreaPx = (int)(oneRowHeightPx * this.rowsBigPanel);
         }
 
         // **************************************************************************************************
         override protected void InitBitmaps()
         {
-            this.bkGround = this.geoEx.ResizeBitmap(this.geoEx.etalonMap, this.widthPx, this.heightPx);
+            this.bkGround = Program.app.getDesk().geoEx.ResizeBitmap(Program.app.getDesk().geoEx.etalonMap, this.widthPx, this.heightPx);
             this.graphfObj_for_bkGround = Graphics.FromImage(this.bkGround);
 
             this.bkGround_withScreenIndicator = new Bitmap(bkGround);
@@ -52,8 +52,8 @@ namespace EvoApp
 
             this.indicatorRect.X = 0;
             this.indicatorRect.Y = 0;
-            this.indicatorRect.Width = this.widthBigPanelAreaPx;
-            this.indicatorRect.Height = this.heightBigPanelAreaPx;
+            this.indicatorRect.Width = this.widthAreaPx;
+            this.indicatorRect.Height = this.heightAreaPx;
 
             this.indicatorBbrush = new SolidBrush(Color.Red);
             this.graphObj_for_bkGround_withScreenIndicator.FillRectangle(this.indicatorBbrush, this.indicatorRect);
@@ -90,30 +90,6 @@ namespace EvoApp
             this.graphObj_for_bkGround_withScreenIndicator.DrawImage(bkGround, 0, 0); // Копируем карту мира без индикатора на битмап с индикатором
             this.graphObj_for_bkGround_withScreenIndicator.FillRectangle(this.indicatorBbrush, this.indicatorRect); // заливаем индикатор
         }
-
-        // **************************************************************************************************
-                        /* метод SetOffsetOriginIdx_OLD(int xColsOffset, int yRowsOffset) не используется
-                         * оставлен здесь для примера нерационального использования памяти
-                         */
-                        public void SetOffsetOriginIdx_OLD(int xColsOffset, int yRowsOffset)
-                        {
-                            int xOrigin = (int)( ((double)xColsOffset) * this.oneColWidthPx);
-                            int yOrigin = (int)( ((double)yRowsOffset) * this.oneRowHeightPx);
-                       
-                            // ниже код, не рациональный по памяти - при каждой перерисовсе будет создаваться новый битмап
-
-                            bkGround_withScreenIndicator.Dispose();  // освобождаем память занятое битмапом
-                            bkGround_withScreenIndicator = new Bitmap(bkGround); // создаем новый пустой битмап
-
-                            // чтобы рисовать на битмапе, связываем его с объектом Graphics, который умеет это делать
-                            Graphics graphObj = Graphics.FromImage(bkGround_withScreenIndicator); 
-
-                            // создаем прямоугольник, соответствующий красному индикатору
-                            Rectangle rect = new Rectangle(xOrigin, yOrigin, this.widthBigPanelAreaPx, this.heightBigPanelAreaPx);
-
-                            graphObj.FillRectangle(this.indicatorBbrush, rect); // заливаем этот прямоугольник кистью this.indicatorBbrush
-                        }
-
         // **************************************************************************************************
     }
 }

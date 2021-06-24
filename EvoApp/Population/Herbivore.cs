@@ -16,26 +16,23 @@ namespace EvoApp
             new Point(+1,+1), new Point(-1,+1),
             new Point(+1,+1), new Point(-1,+1),
         };
-        // *************************************************************************************************************************************************
 
         override public Point[] getStepShift()
         {
             return stepHerbivore;
         }
-
-        public IBehavior behavior { get; set; }
-
-
-        ///////////////////
+        // *************************************************************************************************************************************************
 
         public Herbivore(int entityId) : base(entityId)
         {
-
         }
-
-        override public int Paint (Graphics canvasGraph, DeskCell cell)
+        // *************************************************************************************************************************************************
+        override protected void drawOnRect(Graphics canvasGraph, int xOriginGlobal, int yOriginGlobal, int width, int height)
         {
-            return 0;
+            canvasGraph.DrawImage(Population.bmpHerbivore, xOriginGlobal, yOriginGlobal);
         }
+        // *************************************************************************************************************************************************
+
+        // *************************************************************************************************************************************************
     }
 }

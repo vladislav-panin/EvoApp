@@ -118,34 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="panelEvoBig.Location" type="System.Drawing.Point, System.Drawing">
-    <value>255, 36</value>
-  </data>
-  <data name="panelEvoBig.Size" type="System.Drawing.Size, System.Drawing">
-    <value>941, 901</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="panelEvoBig.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;panelEvoBig.Name" xml:space="preserve">
-    <value>panelEvoBig</value>
-  </data>
-  <data name="&gt;&gt;panelEvoBig.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelEvoBig.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelEvoBig.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="hSlider.Location" type="System.Drawing.Point, System.Drawing">
-    <value>245, 2</value>
+    <value>478, 3</value>
   </data>
   <data name="hSlider.Size" type="System.Drawing.Size, System.Drawing">
-    <value>957, 45</value>
+    <value>932, 45</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="hSlider.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
@@ -159,14 +138,14 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;hSlider.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>35</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="vSlider.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="vSlider.Location" type="System.Drawing.Point, System.Drawing">
-    <value>221, 28</value>
+    <value>454, 29</value>
   </data>
   <data name="vSlider.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Vertical</value>
@@ -175,7 +154,7 @@
     <value>No</value>
   </data>
   <data name="vSlider.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 918</value>
+    <value>45, 893</value>
   </data>
   <data name="vSlider.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -190,133 +169,112 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;vSlider.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>11</value>
   </data>
-  <data name="panelEvoSmall.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 249</value>
+  <data name="lbDisertPict.Location" type="System.Drawing.Point, System.Drawing">
+    <value>97, 275</value>
   </data>
-  <data name="panelEvoSmall.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 160</value>
-  </data>
-  <data name="panelEvoSmall.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;panelEvoSmall.Name" xml:space="preserve">
-    <value>panelEvoSmall</value>
-  </data>
-  <data name="&gt;&gt;panelEvoSmall.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelEvoSmall.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelEvoSmall.ZOrder" xml:space="preserve">
-    <value>28</value>
-  </data>
-  <data name="pbLandDesert.Location" type="System.Drawing.Point, System.Drawing">
-    <value>54, 442</value>
-  </data>
-  <data name="pbLandDesert.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="lbDisertPict.Size" type="System.Drawing.Size, System.Drawing">
     <value>27, 13</value>
   </data>
-  <data name="pbLandDesert.TabIndex" type="System.Int32, mscorlib">
+  <data name="lbDisertPict.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;pbLandDesert.Name" xml:space="preserve">
-    <value>pbLandDesert</value>
+  <data name="&gt;&gt;lbDisertPict.Name" xml:space="preserve">
+    <value>lbDisertPict</value>
   </data>
-  <data name="&gt;&gt;pbLandDesert.Type" xml:space="preserve">
+  <data name="&gt;&gt;lbDisertPict.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pbLandDesert.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lbDisertPict.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;pbLandDesert.ZOrder" xml:space="preserve">
-    <value>27</value>
+  <data name="&gt;&gt;lbDisertPict.ZOrder" xml:space="preserve">
+    <value>34</value>
   </data>
-  <data name="pbLandSea.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lbSeaPict.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="pbLandSea.Location" type="System.Drawing.Point, System.Drawing">
-    <value>54, 458</value>
+  <data name="lbSeaPict.Location" type="System.Drawing.Point, System.Drawing">
+    <value>97, 291</value>
   </data>
-  <data name="pbLandSea.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="lbSeaPict.Size" type="System.Drawing.Size, System.Drawing">
     <value>27, 13</value>
   </data>
-  <data name="pbLandSea.TabIndex" type="System.Int32, mscorlib">
+  <data name="lbSeaPict.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;pbLandSea.Name" xml:space="preserve">
-    <value>pbLandSea</value>
+  <data name="&gt;&gt;lbSeaPict.Name" xml:space="preserve">
+    <value>lbSeaPict</value>
   </data>
-  <data name="&gt;&gt;pbLandSea.Type" xml:space="preserve">
+  <data name="&gt;&gt;lbSeaPict.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pbLandSea.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lbSeaPict.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;pbLandSea.ZOrder" xml:space="preserve">
-    <value>26</value>
+  <data name="&gt;&gt;lbSeaPict.ZOrder" xml:space="preserve">
+    <value>33</value>
   </data>
-  <data name="pbLandLake.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lbLakePict.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="pbLandLake.Location" type="System.Drawing.Point, System.Drawing">
-    <value>54, 472</value>
+  <data name="lbLakePict.Location" type="System.Drawing.Point, System.Drawing">
+    <value>97, 305</value>
   </data>
-  <data name="pbLandLake.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="lbLakePict.Size" type="System.Drawing.Size, System.Drawing">
     <value>27, 13</value>
   </data>
-  <data name="pbLandLake.TabIndex" type="System.Int32, mscorlib">
+  <data name="lbLakePict.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;pbLandLake.Name" xml:space="preserve">
-    <value>pbLandLake</value>
+  <data name="&gt;&gt;lbLakePict.Name" xml:space="preserve">
+    <value>lbLakePict</value>
   </data>
-  <data name="&gt;&gt;pbLandLake.Type" xml:space="preserve">
+  <data name="&gt;&gt;lbLakePict.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pbLandLake.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lbLakePict.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;pbLandLake.ZOrder" xml:space="preserve">
-    <value>25</value>
+  <data name="&gt;&gt;lbLakePict.ZOrder" xml:space="preserve">
+    <value>32</value>
   </data>
-  <data name="pbLandMountains.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lbMountainsPict.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="pbLandMountains.Location" type="System.Drawing.Point, System.Drawing">
-    <value>54, 487</value>
+  <data name="lbMountainsPict.Location" type="System.Drawing.Point, System.Drawing">
+    <value>97, 320</value>
   </data>
-  <data name="pbLandMountains.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="lbMountainsPict.Size" type="System.Drawing.Size, System.Drawing">
     <value>27, 13</value>
   </data>
-  <data name="pbLandMountains.TabIndex" type="System.Int32, mscorlib">
+  <data name="lbMountainsPict.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="&gt;&gt;pbLandMountains.Name" xml:space="preserve">
-    <value>pbLandMountains</value>
+  <data name="&gt;&gt;lbMountainsPict.Name" xml:space="preserve">
+    <value>lbMountainsPict</value>
   </data>
-  <data name="&gt;&gt;pbLandMountains.Type" xml:space="preserve">
+  <data name="&gt;&gt;lbMountainsPict.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pbLandMountains.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lbMountainsPict.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;pbLandMountains.ZOrder" xml:space="preserve">
-    <value>23</value>
+  <data name="&gt;&gt;lbMountainsPict.ZOrder" xml:space="preserve">
+    <value>30</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Georgia, 12pt, style=Italic, Underline</value>
+    <value>Microsoft Sans Serif, 9.75pt, style=Italic</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 412</value>
+    <value>25, 272</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 18</value>
+    <value>66, 16</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -334,196 +292,136 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>29</value>
   </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lbDisert.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lbDisert.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>87, 441</value>
+  <data name="lbDisert.Location" type="System.Drawing.Point, System.Drawing">
+    <value>130, 274</value>
   </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="lbDisert.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 13</value>
   </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+  <data name="lbDisert.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
-  <data name="label3.Text" xml:space="preserve">
+  <data name="lbDisert.Text" xml:space="preserve">
     <value>пустыня, песок</value>
   </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
+  <data name="&gt;&gt;lbDisert.Name" xml:space="preserve">
+    <value>lbDisert</value>
   </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+  <data name="&gt;&gt;lbDisert.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lbDisert.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>19</value>
+  <data name="&gt;&gt;lbDisert.ZOrder" xml:space="preserve">
+    <value>26</value>
   </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lbSea.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lbSea.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>87, 457</value>
+  <data name="lbSea.Location" type="System.Drawing.Point, System.Drawing">
+    <value>130, 290</value>
   </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="lbSea.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 13</value>
   </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+  <data name="lbSea.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
-  <data name="label2.Text" xml:space="preserve">
+  <data name="lbSea.Text" xml:space="preserve">
     <value>море, сильно соленое</value>
   </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
+  <data name="&gt;&gt;lbSea.Name" xml:space="preserve">
+    <value>lbSea</value>
   </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+  <data name="&gt;&gt;lbSea.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lbSea.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>18</value>
+  <data name="&gt;&gt;lbSea.ZOrder" xml:space="preserve">
+    <value>25</value>
   </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lbLake.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lbLake.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>87, 471</value>
+  <data name="lbLake.Location" type="System.Drawing.Point, System.Drawing">
+    <value>130, 304</value>
   </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="lbLake.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 13</value>
   </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+  <data name="lbLake.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
-  <data name="label4.Text" xml:space="preserve">
+  <data name="lbLake.Text" xml:space="preserve">
     <value>Пресная вода</value>
   </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
+  <data name="&gt;&gt;lbLake.Name" xml:space="preserve">
+    <value>lbLake</value>
   </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+  <data name="&gt;&gt;lbLake.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lbLake.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>16</value>
+  <data name="&gt;&gt;lbLake.ZOrder" xml:space="preserve">
+    <value>23</value>
   </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lbMountains.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lbMountains.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>87, 486</value>
+  <data name="lbMountains.Location" type="System.Drawing.Point, System.Drawing">
+    <value>130, 319</value>
   </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="lbMountains.Size" type="System.Drawing.Size, System.Drawing">
     <value>33, 13</value>
   </data>
-  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+  <data name="lbMountains.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
-  <data name="label5.Text" xml:space="preserve">
+  <data name="lbMountains.Text" xml:space="preserve">
     <value>Горы</value>
   </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
+  <data name="&gt;&gt;lbMountains.Name" xml:space="preserve">
+    <value>lbMountains</value>
   </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+  <data name="&gt;&gt;lbMountains.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lbMountains.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Georgia, 12pt, style=Italic, Underline</value>
-  </data>
-  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 564</value>
-  </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 18</value>
-  </data>
-  <data name="label7.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>Скорость Эволюции:</value>
-  </data>
-  <data name="&gt;&gt;label7.Name" xml:space="preserve">
-    <value>label7</value>
-  </data>
-  <data name="&gt;&gt;label7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="comboEvoSpeed.Items" xml:space="preserve">
-    <value>Высокая</value>
-  </data>
-  <data name="comboEvoSpeed.Items1" xml:space="preserve">
-    <value>Средняя</value>
-  </data>
-  <data name="comboEvoSpeed.Items2" xml:space="preserve">
-    <value>Низкая</value>
-  </data>
-  <data name="comboEvoSpeed.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 585</value>
-  </data>
-  <data name="comboEvoSpeed.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 21</value>
-  </data>
-  <data name="comboEvoSpeed.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;comboEvoSpeed.Name" xml:space="preserve">
-    <value>comboEvoSpeed</value>
-  </data>
-  <data name="&gt;&gt;comboEvoSpeed.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboEvoSpeed.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;comboEvoSpeed.ZOrder" xml:space="preserve">
-    <value>11</value>
+  <data name="&gt;&gt;lbMountains.ZOrder" xml:space="preserve">
+    <value>22</value>
   </data>
   <data name="chkShowGrid.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="chkShowGrid.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 612</value>
+    <value>322, 157</value>
+  </data>
+  <data name="chkShowGrid.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
   </data>
   <data name="chkShowGrid.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 17</value>
@@ -544,118 +442,157 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chkShowGrid.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>19</value>
   </data>
-  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;evoTitlePanel.Name" xml:space="preserve">
+    <value>evoTitlePanel</value>
   </data>
-  <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Algerian, 12pt, style=Italic</value>
-  </data>
-  <data name="label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>46, 48</value>
-  </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 18</value>
-  </data>
-  <data name="label9.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>версия 1</value>
-  </data>
-  <data name="&gt;&gt;label9.Name" xml:space="preserve">
-    <value>label9</value>
-  </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
-    <value>panel4</value>
-  </data>
-  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Algerian, 20pt, style=Italic</value>
-  </data>
-  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 15</value>
-  </data>
-  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 30</value>
-  </data>
-  <data name="label8.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="label8.Text" xml:space="preserve">
-    <value>Эволюция </value>
-  </data>
-  <data name="&gt;&gt;label8.Name" xml:space="preserve">
-    <value>label8</value>
-  </data>
-  <data name="&gt;&gt;label8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
-    <value>panel4</value>
-  </data>
-  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 2</value>
-  </data>
-  <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 92</value>
-  </data>
-  <data name="panel4.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
-    <value>panel4</value>
-  </data>
-  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
+  <data name="&gt;&gt;evoTitlePanel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
-    <value>panel3</value>
+  <data name="&gt;&gt;evoTitlePanel.Parent" xml:space="preserve">
+    <value>evoTitlePanel2</value>
   </data>
-  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;evoTitlePanel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="evoTitlePanel2.Location" type="System.Drawing.Point, System.Drawing">
     <value>16, 29</value>
   </data>
-  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 96</value>
+  <data name="evoTitlePanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>412, 96</value>
   </data>
-  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
+  <data name="evoTitlePanel2.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
-  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
-    <value>panel3</value>
+  <data name="&gt;&gt;evoTitlePanel2.Name" xml:space="preserve">
+    <value>evoTitlePanel2</value>
   </data>
-  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
+  <data name="&gt;&gt;evoTitlePanel2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;evoTitlePanel2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="&gt;&gt;evoTitlePanel2.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;evoTitleVersion.Name" xml:space="preserve">
+    <value>evoTitleVersion</value>
+  </data>
+  <data name="&gt;&gt;evoTitleVersion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;evoTitleVersion.Parent" xml:space="preserve">
+    <value>evoTitlePanel</value>
+  </data>
+  <data name="&gt;&gt;evoTitleVersion.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;evoTitle.Name" xml:space="preserve">
+    <value>evoTitle</value>
+  </data>
+  <data name="&gt;&gt;evoTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;evoTitle.Parent" xml:space="preserve">
+    <value>evoTitlePanel</value>
+  </data>
+  <data name="&gt;&gt;evoTitle.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="evoTitlePanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 2</value>
+  </data>
+  <data name="evoTitlePanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>408, 92</value>
+  </data>
+  <data name="evoTitlePanel.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;evoTitlePanel.Name" xml:space="preserve">
+    <value>evoTitlePanel</value>
+  </data>
+  <data name="&gt;&gt;evoTitlePanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;evoTitlePanel.Parent" xml:space="preserve">
+    <value>evoTitlePanel2</value>
+  </data>
+  <data name="&gt;&gt;evoTitlePanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="evoTitleVersion.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="evoTitleVersion.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Algerian, 12pt, style=Italic</value>
+  </data>
+  <data name="evoTitleVersion.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="evoTitleVersion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>171, 54</value>
+  </data>
+  <data name="evoTitleVersion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 18</value>
+  </data>
+  <data name="evoTitleVersion.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="evoTitleVersion.Text" xml:space="preserve">
+    <value>версия 1</value>
+  </data>
+  <data name="&gt;&gt;evoTitleVersion.Name" xml:space="preserve">
+    <value>evoTitleVersion</value>
+  </data>
+  <data name="&gt;&gt;evoTitleVersion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;evoTitleVersion.Parent" xml:space="preserve">
+    <value>evoTitlePanel</value>
+  </data>
+  <data name="&gt;&gt;evoTitleVersion.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="evoTitle.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="evoTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Algerian, 20pt, style=Italic</value>
+  </data>
+  <data name="evoTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 21</value>
+  </data>
+  <data name="evoTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 30</value>
+  </data>
+  <data name="evoTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="evoTitle.Text" xml:space="preserve">
+    <value>Эволюция </value>
+  </data>
+  <data name="&gt;&gt;evoTitle.Name" xml:space="preserve">
+    <value>evoTitle</value>
+  </data>
+  <data name="&gt;&gt;evoTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;evoTitle.Parent" xml:space="preserve">
+    <value>evoTitlePanel</value>
+  </data>
+  <data name="&gt;&gt;evoTitle.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="btnStart.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <data name="btnStart.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
   <data name="btnStart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 728</value>
+    <value>18, 157</value>
   </data>
   <data name="btnStart.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -676,16 +613,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnStart.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>16</value>
   </data>
   <data name="btnStop.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
+  </data>
+  <data name="btnStop.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
   <data name="btnStop.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btnStop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>112, 728</value>
+    <value>16, 188</value>
   </data>
   <data name="btnStop.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -706,7 +646,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnStop.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>15</value>
   </data>
   <data name="lblinit.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -715,16 +655,19 @@
     <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
   <data name="lblinit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 140</value>
+    <value>120, 128</value>
   </data>
   <data name="lblinit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 16</value>
+    <value>204, 16</value>
   </data>
   <data name="lblinit.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
   </data>
   <data name="lblinit.Text" xml:space="preserve">
-    <value>Ждите, инициализация...</value>
+    <value>Ждите, идет инициализация...</value>
+  </data>
+  <data name="lblinit.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;lblinit.Name" xml:space="preserve">
     <value>lblinit</value>
@@ -736,199 +679,166 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblinit.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="lblCellCount.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblCellCount.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="lblCellCount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 160</value>
-  </data>
-  <data name="lblCellCount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 16</value>
-  </data>
-  <data name="lblCellCount.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="lblCellCount.Text" xml:space="preserve">
-    <value>Количество ячеек: 0</value>
-  </data>
-  <data name="&gt;&gt;lblCellCount.Name" xml:space="preserve">
-    <value>lblCellCount</value>
-  </data>
-  <data name="&gt;&gt;lblCellCount.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblCellCount.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblCellCount.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="pbLandGrass.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="pbLandGrass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>54, 518</value>
-  </data>
-  <data name="pbLandGrass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 13</value>
-  </data>
-  <data name="pbLandGrass.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;pbLandGrass.Name" xml:space="preserve">
-    <value>pbLandGrass</value>
-  </data>
-  <data name="&gt;&gt;pbLandGrass.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pbLandGrass.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pbLandGrass.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>87, 517</value>
-  </data>
-  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 13</value>
-  </data>
-  <data name="label10.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="label10.Text" xml:space="preserve">
-    <value>Трава</value>
-  </data>
-  <data name="&gt;&gt;label10.Name" xml:space="preserve">
-    <value>label10</value>
-  </data>
-  <data name="&gt;&gt;label10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
     <value>14</value>
   </data>
-  <data name="pbLandTrees.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="pbLandTrees.Location" type="System.Drawing.Point, System.Drawing">
-    <value>54, 502</value>
-  </data>
-  <data name="pbLandTrees.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 13</value>
-  </data>
-  <data name="pbLandTrees.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;pbLandTrees.Name" xml:space="preserve">
-    <value>pbLandTrees</value>
-  </data>
-  <data name="&gt;&gt;pbLandTrees.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pbLandTrees.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pbLandTrees.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lbCellCount.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="lbCellCount.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
-  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>87, 501</value>
+  <data name="lbCellCount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1420, 49</value>
   </data>
-  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 13</value>
+  <data name="lbCellCount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 13</value>
   </data>
-  <data name="label11.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+  <data name="lbCellCount.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
   </data>
-  <data name="label11.Text" xml:space="preserve">
-    <value>Деревья</value>
+  <data name="lbCellCount.Text" xml:space="preserve">
+    <value>Количество ячеек: 0</value>
   </data>
-  <data name="&gt;&gt;label11.Name" xml:space="preserve">
-    <value>label11</value>
+  <data name="&gt;&gt;lbCellCount.Name" xml:space="preserve">
+    <value>lbCellCount</value>
   </data>
-  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+  <data name="&gt;&gt;lbCellCount.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lbCellCount.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lbCellCount.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
-  <metadata name="bigGamePaintTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="lblOffsetCaption.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="lbGrassPict.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="lblOffsetCaption.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Italic</value>
+  <data name="lbGrassPict.Location" type="System.Drawing.Point, System.Drawing">
+    <value>97, 351</value>
   </data>
-  <data name="lblOffsetCaption.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 204</value>
+  <data name="lbGrassPict.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 13</value>
   </data>
-  <data name="lblOffsetCaption.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 20</value>
+  <data name="lbGrassPict.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
-  <data name="lblOffsetCaption.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
+  <data name="&gt;&gt;lbGrassPict.Name" xml:space="preserve">
+    <value>lbGrassPict</value>
   </data>
-  <data name="lblOffsetCaption.Text" xml:space="preserve">
-    <value>Смещение:</value>
+  <data name="&gt;&gt;lbGrassPict.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lblOffsetCaption.Name" xml:space="preserve">
-    <value>lblOffsetCaption</value>
-  </data>
-  <data name="&gt;&gt;lblOffsetCaption.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblOffsetCaption.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lbGrassPict.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;lblOffsetCaption.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;lbGrassPict.ZOrder" xml:space="preserve">
+    <value>28</value>
   </data>
+  <data name="lbGrass.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbGrass.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbGrass.Location" type="System.Drawing.Point, System.Drawing">
+    <value>130, 350</value>
+  </data>
+  <data name="lbGrass.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 13</value>
+  </data>
+  <data name="lbGrass.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="lbGrass.Text" xml:space="preserve">
+    <value>Трава</value>
+  </data>
+  <data name="&gt;&gt;lbGrass.Name" xml:space="preserve">
+    <value>lbGrass</value>
+  </data>
+  <data name="&gt;&gt;lbGrass.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbGrass.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbGrass.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="lbTreesPict.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbTreesPict.Location" type="System.Drawing.Point, System.Drawing">
+    <value>97, 335</value>
+  </data>
+  <data name="lbTreesPict.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 13</value>
+  </data>
+  <data name="lbTreesPict.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;lbTreesPict.Name" xml:space="preserve">
+    <value>lbTreesPict</value>
+  </data>
+  <data name="&gt;&gt;lbTreesPict.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbTreesPict.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbTreesPict.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="lbTrees.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbTrees.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbTrees.Location" type="System.Drawing.Point, System.Drawing">
+    <value>130, 334</value>
+  </data>
+  <data name="lbTrees.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 13</value>
+  </data>
+  <data name="lbTrees.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="lbTrees.Text" xml:space="preserve">
+    <value>Деревья</value>
+  </data>
+  <data name="&gt;&gt;lbTrees.Name" xml:space="preserve">
+    <value>lbTrees</value>
+  </data>
+  <data name="&gt;&gt;lbTrees.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbTrees.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbTrees.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <metadata name="bigEvoPaintTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="lblOffset.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="lblOffset.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="lblOffset.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+    <value>Microsoft Sans Serif, 9.75pt, style=Italic</value>
   </data>
   <data name="lblOffset.Location" type="System.Drawing.Point, System.Drawing">
-    <value>115, 204</value>
+    <value>246, 368</value>
   </data>
   <data name="lblOffset.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 20</value>
+    <value>78, 16</value>
   </data>
   <data name="lblOffset.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
   <data name="lblOffset.Text" xml:space="preserve">
-    <value>неопределено</value>
+    <value>Смещение:</value>
   </data>
   <data name="&gt;&gt;lblOffset.Name" xml:space="preserve">
     <value>lblOffset</value>
@@ -940,61 +850,61 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblOffset.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>12</value>
   </data>
-  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lbCurrOffsetPict.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 231</value>
+  <data name="lbCurrOffsetPict.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 371</value>
   </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="lbCurrOffsetPict.Size" type="System.Drawing.Size, System.Drawing">
     <value>12, 12</value>
   </data>
-  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="lbCurrOffsetPict.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
-    <value>pictureBox1</value>
+  <data name="&gt;&gt;lbCurrOffsetPict.Name" xml:space="preserve">
+    <value>lbCurrOffsetPict</value>
   </data>
-  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;lbCurrOffsetPict.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lbCurrOffsetPict.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>24</value>
+  <data name="&gt;&gt;lbCurrOffsetPict.ZOrder" xml:space="preserve">
+    <value>31</value>
   </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lbCurrOffset.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lbCurrOffset.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 231</value>
+  <data name="lbCurrOffset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 371</value>
   </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="lbCurrOffset.Size" type="System.Drawing.Size, System.Drawing">
     <value>148, 13</value>
   </data>
-  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+  <data name="lbCurrOffset.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
-  <data name="label6.Text" xml:space="preserve">
+  <data name="lbCurrOffset.Text" xml:space="preserve">
     <value>текущее положение экрана</value>
   </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
+  <data name="&gt;&gt;lbCurrOffset.Name" xml:space="preserve">
+    <value>lbCurrOffset</value>
   </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+  <data name="&gt;&gt;lbCurrOffset.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lbCurrOffset.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>17</value>
+  <data name="&gt;&gt;lbCurrOffset.ZOrder" xml:space="preserve">
+    <value>24</value>
   </data>
   <data name="chkShowCoo.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1003,7 +913,10 @@
     <value>NoControl</value>
   </data>
   <data name="chkShowCoo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 635</value>
+    <value>289, 188</value>
+  </data>
+  <data name="chkShowCoo.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
   </data>
   <data name="chkShowCoo.Size" type="System.Drawing.Size, System.Drawing">
     <value>137, 17</value>
@@ -1024,27 +937,318 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chkShowCoo.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="lbEvoTickTime.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbEvoTickTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1420, 109</value>
+  </data>
+  <data name="lbEvoTickTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 13</value>
+  </data>
+  <data name="lbEvoTickTime.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbEvoTickTime.Text" xml:space="preserve">
+    <value>Шаг эволюции (мс): </value>
+  </data>
+  <data name="&gt;&gt;lbEvoTickTime.Name" xml:space="preserve">
+    <value>lbEvoTickTime</value>
+  </data>
+  <data name="&gt;&gt;lbEvoTickTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbEvoTickTime.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbEvoTickTime.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="lblEvoStep.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lblEvoStep.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="lblEvoStep.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;lblEvoStep.Name" xml:space="preserve">
+    <value>lblEvoStep</value>
+  </data>
+  <data name="&gt;&gt;lblEvoStep.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblEvoStep.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblEvoStep.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="richTimerInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 756</value>
+  </data>
+  <data name="richTimerInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>411, 157</value>
+  </data>
+  <data name="richTimerInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="richTimerInfo.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;richTimerInfo.Name" xml:space="preserve">
+    <value>richTimerInfo</value>
+  </data>
+  <data name="&gt;&gt;richTimerInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;richTimerInfo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;richTimerInfo.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lbEntityCount.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbEntityCount.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbEntityCount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1421, 194</value>
+  </data>
+  <data name="lbEntityCount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 13</value>
+  </data>
+  <data name="lbEntityCount.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbEntityCount.Text" xml:space="preserve">
+    <value>Число особей:</value>
+  </data>
+  <data name="&gt;&gt;lbEntityCount.Name" xml:space="preserve">
+    <value>lbEntityCount</value>
+  </data>
+  <data name="&gt;&gt;lbEntityCount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbEntityCount.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbEntityCount.ZOrder" xml:space="preserve">
     <value>9</value>
+  </data>
+  <data name="lblEntityCount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lblEntityCount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="lblEntityCount.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;lblEntityCount.Name" xml:space="preserve">
+    <value>lblEntityCount</value>
+  </data>
+  <data name="&gt;&gt;lblEntityCount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblEntityCount.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblEntityCount.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lbEvoTickCount.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbEvoTickCount.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbEvoTickCount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1421, 168</value>
+  </data>
+  <data name="lbEvoTickCount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 13</value>
+  </data>
+  <data name="lbEvoTickCount.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbEvoTickCount.Text" xml:space="preserve">
+    <value>Число просчитанных циклов эволюции:</value>
+  </data>
+  <data name="&gt;&gt;lbEvoTickCount.Name" xml:space="preserve">
+    <value>lbEvoTickCount</value>
+  </data>
+  <data name="&gt;&gt;lbEvoTickCount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbEvoTickCount.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbEvoTickCount.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="lbEvoInitTime.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbEvoInitTime.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbEvoInitTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1421, 65</value>
+  </data>
+  <data name="lbEvoInitTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 13</value>
+  </data>
+  <data name="lbEvoInitTime.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbEvoInitTime.Text" xml:space="preserve">
+    <value>Время инициализации (мс): :</value>
+  </data>
+  <data name="&gt;&gt;lbEvoInitTime.Name" xml:space="preserve">
+    <value>lbEvoInitTime</value>
+  </data>
+  <data name="&gt;&gt;lbEvoInitTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbEvoInitTime.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbEvoInitTime.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="evoPanelBig.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="evoPanelBig.Location" type="System.Drawing.Point, System.Drawing">
+    <value>499, 49</value>
+  </data>
+  <data name="evoPanelBig.Size" type="System.Drawing.Size, System.Drawing">
+    <value>908, 873</value>
+  </data>
+  <data name="evoPanelBig.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;evoPanelBig.Name" xml:space="preserve">
+    <value>evoPanelBig</value>
+  </data>
+  <data name="&gt;&gt;evoPanelBig.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;evoPanelBig.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;evoPanelBig.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="evoPanelSmall.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="evoPanelSmall.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 390</value>
+  </data>
+  <data name="evoPanelSmall.Size" type="System.Drawing.Size, System.Drawing">
+    <value>409, 350</value>
+  </data>
+  <data name="evoPanelSmall.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;evoPanelSmall.Name" xml:space="preserve">
+    <value>evoPanelSmall</value>
+  </data>
+  <data name="&gt;&gt;evoPanelSmall.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;evoPanelSmall.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;evoPanelSmall.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lbTimerInterval.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbTimerInterval.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbTimerInterval.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1420, 151</value>
+  </data>
+  <data name="lbTimerInterval.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 13</value>
+  </data>
+  <data name="lbTimerInterval.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbTimerInterval.Text" xml:space="preserve">
+    <value>Таймер перерисовки панелей (мс):</value>
+  </data>
+  <data name="&gt;&gt;lbTimerInterval.Name" xml:space="preserve">
+    <value>lbTimerInterval</value>
+  </data>
+  <data name="&gt;&gt;lbTimerInterval.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbTimerInterval.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbTimerInterval.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lbEvoFriquency.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbEvoFriquency.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbEvoFriquency.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1420, 125</value>
+  </data>
+  <data name="lbEvoFriquency.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 13</value>
+  </data>
+  <data name="lbEvoFriquency.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbEvoFriquency.Text" xml:space="preserve">
+    <value>Частота шага эволюции: </value>
+  </data>
+  <data name="&gt;&gt;lbEvoFriquency.Name" xml:space="preserve">
+    <value>lbEvoFriquency</value>
+  </data>
+  <data name="&gt;&gt;lbEvoFriquency.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbEvoFriquency.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbEvoFriquency.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>28</value>
+    <value>25</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1211, 948</value>
+    <value>1684, 925</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Evo v 0.1</value>
   </data>
-  <data name="&gt;&gt;bigGamePaintTimer.Name" xml:space="preserve">
-    <value>bigGamePaintTimer</value>
+  <data name="&gt;&gt;bigEvoPaintTimer.Name" xml:space="preserve">
+    <value>bigEvoPaintTimer</value>
   </data>
-  <data name="&gt;&gt;bigGamePaintTimer.Type" xml:space="preserve">
+  <data name="&gt;&gt;bigEvoPaintTimer.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

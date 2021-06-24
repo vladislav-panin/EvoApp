@@ -19,20 +19,17 @@ namespace EvoApp
         public int cellWidthPx { get; set; }
         public int cellHeightPx { get; set; }
 
-        static public int colCount { get; } = 20;  // количество столбцов (то есть ячеек в ширину) на большой панели
-        static public int rowCount { get; } = 20;  // количество строк (то есть ячеек в высоту) на большой панели
+        static public int colCount { get; } = 10;  // количество столбцов (то есть ячеек в ширину) на большой панели
+        static public int rowCount { get; } = 10;  // количество строк (то есть ячеек в высоту) на большой панели
 
         public int widthPx { get; set; } = 0;  // ширина (в пикселях) панели, на которой буду рисовать
         public int heightPx { get; set; } = 0; // высота (в пикселях) панели, на которой буду рисовать
 
-        public int paintInterval { get; set; } = 1000; // интервал прорисовки большой панели 200 миллисекунд (то есть 5 раз в секунду)
+        public int timerPaintInterval { get; set; } = 250; // интервал прорисовки большой панели 250 миллисекунд (то есть 4 раза в секунду)
 
         public int hSlider_xTickCount { get; set; } = -1; // max положение горизонтального слайдера, минимальное выставляем в 0 на форме
         public int vSlider_yTickCount { get; set; } = -1; // max положение вертикального слайдера, минимальное выставляем в 0 на форме
         // *******************************************************************************************************************************        
-
-        protected Desk gameDesk { get; set; } = null;
-        protected GeoEx geoEx { get; set; } = null;
 
         public Bitmap bkGround = null;   //  буфер для Bitmap-изображения
         public Graphics graphfObj_for_bkGround = null;  //  холст, который умеет рисовать на bkGround
@@ -82,9 +79,6 @@ namespace EvoApp
         // int widthPx, heightPx  - ширина и высота (в пикселях) панели, на которой буду рисовать
         virtual public void Init(int cellWidthPx, int cellHeightPx)
         {
-            this.gameDesk = Program.app.desk;
-            this.geoEx = Program.app.desk.geoEx;
-
             InitDimensions(cellWidthPx, cellHeightPx);
             InitBitmaps();
         }
@@ -97,8 +91,8 @@ namespace EvoApp
             this.cellWidthPx = cellWidthPx / colCount;
             this.cellHeightPx = cellHeightPx / rowCount;
 
-            this.hSlider_xTickCount = (Program.app.desk.geoEx.colCount / PainterBigEvoPanel.colCount);
-            this.vSlider_yTickCount = (Program.app.desk.geoEx.rowCount / PainterBigEvoPanel.rowCount);
+            this.hSlider_xTickCount = (Program.app.getDesk().geoEx.colCount / PainterEvoPanelBig.colCount);
+            this.vSlider_yTickCount = (Program.app.getDesk().geoEx.rowCount / PainterEvoPanelBig.rowCount);
 
             this.invertor = new Invertor(0, this.vSlider_yTickCount - 1, this.vSlider_yTickCount - 1);
         }

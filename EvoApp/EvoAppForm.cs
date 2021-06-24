@@ -7,13 +7,15 @@ namespace EvoApp
 {
     public partial class EvoAppForm : Form
     {
+        // ****************************************************************************************
         private bool isAppInited = false;
 
         private BackgroundWorker bgWorkerForInit;
-        private PainterBigEvoPanel painterBigEvoPanel = new PainterBigEvoPanel();
-        private PainterSmallEvoPanel painterSmallEvoPanel = new PainterSmallEvoPanel();
 
+        private PainterEvoPanelBig painterEvoPanelBig = new PainterEvoPanelBig();
+        private PainterEvoPanelSmall painterEvoPanelSmall = new PainterEvoPanelSmall();
         // ****************************************************************************************
+
         public EvoAppForm()
         {
             InitializeComponent();
@@ -32,9 +34,9 @@ namespace EvoApp
             // --------------------------------------------- //
             // Инициализация рисовальшиков панелей игры
 
-            painterSmallEvoPanel.Init (panelEvoSmall.Width, panelEvoSmall.Height);
-            painterBigEvoPanel.  Init (panelEvoBig.  Width, panelEvoBig.  Height);
-
+            painterEvoPanelSmall.Init(evoPanelSmall.Width, evoPanelSmall.Height);
+            painterEvoPanelBig.Init(evoPanelBig.Width, evoPanelBig.Height);
+            
             InitSliders();
             InitCommonGUI_vars();
         }
@@ -42,8 +44,8 @@ namespace EvoApp
         // ****************************************************************************************
         protected void InitCommonGUI_vars()
         {
-            int cellWidthPx_onBigPanel  = panelEvoBig.Width / PainterBase.colCount;
-            int cellHeightPx_onBigPanel = panelEvoBig.Height / PainterBase.rowCount;
+            int cellWidthPx_onBigPanel = evoPanelBig.Width / PainterBase.colCount;
+            int cellHeightPx_onBigPanel = evoPanelBig.Height / PainterBase.rowCount;
 
             DeskCell.InitCell(cellWidthPx_onBigPanel, cellHeightPx_onBigPanel);
         }
@@ -51,21 +53,20 @@ namespace EvoApp
         protected void InitSliders()
         {
             hSlider.Minimum = 0;
-            hSlider.Maximum = painterBigEvoPanel.hSlider_xTickCount - 1;
+            hSlider.Maximum = painterEvoPanelBig.hSlider_xTickCount - 1;
             hSlider.Value = 0;
             hSlider.LargeChange = 1;
 
-            painterBigEvoPanel.HSlider_Val = 0; // одновременно будет инициирован оффсет
-            //painterBigEvoPanel.VSlider_Val = vSlider.Maximum; // одновременно будет инициирован оффсет
-            painterBigEvoPanel.VSlider_Val = 0;
+            painterEvoPanelBig.HSlider_Val = 0; // одновременно будет инициирован оффсет            
+            painterEvoPanelBig.VSlider_Val = 0;
 
             vSlider.Minimum = 0;
-            vSlider.Maximum = painterBigEvoPanel.vSlider_yTickCount - 1;
+            vSlider.Maximum = painterEvoPanelBig.vSlider_yTickCount - 1;
             vSlider.Value = vSlider.Maximum;
             vSlider.LargeChange = 1;
 
-            painterSmallEvoPanel.HSlider_Val = 0; // одновременно будет инициирован оффсет
-            painterSmallEvoPanel.VSlider_Val = 0; // одновременно будет инициирован оффсет
+            painterEvoPanelSmall.HSlider_Val = 0; // одновременно будет инициирован оффсет
+            painterEvoPanelSmall.VSlider_Val = 0; // одновременно будет инициирован оффсет            
         }
 
         // ****************************************************************************************
@@ -83,7 +84,7 @@ namespace EvoApp
         // этот метод будет выполнятся асинхронно (в другом потоке?) на объекте bgWorkerForInit
         private void bgWorkerForInit_DoWork(object sender, DoWorkEventArgs e)
         {
-            AppInitResult res = this.InitGame(); 
+            AppInitInfo res = this.InitGame();
             e.Result = res;
         }
 
@@ -92,10 +93,8 @@ namespace EvoApp
         // этом потоке будет запущен на выполнение этот метод
         private void bgWorkerForInit_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-            AppInitResult res = (AppInitResult)e.Result;
+            AppInitInfo res = (AppInitInfo)e.Result;
             SetAppIsInited(res);
-
-            RunGame();            
         }
 
         // ****************************************************************************************
@@ -106,58 +105,41 @@ namespace EvoApp
         }
 
         // ****************************************************************************************
-        public AppInitResult InitGame()
+        public AppInitInfo InitGame()
         {
-            AppInitResult res = Program.app.Init();
+            AppInitInfo res = Program.app.Init();
             return res;
         }
 
         // ****************************************************************************************
-        public void SetAppIsInited (AppInitResult res)
+        public void SetAppIsInited(AppInitInfo res)
         {
             // "переворачиваю" вертикальный слайдер, в соответствии с вертикальной нумерацией ячеек - она растет сверху вниз
-            painterBigEvoPanel.VSlider_Val = vSlider.Maximum; // одновременно будет инициирован оффсет
-            painterSmallEvoPanel.VSlider_Val = vSlider.Maximum; // одновременно будет инициирован оффсет
+            painterEvoPanelBig.VSlider_Val = vSlider.Maximum; // одновременно будет инициирован оффсет
+            painterEvoPanelSmall.VSlider_Val = vSlider.Maximum; // одновременно будет инициирован оффсет
+
+            evoPanelBig.BorderStyle = BorderStyle.None;
+            evoPanelSmall.BorderStyle = BorderStyle.None;
 
             isAppInited = true;
 
-            lblinit.Text = "игра запущена!";
+            lblinit.Text = "Эволюция готова к запуску!";
             lblinit.ForeColor = Color.Green;
             btnStart.Enabled = true;
             btnStop.Enabled = true;
 
-            this.lblCellCount.Text = "количество ячеек: " + Convert.ToString(res.cellCount);
-            this.lblOffset.Text = painterBigEvoPanel.GetOffsetString();
+            this.lbCellCount.Text = "Количество ячеек: " + Convert.ToString(res.cellCount);
+            this.lblOffset.Text = "смещение: " + painterEvoPanelBig.GetOffsetString();
 
-            this.panelEvoBig.Invalidate();
-            this.panelEvoBig.Update();
-                        
-            this.panelEvoSmall.Invalidate();
-            this.panelEvoSmall.Update();
-        }
+            richTimerInfo.Text = res.sTimerInfo;
+            lbEntityCount.Text = "Число особей: " + res.entityCount;
+            lbEvoInitTime.Text = "Время инициализации (мс): " + res.evoInitTime_millisec;
 
-        // ****************************************************************************************
-        public void RunGame()
-        {
-            Program.app.Run(); // запуск на выполнение эволюции
+            this.evoPanelBig.Invalidate();
+            this.evoPanelBig.Update();
 
-            // Инициализация таймера WinForm, брошенный на форму 
-            bigGamePaintTimer.Interval = painterBigEvoPanel.paintInterval;
-            bigGamePaintTimer.Enabled = true; // старт таймера
-        }
-
-        // ****************************************************************************************
-        // Метод формы, который будет выполнятся на каждое срабатывание таймера WinForm, брошенный на форму 
-        // Связь с таймром была установлена в графическом редакторе формы
-        private void bigGamePaintTimer_Tick(object sender, EventArgs e)
-        {
-            // вызываем рорисовывку большой панели на кажый тик таймера
-            // panelBigGame.Invalidate();
-            // panelBigGame.Update();
-
-            // вызываем рорисовывку маленькой панели на кажый тик таймера
-            // panelSmallGame.Invalidate();
-            // panelSmallGame.Update();
+            this.evoPanelSmall.Invalidate();
+            this.evoPanelSmall.Update();
         }
 
         // ****************************************************************************************       
@@ -165,103 +147,110 @@ namespace EvoApp
         {
             // обновляем текущее положение вертикального слайдера в большой и малой панелях,
             // одновременно там автоматически будет установлен idxColsOffset (перерассчитан оффсет)
-            painterSmallEvoPanel.VSlider_Val = vSlider.Value;
-            painterBigEvoPanel.VSlider_Val = vSlider.Value;
+            painterEvoPanelSmall.VSlider_Val = vSlider.Value;
+            painterEvoPanelBig.VSlider_Val = vSlider.Value;
 
-            lblOffset.Text = painterBigEvoPanel.GetOffsetString();
+            lblOffset.Text = "смещение: " + painterEvoPanelBig.GetOffsetString();
 
-            panelEvoSmall.Invalidate();
-            panelEvoSmall.Update();
+            evoPanelSmall.Invalidate();
+            evoPanelSmall.Update();
 
-            panelEvoBig.Invalidate();
-            panelEvoBig.Update();
+            evoPanelBig.Invalidate();
+            evoPanelBig.Update();
         }
 
         private void hSlider_Scroll(object sender, EventArgs e)
         {
             // обновляем текущее положение горизонтального  слайдера в большой и малой панелях,
             // одновременно там автоматически будет установлен idxColsOffset (перерассчитан оффсет)
-            painterSmallEvoPanel.HSlider_Val = hSlider.Value;
-            painterBigEvoPanel.HSlider_Val = hSlider.Value;
+            painterEvoPanelSmall.HSlider_Val = hSlider.Value;
+            painterEvoPanelBig.HSlider_Val = hSlider.Value;
 
-            lblOffset.Text = painterBigEvoPanel.GetOffsetString();
+            lblOffset.Text = "смещение: " + painterEvoPanelBig.GetOffsetString();
 
-            panelEvoSmall.Invalidate();
-            panelEvoSmall.Update();
+            evoPanelSmall.Invalidate();
+            evoPanelSmall.Update();
 
-            panelEvoBig.Invalidate();
-            panelEvoBig.Update();
+            evoPanelBig.Invalidate();
+            evoPanelBig.Update();
         }
         // ****************************************************************************************       
         private void chkShowGrid_CheckedChanged(object sender, EventArgs e)
         {
             CheckBox chkBox = (CheckBox)sender;
             if (chkBox.Checked)
-                PainterBigEvoPanel.isGridRequired = true;
+                PainterEvoPanelBig.isGridRequired = true;
             else
-                PainterBigEvoPanel.isGridRequired = false;
+                PainterEvoPanelBig.isGridRequired = false;
 
-            panelEvoBig.Invalidate();
-            panelEvoBig.Update();
+            evoPanelBig.Invalidate();
+            evoPanelBig.Update();
         }
 
         private void chkShowCoo_CheckedChanged(object sender, EventArgs e)
         {
             CheckBox chkBox = (CheckBox)sender;
             if (chkBox.Checked)
-                PainterBigEvoPanel.isCoordRequired = true;
+                PainterEvoPanelBig.isCoordRequired = true;
             else
-                PainterBigEvoPanel.isCoordRequired = false;            
+                PainterEvoPanelBig.isCoordRequired = false;
 
-            panelEvoBig.Invalidate();
-            panelEvoBig.Update();
+            evoPanelBig.Invalidate();
+            evoPanelBig.Update();
         }
+       
         // ****************************************************************************************       
-        private void comboEvoSpeed_SelectedValueChanged(object sender, EventArgs e)
-        {
-            ComboBox comboBox = (ComboBox)sender;
-            String speed = comboBox.SelectedItem.ToString();
-
-            switch (speed)
-            {
-                case "Высокая":
-                    Program.app.evoSpeed = EvoSpeed.Hi;
-                    break;
-
-                case "Средняя":
-                    Program.app.evoSpeed = EvoSpeed.Medium;
-                    break;
-
-                case "Низкая":
-                    Program.app.evoSpeed = EvoSpeed.Slow;
-                    break;
-            }
-        }
-
-        // ****************************************************************************************       
-        private void panelSmallGame_Paint(object sender, PaintEventArgs e)
-        {
-            if (!isAppInited)    
-                return;
-                   
-            Graphics panelCanvasGraph = e.Graphics;
-            this.painterSmallEvoPanel.panelPaint(panelCanvasGraph);
-        }
-        
-        // ****************************************************************************************       
-        private void panelBigGame_Paint(object sender, PaintEventArgs e)
+        private void pictSmallEvoPanel_Paint(object sender, PaintEventArgs e)
         {
             if (!isAppInited)
                 return;
-            
+
             Graphics panelCanvasGraph = e.Graphics;
-            this.painterBigEvoPanel.panelPaint(panelCanvasGraph);
+            this.painterEvoPanelSmall.panelPaint(panelCanvasGraph);
         }
 
+        // ****************************************************************************************       
+        private void pictBigEvoPanel_Paint(object sender, PaintEventArgs e)
+        {
+            if (!isAppInited)
+                return;
+
+            Graphics panelCanvasGraph = e.Graphics;
+            this.painterEvoPanelBig.panelPaint(panelCanvasGraph);
+        }
+        // ****************************************************************************************                   
         public void btnStart_Click(object sender, EventArgs e)
         {
-             
+            // Инициализация таймера WinForm, брошенного на форму 
+            bigEvoPaintTimer.Interval = painterEvoPanelBig.timerPaintInterval;
+            bigEvoPaintTimer.Enabled = true; // старт таймера
         }
-        // ****************************************************************************************       
+
+        private void btnStop_Click(object sender, EventArgs e)
+        {
+            bigEvoPaintTimer.Enabled = false; 
+        }
+
+        // ****************************************************************************************
+        // Метод формы, который будет выполнятся на каждое срабатывание таймера WinForm, брошенный на форму 
+        // Связь с таймром была установлена в графическом редакторе формы
+        private void bigEvoPaintTimer_Tick(object sender, EventArgs e)
+        {
+            Program.app.Run(); // запуск на выполнение эволюции 
+
+            lbEvoTickCount.Text = "Число просчитанных циклов эволюции: " + Program.app.getThreadInfo().evoCycleCounter;
+            lbEvoTickTime.Text = "Длительность цикла эволюции (мс): " + Program.app.getThreadInfo().evoCycleTime_millisec;
+
+            lbTimerInterval.Text = "Таймер перерисовки панелей (мс): " + painterEvoPanelBig.timerPaintInterval;
+            lbEvoFriquency.Text = "Частота расчета шага эволюции: " + ((float)1000)/((float)painterEvoPanelBig.timerPaintInterval) + " раз/сек";
+
+            // вызываем рорисовывку большой панели на каждый тик таймера
+            evoPanelBig.Invalidate();
+            evoPanelBig.Update();
+
+            // вызываем рорисовывку маленькой панели на кажый тик таймера
+            evoPanelSmall.Invalidate();
+            evoPanelSmall.Update();
+        }
     }
 }
