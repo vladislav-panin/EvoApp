@@ -71,6 +71,9 @@ namespace EvoApp
             this.evoPanelSmall = new System.Windows.Forms.PictureBox();
             this.lbTimerInterval = new System.Windows.Forms.Label();
             this.lbEvoFriquency = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lbWidthCell = new System.Windows.Forms.Label();
+            this.lbHeightCell = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.hSlider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vSlider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbDisertPict)).BeginInit();
@@ -348,6 +351,16 @@ namespace EvoApp
             resources.ApplyResources(this.lbEvoFriquency, "lbEvoFriquency");
             this.lbEvoFriquency.Name = "lbEvoFriquency";
             // 
+            // lbWidthCell
+            // 
+            resources.ApplyResources(this.lbWidthCell, "lbWidthCell");
+            this.lbWidthCell.Name = "lbWidthCell";
+            // 
+            // lbHeightCell
+            // 
+            resources.ApplyResources(this.lbHeightCell, "lbHeightCell");
+            this.lbHeightCell.Name = "lbHeightCell";
+            // 
             // EvoAppForm
             // 
             resources.ApplyResources(this, "$this");
@@ -360,9 +373,11 @@ namespace EvoApp
             this.Controls.Add(this.lblEvoStep);
             this.Controls.Add(this.lbEvoInitTime);
             this.Controls.Add(this.lbTimerInterval);
+            this.Controls.Add(this.lbHeightCell);
             this.Controls.Add(this.lbEvoFriquency);
             this.Controls.Add(this.lbEvoTickCount);
             this.Controls.Add(this.lbEntityCount);
+            this.Controls.Add(this.lbWidthCell);
             this.Controls.Add(this.lbEvoTickTime);
             this.Controls.Add(this.vSlider);
             this.Controls.Add(this.lblOffset);
@@ -453,6 +468,9 @@ namespace EvoApp
         private System.Windows.Forms.PictureBox evoPanelSmall;
         private System.Windows.Forms.Label lbTimerInterval;
         private System.Windows.Forms.Label lbEvoFriquency;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lbWidthCell;
+        private System.Windows.Forms.Label lbHeightCell;
     }
 }
 

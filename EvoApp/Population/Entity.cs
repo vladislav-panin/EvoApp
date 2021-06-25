@@ -35,19 +35,6 @@ namespace EvoApp
         }
         // *************************************************************************************************************************************************        
         // Rectangle rect - это координаты прямоугольникаи на панели, в пикселях, где рисуем
-        /*
-        override protected void drawOnRect(Graphics canvasGraph, int xOriginGlobal, int yOriginGlobal, int width, int height)
-        {
-            //base.drawOnRect(canvasGraph, xOriginGlobal, yOriginGlobal, width, height);
-
-            canvasGraph.FillEllipse (
-                getBrush(),
-                xOriginGlobal,
-                yOriginGlobal,
-                width,
-                height);
-        }
-        */
         override protected void drawOnRect(Graphics canvasGraph, int xOriginGlobal, int yOriginGlobal, int width, int height)
         {
             canvasGraph.DrawImage(Population.bmpEntity, xOriginGlobal, yOriginGlobal);
@@ -63,9 +50,32 @@ namespace EvoApp
             int indCellX_Next = this.position.X + getStepShift()[idxStep].X; // вычисляем индекс по горизонтали ячейки в которую ent прыгнет следующим шагом
             int indCellY_Next = this.position.Y + getStepShift()[idxStep].Y; // вычисляем индекс по вертикали ячейки в которую ent прыгнет следующим шагом
 
+            indCellX_Next = CalcReboundX(indCellX_Next);
+            indCellY_Next = CalcReboundX(indCellY_Next);
+
             Cells()[indCellY][indCellX].EntityRemove(this);
-            Cells()[indCellY][indCellX].EntityAdd(this);
+            Cells()[indCellX_Next][indCellX_Next].EntityAdd(this);
         }
         // *************************************************************************************************************************************************
+        protected int CalcReboundX(int indCellX_Next)
+        {
+            if (indCellX_Next < 0)
+                return (-indCellX_Next + 2);
+
+            if (indCellX_Next >= Program.app.getDesk().geoEx.colCount)
+                return (indCellX_Next - Program.app.getDesk().geoEx.colCount - 2);
+
+            return indCellX_Next;
+        }
+        protected int CalcReboundY(int indCellY_Next)
+        {
+            if (indCellY_Next < 0)
+                return (-indCellY_Next + 2);
+
+            if (indCellY_Next >= Program.app.getDesk().geoEx.rowCount)
+                return (indCellY_Next - Program.app.getDesk().geoEx.rowCount - 2);
+
+            return indCellY_Next;
+        }
     }
 }

@@ -19,6 +19,11 @@ namespace EvoApp
         Rectangle cellRect = new Rectangle();
          protected List<Entity> lstEntity { get; set; } = new List<Entity>();
 
+        public int EntityCount()
+        {
+            return lstEntity.Count;
+        }
+
         public void EntityAdd(Entity ent)
         {
             lstEntity.Add(ent);

@@ -128,12 +128,19 @@ namespace EvoApp
             btnStart.Enabled = true;
             btnStop.Enabled = true;
 
+            lbEvoTickTime.Text = "Длительность цикла эволюции (мс): " + Program.app.getThreadInfo().evoCycleTime_millisec;
             this.lbCellCount.Text = "Количество ячеек: " + Convert.ToString(res.cellCount);
+            lbEntityCount.Text = "Число особей: " + res.entityCount;
             this.lblOffset.Text = "смещение: " + painterEvoPanelBig.GetOffsetString();
 
             richTimerInfo.Text = res.sTimerInfo;
-            lbEntityCount.Text = "Число особей: " + res.entityCount;
+
+            lbTimerInterval.Text = "Таймер перерисовки панелей (мс): " + painterEvoPanelBig.timerPaintInterval;
             lbEvoInitTime.Text = "Время инициализации (мс): " + res.evoInitTime_millisec;
+
+            lbWidthCell.Text = "Ширина ячейки  в пикселях: " + painterEvoPanelBig.cellWidthPx;
+            lbHeightCell.Text = "Высота ячейки  в пикселях: " + painterEvoPanelBig.cellWidthPx;
+
 
             this.evoPanelBig.Invalidate();
             this.evoPanelBig.Update();
@@ -238,11 +245,16 @@ namespace EvoApp
         {
             Program.app.Run(); // запуск на выполнение эволюции 
 
+            lbEntityCount.Text = "Число особей: " + Program.app.population.EntityCount();
+
             lbEvoTickCount.Text = "Число просчитанных циклов эволюции: " + Program.app.getThreadInfo().evoCycleCounter;
             lbEvoTickTime.Text = "Длительность цикла эволюции (мс): " + Program.app.getThreadInfo().evoCycleTime_millisec;
 
             lbTimerInterval.Text = "Таймер перерисовки панелей (мс): " + painterEvoPanelBig.timerPaintInterval;
             lbEvoFriquency.Text = "Частота расчета шага эволюции: " + ((float)1000)/((float)painterEvoPanelBig.timerPaintInterval) + " раз/сек";
+
+            lbWidthCell.Text = "Ширина ячейки  в пикселях: " + painterEvoPanelBig.cellWidthPx;
+            lbHeightCell.Text = "Высота ячейки  в пикселях: " +  painterEvoPanelBig.cellWidthPx;
 
             // вызываем рорисовывку большой панели на каждый тик таймера
             evoPanelBig.Invalidate();
