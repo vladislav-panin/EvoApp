@@ -118,13 +118,175 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="digger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\digger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnDown16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnDown16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dolly" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dolly.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnDown16withBg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnDown16withBg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="smile" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\smile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnLeft16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnLeft16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnLeft16withBg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnLeft16withBg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnRight16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnRight16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnRight16withBg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnRight16withBg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnUp16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnUp16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnUp16withBg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnUp16withBg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_bgDisert_100x100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Фон_Песок_100х100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_bgGrass_100x100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Фон_Трава_100х100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_bgLake_100x100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Фон_Озеро_100х100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_bgMountins_100x100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Фон_Горы_100х100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_bgSea_100x100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Фон_Море_100х100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_bgWoodEdge_100x100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Фон_Лес_с_Травой_100х100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_bgWood_100x100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Фон_Лес_100х100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_fastFOOD_animal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FAST_FOOD_animal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_fastFOOD_veg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FAST_FOOD_veg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_grass_bush" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит_grass_трава_кустиком.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_herb_beaver_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-herb-бобер-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_herb_beaver_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-herb-бобер-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_herb_deer_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-herb-олень-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_herb_deer_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-herb-олень-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_herb_goat_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-herb-козел-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_herb_goat_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-herb-козел-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_herb_rabbit_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-herb-заяц-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_herb_rabbit_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-herb-заяц-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_herb_sheep_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-herb-овечка-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_herb_sheep_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-herb-овечка-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_herb_squirrel_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-herb-белка-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_herb_squirrel_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-herb-белка-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_human_barn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-human-амбар.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_human_child" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-human-ребенок.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_human_house" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-human-дом.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_human_man" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-human-мужчина.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_human_village" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\village.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_human_woman" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-human-женщина.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_omni_badger_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-omnivores-барсук-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_omni_badger_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-omnivores-барсук-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_omni_bear_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-omnivores-медведь-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_omni_bear_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-omnivores-медведь-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_omni_boar_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-omnivores-кабан-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_omni_boar_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-omnivores-кабан-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_omni_hedgehog_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-omnivores-ежик-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_omni_hedgehog_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-omnivores-ежик-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_raptor_fox_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-raptor-лиса-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_raptor_fox_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-raptor-лиса-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_raptor_lynx_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-raptor-рысь-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_raptor_lynx_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-raptor-рысь-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_raptor_wolf_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-raptor-волк-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_raptor_wolf_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-raptor-волк-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_vegetables_beet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-vegetables-свекла.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_vegetables_carrot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-vegetables-морковка.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_vegetables_patato" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-vegetables-картошка.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_vegetables_tomato" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-vegetables-помидоры.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_wood_acorn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-wood-Желуди.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_wood_mushroom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-wood-Гриб.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_unit_wood_strawberry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Юнит-wood-Клубника.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

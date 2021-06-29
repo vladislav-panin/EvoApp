@@ -117,6 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="hSlider.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="hSlider.Location" type="System.Drawing.Point, System.Drawing">
     <value>478, 3</value>
@@ -138,9 +142,8 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;hSlider.ZOrder" xml:space="preserve">
-    <value>37</value>
+    <value>70</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="vSlider.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -169,100 +172,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;vSlider.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="lbDisertPict.Location" type="System.Drawing.Point, System.Drawing">
-    <value>97, 275</value>
-  </data>
-  <data name="lbDisertPict.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 13</value>
-  </data>
-  <data name="lbDisertPict.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;lbDisertPict.Name" xml:space="preserve">
-    <value>lbDisertPict</value>
-  </data>
-  <data name="&gt;&gt;lbDisertPict.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbDisertPict.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lbDisertPict.ZOrder" xml:space="preserve">
-    <value>36</value>
-  </data>
-  <data name="lbSeaPict.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lbSeaPict.Location" type="System.Drawing.Point, System.Drawing">
-    <value>97, 291</value>
-  </data>
-  <data name="lbSeaPict.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 13</value>
-  </data>
-  <data name="lbSeaPict.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;lbSeaPict.Name" xml:space="preserve">
-    <value>lbSeaPict</value>
-  </data>
-  <data name="&gt;&gt;lbSeaPict.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbSeaPict.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lbSeaPict.ZOrder" xml:space="preserve">
-    <value>35</value>
-  </data>
-  <data name="lbLakePict.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lbLakePict.Location" type="System.Drawing.Point, System.Drawing">
-    <value>97, 305</value>
-  </data>
-  <data name="lbLakePict.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 13</value>
-  </data>
-  <data name="lbLakePict.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;lbLakePict.Name" xml:space="preserve">
-    <value>lbLakePict</value>
-  </data>
-  <data name="&gt;&gt;lbLakePict.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbLakePict.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lbLakePict.ZOrder" xml:space="preserve">
-    <value>34</value>
-  </data>
-  <data name="lbMountainsPict.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lbMountainsPict.Location" type="System.Drawing.Point, System.Drawing">
-    <value>97, 320</value>
-  </data>
-  <data name="lbMountainsPict.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 13</value>
-  </data>
-  <data name="lbMountainsPict.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;lbMountainsPict.Name" xml:space="preserve">
-    <value>lbMountainsPict</value>
-  </data>
-  <data name="&gt;&gt;lbMountainsPict.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbMountainsPict.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lbMountainsPict.ZOrder" xml:space="preserve">
-    <value>32</value>
+    <value>38</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -270,17 +180,20 @@
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt, style=Italic</value>
   </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 272</value>
+    <value>16, 388</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 16</value>
+    <value>79, 16</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Легенда:</value>
+    <value>Ландшафт:</value>
   </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
@@ -292,7 +205,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>31</value>
+    <value>64</value>
   </data>
   <data name="lbDisert.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -301,16 +214,16 @@
     <value>NoControl</value>
   </data>
   <data name="lbDisert.Location" type="System.Drawing.Point, System.Drawing">
-    <value>130, 274</value>
+    <value>50, 415</value>
   </data>
   <data name="lbDisert.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 13</value>
+    <value>49, 13</value>
   </data>
   <data name="lbDisert.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
   <data name="lbDisert.Text" xml:space="preserve">
-    <value>пустыня, песок</value>
+    <value>пустыня</value>
   </data>
   <data name="&gt;&gt;lbDisert.Name" xml:space="preserve">
     <value>lbDisert</value>
@@ -322,7 +235,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lbDisert.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>60</value>
   </data>
   <data name="lbSea.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -331,16 +244,16 @@
     <value>NoControl</value>
   </data>
   <data name="lbSea.Location" type="System.Drawing.Point, System.Drawing">
-    <value>130, 290</value>
+    <value>147, 416</value>
   </data>
   <data name="lbSea.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 13</value>
+    <value>81, 13</value>
   </data>
   <data name="lbSea.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
   <data name="lbSea.Text" xml:space="preserve">
-    <value>море, сильно соленое</value>
+    <value>море, соленое</value>
   </data>
   <data name="&gt;&gt;lbSea.Name" xml:space="preserve">
     <value>lbSea</value>
@@ -352,7 +265,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lbSea.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>59</value>
   </data>
   <data name="lbLake.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -361,7 +274,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbLake.Location" type="System.Drawing.Point, System.Drawing">
-    <value>130, 304</value>
+    <value>147, 430</value>
   </data>
   <data name="lbLake.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 13</value>
@@ -382,7 +295,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lbLake.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>57</value>
   </data>
   <data name="lbMountains.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -391,7 +304,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbMountains.Location" type="System.Drawing.Point, System.Drawing">
-    <value>130, 319</value>
+    <value>277, 413</value>
   </data>
   <data name="lbMountains.Size" type="System.Drawing.Size, System.Drawing">
     <value>33, 13</value>
@@ -412,19 +325,28 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lbMountains.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>56</value>
   </data>
   <data name="chkShowGrid.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="chkShowGrid.CheckAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="chkShowGrid.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Italic</value>
+  </data>
+  <data name="chkShowGrid.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="chkShowGrid.Location" type="System.Drawing.Point, System.Drawing">
-    <value>324, 171</value>
+    <value>17, 24</value>
   </data>
   <data name="chkShowGrid.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>Yes</value>
   </data>
   <data name="chkShowGrid.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 17</value>
+    <value>128, 20</value>
   </data>
   <data name="chkShowGrid.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -439,10 +361,10 @@
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;chkShowGrid.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>panel1</value>
   </data>
   <data name="&gt;&gt;chkShowGrid.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>0</value>
   </data>
   <data name="evoTitleVersion.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -482,6 +404,9 @@
   </data>
   <data name="evoTitle.Font" type="System.Drawing.Font, System.Drawing">
     <value>Algerian, 20pt, style=Italic</value>
+  </data>
+  <data name="evoTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="evoTitle.Location" type="System.Drawing.Point, System.Drawing">
     <value>139, 21</value>
@@ -547,7 +472,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;evoTitlePanel2.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>52</value>
   </data>
   <data name="btnStart.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -555,11 +480,17 @@
   <data name="btnStart.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
+  <data name="btnStart.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt, style=Italic</value>
+  </data>
+  <data name="btnStart.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="btnStart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 157</value>
+    <value>31, 236</value>
   </data>
   <data name="btnStart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+    <value>143, 32</value>
   </data>
   <data name="btnStart.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -577,7 +508,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnStart.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>51</value>
   </data>
   <data name="btnStop.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -585,14 +516,17 @@
   <data name="btnStop.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
+  <data name="btnStop.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt, style=Italic</value>
+  </data>
   <data name="btnStop.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btnStop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 188</value>
+    <value>33, 295</value>
   </data>
   <data name="btnStop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+    <value>143, 32</value>
   </data>
   <data name="btnStop.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -610,19 +544,22 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnStop.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>47</value>
   </data>
   <data name="lblinit.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="lblinit.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
+    <value>Microsoft Sans Serif, 12pt, style=Italic</value>
+  </data>
+  <data name="lblinit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="lblinit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>120, 128</value>
+    <value>125, 149</value>
   </data>
   <data name="lblinit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>204, 16</value>
+    <value>239, 20</value>
   </data>
   <data name="lblinit.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -643,7 +580,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblinit.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>45</value>
   </data>
   <data name="lbCellCount.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -651,8 +588,11 @@
   <data name="lbCellCount.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
+  <data name="lbCellCount.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="lbCellCount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1420, 49</value>
+    <value>1430, 16</value>
   </data>
   <data name="lbCellCount.Size" type="System.Drawing.Size, System.Drawing">
     <value>110, 13</value>
@@ -673,31 +613,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lbCellCount.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="lbGrassPict.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lbGrassPict.Location" type="System.Drawing.Point, System.Drawing">
-    <value>97, 351</value>
-  </data>
-  <data name="lbGrassPict.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 13</value>
-  </data>
-  <data name="lbGrassPict.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;lbGrassPict.Name" xml:space="preserve">
-    <value>lbGrassPict</value>
-  </data>
-  <data name="&gt;&gt;lbGrassPict.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbGrassPict.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lbGrassPict.ZOrder" xml:space="preserve">
-    <value>30</value>
+    <value>44</value>
   </data>
   <data name="lbGrass.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -706,7 +622,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbGrass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>130, 350</value>
+    <value>349, 433</value>
   </data>
   <data name="lbGrass.Size" type="System.Drawing.Size, System.Drawing">
     <value>38, 13</value>
@@ -727,61 +643,37 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lbGrass.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>55</value>
   </data>
-  <data name="lbTreesPict.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lbTreesPict.Location" type="System.Drawing.Point, System.Drawing">
-    <value>97, 335</value>
-  </data>
-  <data name="lbTreesPict.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 13</value>
-  </data>
-  <data name="lbTreesPict.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;lbTreesPict.Name" xml:space="preserve">
-    <value>lbTreesPict</value>
-  </data>
-  <data name="&gt;&gt;lbTreesPict.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbTreesPict.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lbTreesPict.ZOrder" xml:space="preserve">
-    <value>29</value>
-  </data>
-  <data name="lbTrees.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lbWood.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="lbTrees.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lbWood.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="lbTrees.Location" type="System.Drawing.Point, System.Drawing">
-    <value>130, 334</value>
+  <data name="lbWood.Location" type="System.Drawing.Point, System.Drawing">
+    <value>277, 434</value>
   </data>
-  <data name="lbTrees.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 13</value>
+  <data name="lbWood.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 13</value>
   </data>
-  <data name="lbTrees.TabIndex" type="System.Int32, mscorlib">
+  <data name="lbWood.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
-  <data name="lbTrees.Text" xml:space="preserve">
-    <value>Деревья</value>
+  <data name="lbWood.Text" xml:space="preserve">
+    <value>Лес</value>
   </data>
-  <data name="&gt;&gt;lbTrees.Name" xml:space="preserve">
-    <value>lbTrees</value>
+  <data name="&gt;&gt;lbWood.Name" xml:space="preserve">
+    <value>lbWood</value>
   </data>
-  <data name="&gt;&gt;lbTrees.Type" xml:space="preserve">
+  <data name="&gt;&gt;lbWood.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lbTrees.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lbWood.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;lbTrees.ZOrder" xml:space="preserve">
-    <value>22</value>
+  <data name="&gt;&gt;lbWood.ZOrder" xml:space="preserve">
+    <value>54</value>
   </data>
   <metadata name="bigEvoPaintTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>104, 17</value>
@@ -792,8 +684,11 @@
   <data name="lblOffset.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt, style=Italic</value>
   </data>
+  <data name="lblOffset.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="lblOffset.Location" type="System.Drawing.Point, System.Drawing">
-    <value>246, 368</value>
+    <value>251, 456</value>
   </data>
   <data name="lblOffset.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 16</value>
@@ -814,31 +709,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblOffset.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="lbCurrOffsetPict.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lbCurrOffsetPict.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 371</value>
-  </data>
-  <data name="lbCurrOffsetPict.Size" type="System.Drawing.Size, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="lbCurrOffsetPict.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;lbCurrOffsetPict.Name" xml:space="preserve">
-    <value>lbCurrOffsetPict</value>
-  </data>
-  <data name="&gt;&gt;lbCurrOffsetPict.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbCurrOffsetPict.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lbCurrOffsetPict.ZOrder" xml:space="preserve">
-    <value>33</value>
+    <value>43</value>
   </data>
   <data name="lbCurrOffset.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -847,7 +718,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbCurrOffset.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 371</value>
+    <value>39, 455</value>
   </data>
   <data name="lbCurrOffset.Size" type="System.Drawing.Size, System.Drawing">
     <value>148, 13</value>
@@ -868,22 +739,28 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lbCurrOffset.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>58</value>
   </data>
   <data name="chkShowCoo.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="chkShowCoo.CheckAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="chkShowCoo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Italic</value>
   </data>
   <data name="chkShowCoo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="chkShowCoo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>291, 194</value>
+    <value>17, 47</value>
   </data>
   <data name="chkShowCoo.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>Yes</value>
   </data>
   <data name="chkShowCoo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 17</value>
+    <value>170, 20</value>
   </data>
   <data name="chkShowCoo.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -898,16 +775,19 @@
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;chkShowCoo.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>panel1</value>
   </data>
   <data name="&gt;&gt;chkShowCoo.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>1</value>
   </data>
   <data name="lbEvoTickTime.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="lbEvoTickTime.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="lbEvoTickTime.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1421, 208</value>
+    <value>1430, 96</value>
   </data>
   <data name="lbEvoTickTime.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 13</value>
@@ -928,7 +808,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lbEvoTickTime.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>37</value>
+  </data>
+  <data name="lblEvoStep.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="lblEvoStep.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -949,13 +832,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblEvoStep.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="richTimerInfo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 756</value>
+    <value>18, 832</value>
   </data>
   <data name="richTimerInfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>411, 157</value>
+    <value>430, 81</value>
   </data>
   <data name="richTimerInfo.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -973,25 +856,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;richTimerInfo.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="lbEntityCount.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+    <value>3</value>
   </data>
   <data name="lbEntityCount.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lbEntityCount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1422, 297</value>
+    <value>0, 0</value>
   </data>
   <data name="lbEntityCount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 13</value>
+    <value>100, 23</value>
   </data>
   <data name="lbEntityCount.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="lbEntityCount.Text" xml:space="preserve">
-    <value>Число особей:</value>
+    <value>28</value>
   </data>
   <data name="&gt;&gt;lbEntityCount.Name" xml:space="preserve">
     <value>lbEntityCount</value>
@@ -1003,7 +880,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lbEntityCount.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>32</value>
+  </data>
+  <data name="lblEntityCount.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="lblEntityCount.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -1024,7 +904,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblEntityCount.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="lbEvoTickCount.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1033,7 +913,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbEvoTickCount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1422, 267</value>
+    <value>1430, 149</value>
   </data>
   <data name="lbEvoTickCount.Size" type="System.Drawing.Size, System.Drawing">
     <value>208, 13</value>
@@ -1054,7 +934,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lbEvoTickCount.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>27</value>
   </data>
   <data name="lbEvoInitTime.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1063,7 +943,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbEvoInitTime.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1421, 65</value>
+    <value>1430, 31</value>
   </data>
   <data name="lbEvoInitTime.Size" type="System.Drawing.Size, System.Drawing">
     <value>153, 13</value>
@@ -1084,7 +964,1033 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lbEvoInitTime.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>13</value>
+  </data>
+  <data name="lbTimerInterval.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbTimerInterval.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbTimerInterval.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1430, 135</value>
+  </data>
+  <data name="lbTimerInterval.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 13</value>
+  </data>
+  <data name="lbTimerInterval.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbTimerInterval.Text" xml:space="preserve">
+    <value>Таймер перерисовки панелей (мс):</value>
+  </data>
+  <data name="&gt;&gt;lbTimerInterval.Name" xml:space="preserve">
+    <value>lbTimerInterval</value>
+  </data>
+  <data name="&gt;&gt;lbTimerInterval.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbTimerInterval.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbTimerInterval.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="lbEvoFriquency.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbEvoFriquency.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbEvoFriquency.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1430, 112</value>
+  </data>
+  <data name="lbEvoFriquency.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 13</value>
+  </data>
+  <data name="lbEvoFriquency.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbEvoFriquency.Text" xml:space="preserve">
+    <value>Частота шага эволюции: </value>
+  </data>
+  <data name="&gt;&gt;lbEvoFriquency.Name" xml:space="preserve">
+    <value>lbEvoFriquency</value>
+  </data>
+  <data name="&gt;&gt;lbEvoFriquency.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbEvoFriquency.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbEvoFriquency.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="lbWidthCell.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbWidthCell.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbWidthCell.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1430, 57</value>
+  </data>
+  <data name="lbWidthCell.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 13</value>
+  </data>
+  <data name="lbWidthCell.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbWidthCell.Text" xml:space="preserve">
+    <value>Ширина ячейки  в пикселях:</value>
+  </data>
+  <data name="&gt;&gt;lbWidthCell.Name" xml:space="preserve">
+    <value>lbWidthCell</value>
+  </data>
+  <data name="&gt;&gt;lbWidthCell.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbWidthCell.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbWidthCell.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="lbHeightCell.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbHeightCell.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbHeightCell.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1430, 72</value>
+  </data>
+  <data name="lbHeightCell.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 13</value>
+  </data>
+  <data name="lbHeightCell.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbHeightCell.Text" xml:space="preserve">
+    <value>Высота ячейки  в пикселях:</value>
+  </data>
+  <data name="&gt;&gt;lbHeightCell.Name" xml:space="preserve">
+    <value>lbHeightCell</value>
+  </data>
+  <data name="&gt;&gt;lbHeightCell.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbHeightCell.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbHeightCell.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="lbWoodEdge.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbWoodEdge.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbWoodEdge.Location" type="System.Drawing.Point, System.Drawing">
+    <value>349, 419</value>
+  </data>
+  <data name="lbWoodEdge.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 13</value>
+  </data>
+  <data name="lbWoodEdge.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="lbWoodEdge.Text" xml:space="preserve">
+    <value>Опушка леса</value>
+  </data>
+  <data name="&gt;&gt;lbWoodEdge.Name" xml:space="preserve">
+    <value>lbWoodEdge</value>
+  </data>
+  <data name="&gt;&gt;lbWoodEdge.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbWoodEdge.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbWoodEdge.ZOrder" xml:space="preserve">
+    <value>53</value>
+  </data>
+  <data name="lbBiomCountAll.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbBiomCountAll.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="lbBiomCountAll.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbBiomCountAll.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1430, 277</value>
+  </data>
+  <data name="lbBiomCountAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 13</value>
+  </data>
+  <data name="lbBiomCountAll.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="lbBiomCountAll.Text" xml:space="preserve">
+    <value>Общее число юнитов биома (шт): </value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountAll.Name" xml:space="preserve">
+    <value>lbBiomCountAll</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountAll.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountAll.ZOrder" xml:space="preserve">
+    <value>42</value>
+  </data>
+  <data name="lbBiomCountHerbivoreSquirrel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbBiomCountHerbivoreSquirrel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbBiomCountHerbivoreSquirrel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1445, 345</value>
+  </data>
+  <data name="lbBiomCountHerbivoreSquirrel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 13</value>
+  </data>
+  <data name="lbBiomCountHerbivoreSquirrel.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbBiomCountHerbivoreSquirrel.Text" xml:space="preserve">
+    <value>Белки (шт): 0</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountHerbivoreSquirrel.Name" xml:space="preserve">
+    <value>lbBiomCountHerbivoreSquirrel</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountHerbivoreSquirrel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountHerbivoreSquirrel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountHerbivoreSquirrel.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="lbBiomCountHerbivoreDeer.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbBiomCountHerbivoreDeer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbBiomCountHerbivoreDeer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1445, 316</value>
+  </data>
+  <data name="lbBiomCountHerbivoreDeer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 13</value>
+  </data>
+  <data name="lbBiomCountHerbivoreDeer.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbBiomCountHerbivoreDeer.Text" xml:space="preserve">
+    <value>Олени (шт): 0</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountHerbivoreDeer.Name" xml:space="preserve">
+    <value>lbBiomCountHerbivoreDeer</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountHerbivoreDeer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountHerbivoreDeer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountHerbivoreDeer.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="lbBiomCountOmniBoar.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbBiomCountOmniBoar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbBiomCountOmniBoar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1445, 408</value>
+  </data>
+  <data name="lbBiomCountOmniBoar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 13</value>
+  </data>
+  <data name="lbBiomCountOmniBoar.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbBiomCountOmniBoar.Text" xml:space="preserve">
+    <value>Кабаны (шт): 0</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountOmniBoar.Name" xml:space="preserve">
+    <value>lbBiomCountOmniBoar</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountOmniBoar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountOmniBoar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountOmniBoar.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="lbBiomCountOmniBadger.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbBiomCountOmniBadger.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbBiomCountOmniBadger.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1445, 379</value>
+  </data>
+  <data name="lbBiomCountOmniBadger.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 13</value>
+  </data>
+  <data name="lbBiomCountOmniBadger.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbBiomCountOmniBadger.Text" xml:space="preserve">
+    <value>Барсуки (шт): 0 </value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountOmniBadger.Name" xml:space="preserve">
+    <value>lbBiomCountOmniBadger</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountOmniBadger.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountOmniBadger.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountOmniBadger.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="lbBiomCountHerbivoreRabbit.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbBiomCountHerbivoreRabbit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbBiomCountHerbivoreRabbit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1445, 330</value>
+  </data>
+  <data name="lbBiomCountHerbivoreRabbit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 13</value>
+  </data>
+  <data name="lbBiomCountHerbivoreRabbit.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbBiomCountHerbivoreRabbit.Text" xml:space="preserve">
+    <value>Зайцы (шт): 0</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountHerbivoreRabbit.Name" xml:space="preserve">
+    <value>lbBiomCountHerbivoreRabbit</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountHerbivoreRabbit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountHerbivoreRabbit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountHerbivoreRabbit.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="lbBiomCountOmniBear.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbBiomCountOmniBear.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbBiomCountOmniBear.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1445, 394</value>
+  </data>
+  <data name="lbBiomCountOmniBear.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 13</value>
+  </data>
+  <data name="lbBiomCountOmniBear.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbBiomCountOmniBear.Text" xml:space="preserve">
+    <value>Медведи (шт): 0</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountOmniBear.Name" xml:space="preserve">
+    <value>lbBiomCountOmniBear</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountOmniBear.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountOmniBear.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountOmniBear.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="lbBiomCountHerbivore.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbBiomCountHerbivore.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbBiomCountHerbivore.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1430, 301</value>
+  </data>
+  <data name="lbBiomCountHerbivore.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 13</value>
+  </data>
+  <data name="lbBiomCountHerbivore.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbBiomCountHerbivore.Text" xml:space="preserve">
+    <value>Травоядные (шт): 0</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountHerbivore.Name" xml:space="preserve">
+    <value>lbBiomCountHerbivore</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountHerbivore.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountHerbivore.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountHerbivore.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="lbBiomCountRaptor.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbBiomCountRaptor.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="lbBiomCountRaptor.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbBiomCountRaptor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1430, 427</value>
+  </data>
+  <data name="lbBiomCountRaptor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 13</value>
+  </data>
+  <data name="lbBiomCountRaptor.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="lbBiomCountRaptor.Text" xml:space="preserve">
+    <value>Хищники (шт): 0</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountRaptor.Name" xml:space="preserve">
+    <value>lbBiomCountRaptor</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountRaptor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountRaptor.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountRaptor.ZOrder" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="lbBiomCountVegetable.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbBiomCountVegetable.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbBiomCountVegetable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1430, 490</value>
+  </data>
+  <data name="lbBiomCountVegetable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 13</value>
+  </data>
+  <data name="lbBiomCountVegetable.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbBiomCountVegetable.Text" xml:space="preserve">
+    <value>Овощи (шт): 0</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVegetable.Name" xml:space="preserve">
+    <value>lbBiomCountVegetable</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVegetable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVegetable.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVegetable.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="lbBiomCountRaptorLynx.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbBiomCountRaptorLynx.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbBiomCountRaptorLynx.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1445, 456</value>
+  </data>
+  <data name="lbBiomCountRaptorLynx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 13</value>
+  </data>
+  <data name="lbBiomCountRaptorLynx.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbBiomCountRaptorLynx.Text" xml:space="preserve">
+    <value>Рыси (шт): 0</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountRaptorLynx.Name" xml:space="preserve">
+    <value>lbBiomCountRaptorLynx</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountRaptorLynx.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountRaptorLynx.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountRaptorLynx.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="lbBiomCountVegetablePatato.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbBiomCountVegetablePatato.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbBiomCountVegetablePatato.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1445, 533</value>
+  </data>
+  <data name="lbBiomCountVegetablePatato.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 13</value>
+  </data>
+  <data name="lbBiomCountVegetablePatato.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbBiomCountVegetablePatato.Text" xml:space="preserve">
+    <value>Картошка (шт): 0</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVegetablePatato.Name" xml:space="preserve">
+    <value>lbBiomCountVegetablePatato</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVegetablePatato.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVegetablePatato.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVegetablePatato.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="lbBiomCountVegetableCarrot.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbBiomCountVegetableCarrot.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbBiomCountVegetableCarrot.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1445, 504</value>
+  </data>
+  <data name="lbBiomCountVegetableCarrot.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 13</value>
+  </data>
+  <data name="lbBiomCountVegetableCarrot.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbBiomCountVegetableCarrot.Text" xml:space="preserve">
+    <value>Морковка (шт): 0</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVegetableCarrot.Name" xml:space="preserve">
+    <value>lbBiomCountVegetableCarrot</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVegetableCarrot.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVegetableCarrot.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVegetableCarrot.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="lbBiomCountRaptorWolf.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbBiomCountRaptorWolf.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbBiomCountRaptorWolf.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1445, 471</value>
+  </data>
+  <data name="lbBiomCountRaptorWolf.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 13</value>
+  </data>
+  <data name="lbBiomCountRaptorWolf.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbBiomCountRaptorWolf.Text" xml:space="preserve">
+    <value>Волки (шт): 0</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountRaptorWolf.Name" xml:space="preserve">
+    <value>lbBiomCountRaptorWolf</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountRaptorWolf.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountRaptorWolf.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountRaptorWolf.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="lbBiomCountVegetableMushroom.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbBiomCountVegetableMushroom.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbBiomCountVegetableMushroom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1445, 519</value>
+  </data>
+  <data name="lbBiomCountVegetableMushroom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 13</value>
+  </data>
+  <data name="lbBiomCountVegetableMushroom.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbBiomCountVegetableMushroom.Text" xml:space="preserve">
+    <value>Грибы (шт): 0</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVegetableMushroom.Name" xml:space="preserve">
+    <value>lbBiomCountVegetableMushroom</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVegetableMushroom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVegetableMushroom.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVegetableMushroom.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="lbBiomCountRaptorFox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbBiomCountRaptorFox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbBiomCountRaptorFox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1445, 441</value>
+  </data>
+  <data name="lbBiomCountRaptorFox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 13</value>
+  </data>
+  <data name="lbBiomCountRaptorFox.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbBiomCountRaptorFox.Text" xml:space="preserve">
+    <value>Лисы (шт): 0</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountRaptorFox.Name" xml:space="preserve">
+    <value>lbBiomCountRaptorFox</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountRaptorFox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountRaptorFox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountRaptorFox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lbBiomCountVegetableTomato.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbBiomCountVegetableTomato.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="lbBiomCountVegetableTomato.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbBiomCountVegetableTomato.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1445, 548</value>
+  </data>
+  <data name="lbBiomCountVegetableTomato.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 13</value>
+  </data>
+  <data name="lbBiomCountVegetableTomato.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="lbBiomCountVegetableTomato.Text" xml:space="preserve">
+    <value>Помидоры (шт): 0</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVegetableTomato.Name" xml:space="preserve">
+    <value>lbBiomCountVegetableTomato</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVegetableTomato.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVegetableTomato.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVegetableTomato.ZOrder" xml:space="preserve">
+    <value>41</value>
+  </data>
+  <data name="lbBiomCountVilligeBarn.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbBiomCountVilligeBarn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="lbBiomCountVilligeBarn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbBiomCountVilligeBarn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1445, 685</value>
+  </data>
+  <data name="lbBiomCountVilligeBarn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 13</value>
+  </data>
+  <data name="lbBiomCountVilligeBarn.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="lbBiomCountVilligeBarn.Text" xml:space="preserve">
+    <value>Амбары (шт): 0</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVilligeBarn.Name" xml:space="preserve">
+    <value>lbBiomCountVilligeBarn</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVilligeBarn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVilligeBarn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVilligeBarn.ZOrder" xml:space="preserve">
+    <value>39</value>
+  </data>
+  <data name="lbBiomCountHumanWoman.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbBiomCountHumanWoman.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbBiomCountHumanWoman.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1445, 616</value>
+  </data>
+  <data name="lbBiomCountHumanWoman.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 13</value>
+  </data>
+  <data name="lbBiomCountHumanWoman.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbBiomCountHumanWoman.Text" xml:space="preserve">
+    <value>Жешщины (шт): 0</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountHumanWoman.Name" xml:space="preserve">
+    <value>lbBiomCountHumanWoman</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountHumanWoman.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountHumanWoman.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountHumanWoman.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="lbBiomCountHuman.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbBiomCountHuman.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbBiomCountHuman.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1430, 585</value>
+  </data>
+  <data name="lbBiomCountHuman.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 13</value>
+  </data>
+  <data name="lbBiomCountHuman.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbBiomCountHuman.Text" xml:space="preserve">
+    <value>Люди (шт): 0</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountHuman.Name" xml:space="preserve">
+    <value>lbBiomCountHuman</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountHuman.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountHuman.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountHuman.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="lbBiomCountVilligeBarnAnimal.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbBiomCountVilligeBarnAnimal.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbBiomCountVilligeBarnAnimal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1464, 717</value>
+  </data>
+  <data name="lbBiomCountVilligeBarnAnimal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 13</value>
+  </data>
+  <data name="lbBiomCountVilligeBarnAnimal.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbBiomCountVilligeBarnAnimal.Text" xml:space="preserve">
+    <value>Зверей копченых (шт): 0</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVilligeBarnAnimal.Name" xml:space="preserve">
+    <value>lbBiomCountVilligeBarnAnimal</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVilligeBarnAnimal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVilligeBarnAnimal.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVilligeBarnAnimal.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="lbBiomCountVilligeHouse.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbBiomCountVilligeHouse.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbBiomCountVilligeHouse.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1445, 668</value>
+  </data>
+  <data name="lbBiomCountVilligeHouse.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 13</value>
+  </data>
+  <data name="lbBiomCountVilligeHouse.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbBiomCountVilligeHouse.Text" xml:space="preserve">
+    <value>Дома (шт): 0</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVilligeHouse.Name" xml:space="preserve">
+    <value>lbBiomCountVilligeHouse</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVilligeHouse.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVilligeHouse.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVilligeHouse.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="lbBiomCountOmni.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbBiomCountOmni.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbBiomCountOmni.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1429, 365</value>
+  </data>
+  <data name="lbBiomCountOmni.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 13</value>
+  </data>
+  <data name="lbBiomCountOmni.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbBiomCountOmni.Text" xml:space="preserve">
+    <value>Всеядные (шт): 0</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountOmni.Name" xml:space="preserve">
+    <value>lbBiomCountOmni</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountOmni.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountOmni.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountOmni.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="lbBiomCountHumanMan.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbBiomCountHumanMan.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbBiomCountHumanMan.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1445, 632</value>
+  </data>
+  <data name="lbBiomCountHumanMan.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 13</value>
+  </data>
+  <data name="lbBiomCountHumanMan.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbBiomCountHumanMan.Text" xml:space="preserve">
+    <value>Мужчины (шт): 0</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountHumanMan.Name" xml:space="preserve">
+    <value>lbBiomCountHumanMan</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountHumanMan.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountHumanMan.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountHumanMan.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="lbBiomCountHumanChildren.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbBiomCountHumanChildren.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbBiomCountHumanChildren.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1445, 600</value>
+  </data>
+  <data name="lbBiomCountHumanChildren.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 13</value>
+  </data>
+  <data name="lbBiomCountHumanChildren.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbBiomCountHumanChildren.Text" xml:space="preserve">
+    <value>Дети (шт): 0</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountHumanChildren.Name" xml:space="preserve">
+    <value>lbBiomCountHumanChildren</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountHumanChildren.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountHumanChildren.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountHumanChildren.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="lbBiomCountVillige.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbBiomCountVillige.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbBiomCountVillige.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1430, 654</value>
+  </data>
+  <data name="lbBiomCountVillige.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 13</value>
+  </data>
+  <data name="lbBiomCountVillige.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbBiomCountVillige.Text" xml:space="preserve">
+    <value>Деревни (шт): 0</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVillige.Name" xml:space="preserve">
+    <value>lbBiomCountVillige</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVillige.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVillige.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVillige.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="lbBiomCountVegetableStrawberry.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbBiomCountVegetableStrawberry.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbBiomCountVegetableStrawberry.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1445, 563</value>
+  </data>
+  <data name="lbBiomCountVegetableStrawberry.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 13</value>
+  </data>
+  <data name="lbBiomCountVegetableStrawberry.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbBiomCountVegetableStrawberry.Text" xml:space="preserve">
+    <value>Клубника (шт): 0</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVegetableStrawberry.Name" xml:space="preserve">
+    <value>lbBiomCountVegetableStrawberry</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVegetableStrawberry.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVegetableStrawberry.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVegetableStrawberry.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="lbBiomCountVilligeBarnVeg.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbBiomCountVilligeBarnVeg.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbBiomCountVilligeBarnVeg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1464, 700</value>
+  </data>
+  <data name="lbBiomCountVilligeBarnVeg.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 13</value>
+  </data>
+  <data name="lbBiomCountVilligeBarnVeg.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbBiomCountVilligeBarnVeg.Text" xml:space="preserve">
+    <value>Овощей сушеных (мс): :</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVilligeBarnVeg.Name" xml:space="preserve">
+    <value>lbBiomCountVilligeBarnVeg</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVilligeBarnVeg.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVilligeBarnVeg.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbBiomCountVilligeBarnVeg.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1433, 174</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>239, 94</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="evoPanelBig.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1108,16 +2014,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;evoPanelBig.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="evoPanelSmall.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="evoPanelSmall.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 390</value>
+    <value>17, 475</value>
   </data>
   <data name="evoPanelSmall.Size" type="System.Drawing.Size, System.Drawing">
-    <value>409, 350</value>
+    <value>430, 350</value>
   </data>
   <data name="evoPanelSmall.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
@@ -1132,130 +2038,374 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;evoPanelSmall.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnDown.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnDown.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGeYUxB9wAAACBjSFJNAACH
+        EAAAjBIAAP1NAACBPgAAWesAARIPAAA85gAAGc66ySIyAAABK2lDQ1BQaG90b3Nob3AgSUNDIHByb2Zp
+        bGUAACjPY2BgMnB0cXJlEmBgyM0rKQpyd1KIiIxSYD/PwMbAzAAGicnFBY4BAT4gdl5+XioDBvh2jYER
+        RF/WBZnFQBrgSi4oKgHSf4DYKCW1OJmBgdEAyM4uLykAijPOAbJFkrLB7A0gdlFIkDOQfQTI5kuHsK+A
+        2EkQ9hMQuwjoCSD7C0h9OpjNxAE2B8KWAbFLUitA9jI45xdUFmWmZ5QoGFpaWio4puQnpSoEVxaXpOYW
+        K3jmJecXFeQXJZakpgDVQtwHBoIQhaAQ0wBqtNBkoDIAxQOE9TkQHL6MYmcQYgiQXFpUBmUyMhkT5iPM
+        mCPBwOC/lIGB5Q9CzKSXgWGBDgMD/1SEmJohA4OAPgPDvjkAwMZP/eeaqagAAAAJcEhZcwAACxMAAAsT
+        AQCanBgAAAETSURBVDhPlZHNTsJAFIVnRwhbYviriQtT2fgIFJrqg5kaUUmhXfYZoFBg51/1XYwLExfG
+        EDcGOdNcQoe5UBZfMj1zvzPTVtjdScW+icuXV3NxCHDgirNROKy/DH6s++hUN6gDs3DgyhsYj8FHPekv
+        8pS078YnK/m78ex/dW4nDRnmLVFlZOvNfSU6GWSGuBJOBsK5npYu3FmBAgwYT/4nPhJKANbINmU4cIUZ
+        hRFOxelqSfXNWwJVppvCFVYvataS/i9Xwslw4MqQK3HcWRFwMjK5AVaBKUvSE2uUE5CPH4L36qv31/JG
+        55RnhrgSTgbrBaGW7JJB5oGgb0J/YfOdVbYCgm7CnUxoQ8LuxkdAt5cyF/8AFrYaxqsC1QAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="btnDown.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>307, 304</value>
+  </data>
+  <data name="btnDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="btnDown.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnDown.Name" xml:space="preserve">
+    <value>btnDown</value>
+  </data>
+  <data name="&gt;&gt;btnDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnDown.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnDown.ZOrder" xml:space="preserve">
+    <value>46</value>
+  </data>
+  <data name="btnRight.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnRight.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGeYUxB9wAAACBjSFJNAACH
+        EAAAjBIAAP1NAACBPgAAWesAARIPAAA85gAAGc66ySIyAAABK2lDQ1BQaG90b3Nob3AgSUNDIHByb2Zp
+        bGUAACjPY2BgMnB0cXJlEmBgyM0rKQpyd1KIiIxSYD/PwMbAzAAGicnFBY4BAT4gdl5+XioDBvh2jYER
+        RF/WBZnFQBrgSi4oKgHSf4DYKCW1OJmBgdEAyM4uLykAijPOAbJFkrLB7A0gdlFIkDOQfQTI5kuHsK+A
+        2EkQ9hMQuwjoCSD7C0h9OpjNxAE2B8KWAbFLUitA9jI45xdUFmWmZ5QoGFpaWio4puQnpSoEVxaXpOYW
+        K3jmJecXFeQXJZakpgDVQtwHBoIQhaAQ0wBqtNBkoDIAxQOE9TkQHL6MYmcQYgiQXFpUBmUyMhkT5iPM
+        mCPBwOC/lIGB5Q9CzKSXgWGBDgMD/1SEmJohA4OAPgPDvjkAwMZP/eeaqagAAAAJcEhZcwAACxMAAAsT
+        AQCanBgAAAEOSURBVDhPY3Dq2CChsXbWGsfODTJuTVsYYNildRO3+rpZ6+x71mkii6NjBqf2jSLS+yd8
+        kdk38R2yIa4tm9ll90x6LnWg/wc+Q8CEffc6VaAhn9ANAbkOZohd31o9mDgyhjMcutYr4jNE8mDfX2yG
+        oHDwGSK3e9JTbIbAGTAMM0R278TXuAxBDhMUzTAMNeQLLkOQwwRDMwyDAlbyUN9/kCEuLZs5YeIgQ0Di
+        IJc4dWwUw9AIw7gMALpICiQOcgVOA6DRiuEFkGaQGDRtqIPEsGs+0P+NgGbsgQjXDIx3ZM3gtIBmMwxj
+        1QzSABMHa0YkaRTNIEyRZhCGZyZ0zURnJpAmUHZG1gzCxGXnLQwARge2GnAvilIAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnRight.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnRight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>356, 255</value>
+  </data>
+  <data name="btnRight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="btnRight.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="lbTimerInterval.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;btnRight.Name" xml:space="preserve">
+    <value>btnRight</value>
   </data>
-  <data name="lbTimerInterval.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;btnRight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lbTimerInterval.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1421, 250</value>
-  </data>
-  <data name="lbTimerInterval.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 13</value>
-  </data>
-  <data name="lbTimerInterval.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="lbTimerInterval.Text" xml:space="preserve">
-    <value>Таймер перерисовки панелей (мс):</value>
-  </data>
-  <data name="&gt;&gt;lbTimerInterval.Name" xml:space="preserve">
-    <value>lbTimerInterval</value>
-  </data>
-  <data name="&gt;&gt;lbTimerInterval.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbTimerInterval.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnRight.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;lbTimerInterval.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="&gt;&gt;btnRight.ZOrder" xml:space="preserve">
+    <value>48</value>
   </data>
-  <data name="lbEvoFriquency.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="btnLeft.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
-  <data name="lbEvoFriquency.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btnLeft.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGeYUxB9wAAACBjSFJNAACH
+        EAAAjBIAAP1NAACBPgAAWesAARIPAAA85gAAGc66ySIyAAABK2lDQ1BQaG90b3Nob3AgSUNDIHByb2Zp
+        bGUAACjPY2BgMnB0cXJlEmBgyM0rKQpyd1KIiIxSYD/PwMbAzAAGicnFBY4BAT4gdl5+XioDBvh2jYER
+        RF/WBZnFQBrgSi4oKgHSf4DYKCW1OJmBgdEAyM4uLykAijPOAbJFkrLB7A0gdlFIkDOQfQTI5kuHsK+A
+        2EkQ9hMQuwjoCSD7C0h9OpjNxAE2B8KWAbFLUitA9jI45xdUFmWmZ5QoGFpaWio4puQnpSoEVxaXpOYW
+        K3jmJecXFeQXJZakpgDVQtwHBoIQhaAQ0wBqtNBkoDIAxQOE9TkQHL6MYmcQYgiQXFpUBmUyMhkT5iPM
+        mCPBwOC/lIGB5Q9CzKSXgWGBDgMD/1SEmJohA4OAPgPDvjkAwMZP/eeaqagAAAAJcEhZcwAACxMAAAsT
+        AQCanBgAAAEcSURBVDhPY3Br2oIT2/es01RfN2udS+smbmRxp44NEhprZ60B0SgakDFIs9SB/h+yeyY9
+        d23ZzA4TB2kCiUnvn/DFqX2jCIZGEAZqVodpBmmAicM1H+j/Zt+9ThUkRpFmEMauee/E18iaHTs3yGDT
+        DMLImiF+BmoGapCCiYM1A8WwaQZhmGa4zVg1AwMMm2YQBvptoxhIs+Shvv/Iml1aNnOCNIPEcWkGYbAB
+        kgf7/oIUIvubaANAhF3fWj2QK+R2T3qKEXhQLzh0rVeEiSNjOAMUiCCX4DHkEzZDUDggl+AyRGbfxHfY
+        DIEzYBhmCHpCwmUIimYYhoUJPkNgAYuhGYbhCQtoCHJmQjIEd2aCYZAh2LIzyBBIdt4gAQCOirYaZauT
+        igAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnLeft.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="lbEvoFriquency.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1421, 224</value>
+  <data name="btnLeft.Location" type="System.Drawing.Point, System.Drawing">
+    <value>258, 255</value>
   </data>
-  <data name="lbEvoFriquency.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 13</value>
+  <data name="btnLeft.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
   </data>
-  <data name="lbEvoFriquency.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
+  <data name="btnLeft.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="lbEvoFriquency.Text" xml:space="preserve">
-    <value>Частота шага эволюции: </value>
+  <data name="&gt;&gt;btnLeft.Name" xml:space="preserve">
+    <value>btnLeft</value>
   </data>
-  <data name="&gt;&gt;lbEvoFriquency.Name" xml:space="preserve">
-    <value>lbEvoFriquency</value>
+  <data name="&gt;&gt;btnLeft.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lbEvoFriquency.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbEvoFriquency.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnLeft.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;lbEvoFriquency.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnLeft.ZOrder" xml:space="preserve">
+    <value>49</value>
+  </data>
+  <data name="btnUp.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnUp.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGeYUxB9wAAACBjSFJNAACH
+        EAAAjBIAAP1NAACBPgAAWesAARIPAAA85gAAGc66ySIyAAABK2lDQ1BQaG90b3Nob3AgSUNDIHByb2Zp
+        bGUAACjPY2BgMnB0cXJlEmBgyM0rKQpyd1KIiIxSYD/PwMbAzAAGicnFBY4BAT4gdl5+XioDBvh2jYER
+        RF/WBZnFQBrgSi4oKgHSf4DYKCW1OJmBgdEAyM4uLykAijPOAbJFkrLB7A0gdlFIkDOQfQTI5kuHsK+A
+        2EkQ9hMQuwjoCSD7C0h9OpjNxAE2B8KWAbFLUitA9jI45xdUFmWmZ5QoGFpaWio4puQnpSoEVxaXpOYW
+        K3jmJecXFeQXJZakpgDVQtwHBoIQhaAQ0wBqtNBkoDIAxQOE9TkQHL6MYmcQYgiQXFpUBmUyMhkT5iPM
+        mCPBwOC/lIGB5Q9CzKSXgWGBDgMD/1SEmJohA4OAPgPDvjkAwMZP/eeaqagAAAAJcEhZcwAACxMAAAsT
+        AQCanBgAAAE3SURBVEhLxdRBSsNgFMTx7sQuVSzVhaDUhYftFdqzeAUV1IWgtOAt4jx5A+mXf6wIfS5+
+        kE76zRBSOum67l9gWAHDChhWwLAChhUwrIChze+XPzlLdO8bdRqGRmXpTj5lI4vMBqjTMDQqk1vZylOK
+        68gG36VOw9CgzE/6IOcyl2fBJ6dOw9CaonbU+eg4dRqG1isZGzUcp07D0LKg/05nmYXj5M9xb+edU6dh
+        aFlAoxfykuIax6nTMDQdXsuj0Oh7ovE4s6ZOw9B0eCpHQqPXicbjzJQ6DUPrFYVLeZU3ucos3MiHtK8D
+        Ow1D65WMjRqOU6dhaFmwb9QG49RpGJoO/3bUdsap0zA0HV6Jf0jtyBj/4FbUaRiaDse/1Km05fucyN+f
+        +JAwrIBhBQwrYFgBwwoYHl43+QJMRCegCgzlrQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnUp.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnUp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>307, 206</value>
+  </data>
+  <data name="btnUp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="btnUp.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnUp.Name" xml:space="preserve">
+    <value>btnUp</value>
+  </data>
+  <data name="&gt;&gt;btnUp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnUp.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnUp.ZOrder" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="lbWoodPict.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbWoodPict.Location" type="System.Drawing.Point, System.Drawing">
+    <value>244, 434</value>
+  </data>
+  <data name="lbWoodPict.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 13</value>
+  </data>
+  <data name="lbWoodPict.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="lbWidthCell.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;lbWoodPict.Name" xml:space="preserve">
+    <value>lbWoodPict</value>
   </data>
-  <data name="lbWidthCell.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;lbWoodPict.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lbWidthCell.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1422, 131</value>
-  </data>
-  <data name="lbWidthCell.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 13</value>
-  </data>
-  <data name="lbWidthCell.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="lbWidthCell.Text" xml:space="preserve">
-    <value>Ширина ячейки  в пикселях:</value>
-  </data>
-  <data name="&gt;&gt;lbWidthCell.Name" xml:space="preserve">
-    <value>lbWidthCell</value>
-  </data>
-  <data name="&gt;&gt;lbWidthCell.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbWidthCell.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lbWoodPict.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;lbWidthCell.ZOrder" xml:space="preserve">
-    <value>11</value>
+  <data name="&gt;&gt;lbWoodPict.ZOrder" xml:space="preserve">
+    <value>61</value>
   </data>
-  <data name="lbHeightCell.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lbHeightCell.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lbWoodEdgePict.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="lbHeightCell.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1422, 147</value>
+  <data name="lbWoodEdgePict.Location" type="System.Drawing.Point, System.Drawing">
+    <value>316, 417</value>
   </data>
-  <data name="lbHeightCell.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 13</value>
+  <data name="lbWoodEdgePict.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 13</value>
   </data>
-  <data name="lbHeightCell.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
+  <data name="lbWoodEdgePict.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
-  <data name="lbHeightCell.Text" xml:space="preserve">
-    <value>Высота ячейки  в пикселях:</value>
+  <data name="&gt;&gt;lbWoodEdgePict.Name" xml:space="preserve">
+    <value>lbWoodEdgePict</value>
   </data>
-  <data name="&gt;&gt;lbHeightCell.Name" xml:space="preserve">
-    <value>lbHeightCell</value>
+  <data name="&gt;&gt;lbWoodEdgePict.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lbHeightCell.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbHeightCell.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lbWoodEdgePict.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;lbHeightCell.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lbWoodEdgePict.ZOrder" xml:space="preserve">
+    <value>62</value>
+  </data>
+  <data name="lbGrassPict.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbGrassPict.Location" type="System.Drawing.Point, System.Drawing">
+    <value>316, 434</value>
+  </data>
+  <data name="lbGrassPict.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 13</value>
+  </data>
+  <data name="lbGrassPict.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;lbGrassPict.Name" xml:space="preserve">
+    <value>lbGrassPict</value>
+  </data>
+  <data name="&gt;&gt;lbGrassPict.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbGrassPict.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbGrassPict.ZOrder" xml:space="preserve">
+    <value>63</value>
+  </data>
+  <data name="lbMountainsPict.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbMountainsPict.Location" type="System.Drawing.Point, System.Drawing">
+    <value>244, 414</value>
+  </data>
+  <data name="lbMountainsPict.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 13</value>
+  </data>
+  <data name="lbMountainsPict.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
+  </data>
+  <data name="&gt;&gt;lbMountainsPict.Name" xml:space="preserve">
+    <value>lbMountainsPict</value>
+  </data>
+  <data name="&gt;&gt;lbMountainsPict.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbMountainsPict.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbMountainsPict.ZOrder" xml:space="preserve">
+    <value>65</value>
+  </data>
+  <data name="lbCurrOffsetPict.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbCurrOffsetPict.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 455</value>
+  </data>
+  <data name="lbCurrOffsetPict.Size" type="System.Drawing.Size, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="lbCurrOffsetPict.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lbCurrOffsetPict.Name" xml:space="preserve">
+    <value>lbCurrOffsetPict</value>
+  </data>
+  <data name="&gt;&gt;lbCurrOffsetPict.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbCurrOffsetPict.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbCurrOffsetPict.ZOrder" xml:space="preserve">
+    <value>66</value>
+  </data>
+  <data name="lbLakePict.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbLakePict.Location" type="System.Drawing.Point, System.Drawing">
+    <value>114, 431</value>
+  </data>
+  <data name="lbLakePict.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 13</value>
+  </data>
+  <data name="lbLakePict.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;lbLakePict.Name" xml:space="preserve">
+    <value>lbLakePict</value>
+  </data>
+  <data name="&gt;&gt;lbLakePict.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbLakePict.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbLakePict.ZOrder" xml:space="preserve">
+    <value>67</value>
+  </data>
+  <data name="lbSeaPict.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbSeaPict.Location" type="System.Drawing.Point, System.Drawing">
+    <value>114, 417</value>
+  </data>
+  <data name="lbSeaPict.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 13</value>
+  </data>
+  <data name="lbSeaPict.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lbSeaPict.Name" xml:space="preserve">
+    <value>lbSeaPict</value>
+  </data>
+  <data name="&gt;&gt;lbSeaPict.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbSeaPict.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbSeaPict.ZOrder" xml:space="preserve">
+    <value>68</value>
+  </data>
+  <data name="lbDisertPict.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbDisertPict.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 416</value>
+  </data>
+  <data name="lbDisertPict.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 13</value>
+  </data>
+  <data name="lbDisertPict.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lbDisertPict.Name" xml:space="preserve">
+    <value>lbDisertPict</value>
+  </data>
+  <data name="&gt;&gt;lbDisertPict.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbDisertPict.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbDisertPict.ZOrder" xml:space="preserve">
+    <value>69</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

@@ -33,10 +33,6 @@ namespace EvoApp
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EvoAppForm));
             this.hSlider = new System.Windows.Forms.TrackBar();
             this.vSlider = new System.Windows.Forms.TrackBar();
-            this.lbDisertPict = new System.Windows.Forms.PictureBox();
-            this.lbSeaPict = new System.Windows.Forms.PictureBox();
-            this.lbLakePict = new System.Windows.Forms.PictureBox();
-            this.lbMountainsPict = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lbDisert = new System.Windows.Forms.Label();
             this.lbSea = new System.Windows.Forms.Label();
@@ -51,13 +47,10 @@ namespace EvoApp
             this.btnStop = new System.Windows.Forms.Button();
             this.lblinit = new System.Windows.Forms.Label();
             this.lbCellCount = new System.Windows.Forms.Label();
-            this.lbGrassPict = new System.Windows.Forms.PictureBox();
             this.lbGrass = new System.Windows.Forms.Label();
-            this.lbTreesPict = new System.Windows.Forms.PictureBox();
-            this.lbTrees = new System.Windows.Forms.Label();
+            this.lbWood = new System.Windows.Forms.Label();
             this.bigEvoPaintTimer = new System.Windows.Forms.Timer(this.components);
             this.lblOffset = new System.Windows.Forms.Label();
-            this.lbCurrOffsetPict = new System.Windows.Forms.PictureBox();
             this.lbCurrOffset = new System.Windows.Forms.Label();
             this.chkShowCoo = new System.Windows.Forms.CheckBox();
             this.lbEvoTickTime = new System.Windows.Forms.Label();
@@ -67,32 +60,76 @@ namespace EvoApp
             this.lblEntityCount = new System.Windows.Forms.Label();
             this.lbEvoTickCount = new System.Windows.Forms.Label();
             this.lbEvoInitTime = new System.Windows.Forms.Label();
-            this.evoPanelBig = new System.Windows.Forms.PictureBox();
-            this.evoPanelSmall = new System.Windows.Forms.PictureBox();
             this.lbTimerInterval = new System.Windows.Forms.Label();
             this.lbEvoFriquency = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lbWidthCell = new System.Windows.Forms.Label();
             this.lbHeightCell = new System.Windows.Forms.Label();
+            this.lbWoodEdge = new System.Windows.Forms.Label();
+            this.lbBiomCountAll = new System.Windows.Forms.Label();
+            this.lbBiomCountHerbivoreSquirrel = new System.Windows.Forms.Label();
+            this.lbBiomCountHerbivoreDeer = new System.Windows.Forms.Label();
+            this.lbBiomCountOmniBoar = new System.Windows.Forms.Label();
+            this.lbBiomCountOmniBadger = new System.Windows.Forms.Label();
+            this.lbBiomCountHerbivoreRabbit = new System.Windows.Forms.Label();
+            this.lbBiomCountOmniBear = new System.Windows.Forms.Label();
+            this.lbBiomCountHerbivore = new System.Windows.Forms.Label();
+            this.lbBiomCountRaptor = new System.Windows.Forms.Label();
+            this.lbBiomCountVegetable = new System.Windows.Forms.Label();
+            this.lbBiomCountRaptorLynx = new System.Windows.Forms.Label();
+            this.lbBiomCountVegetablePatato = new System.Windows.Forms.Label();
+            this.lbBiomCountVegetableCarrot = new System.Windows.Forms.Label();
+            this.lbBiomCountRaptorWolf = new System.Windows.Forms.Label();
+            this.lbBiomCountVegetableMushroom = new System.Windows.Forms.Label();
+            this.lbBiomCountRaptorFox = new System.Windows.Forms.Label();
+            this.lbBiomCountVegetableTomato = new System.Windows.Forms.Label();
+            this.lbBiomCountVilligeBarn = new System.Windows.Forms.Label();
+            this.lbBiomCountHumanWoman = new System.Windows.Forms.Label();
+            this.lbBiomCountHuman = new System.Windows.Forms.Label();
+            this.lbBiomCountVilligeBarnAnimal = new System.Windows.Forms.Label();
+            this.lbBiomCountVilligeHouse = new System.Windows.Forms.Label();
+            this.lbBiomCountOmni = new System.Windows.Forms.Label();
+            this.lbBiomCountHumanMan = new System.Windows.Forms.Label();
+            this.lbBiomCountHumanChildren = new System.Windows.Forms.Label();
+            this.lbBiomCountVillige = new System.Windows.Forms.Label();
+            this.lbBiomCountVegetableStrawberry = new System.Windows.Forms.Label();
+            this.lbBiomCountVilligeBarnVeg = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.evoPanelBig = new System.Windows.Forms.PictureBox();
+            this.evoPanelSmall = new System.Windows.Forms.PictureBox();
+            this.btnDown = new System.Windows.Forms.Button();
+            this.btnRight = new System.Windows.Forms.Button();
+            this.btnLeft = new System.Windows.Forms.Button();
+            this.btnUp = new System.Windows.Forms.Button();
+            this.lbWoodPict = new System.Windows.Forms.PictureBox();
+            this.lbWoodEdgePict = new System.Windows.Forms.PictureBox();
+            this.lbGrassPict = new System.Windows.Forms.PictureBox();
+            this.lbMountainsPict = new System.Windows.Forms.PictureBox();
+            this.lbCurrOffsetPict = new System.Windows.Forms.PictureBox();
+            this.lbLakePict = new System.Windows.Forms.PictureBox();
+            this.lbSeaPict = new System.Windows.Forms.PictureBox();
+            this.lbDisertPict = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.hSlider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vSlider)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lbDisertPict)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lbSeaPict)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lbLakePict)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lbMountainsPict)).BeginInit();
             this.evoTitlePanel2.SuspendLayout();
             this.evoTitlePanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lbGrassPict)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lbTreesPict)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lbCurrOffsetPict)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.evoPanelBig)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.evoPanelSmall)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbWoodPict)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbWoodEdgePict)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbGrassPict)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbMountainsPict)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbCurrOffsetPict)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbLakePict)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbSeaPict)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbDisertPict)).BeginInit();
             this.SuspendLayout();
             // 
             // hSlider
             // 
-            this.hSlider.LargeChange = 1;
             resources.ApplyResources(this.hSlider, "hSlider");
+            this.hSlider.LargeChange = 1;
             this.hSlider.Maximum = 20;
             this.hSlider.Name = "hSlider";
             this.hSlider.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
@@ -106,34 +143,6 @@ namespace EvoApp
             this.vSlider.Tag = "";
             this.vSlider.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
             this.vSlider.Scroll += new System.EventHandler(this.vSlider_Scroll);
-            // 
-            // lbDisertPict
-            // 
-            this.lbDisertPict.BackColor = System.Drawing.Color.PaleGoldenrod;
-            resources.ApplyResources(this.lbDisertPict, "lbDisertPict");
-            this.lbDisertPict.Name = "lbDisertPict";
-            this.lbDisertPict.TabStop = false;
-            // 
-            // lbSeaPict
-            // 
-            this.lbSeaPict.BackColor = System.Drawing.Color.MediumBlue;
-            resources.ApplyResources(this.lbSeaPict, "lbSeaPict");
-            this.lbSeaPict.Name = "lbSeaPict";
-            this.lbSeaPict.TabStop = false;
-            // 
-            // lbLakePict
-            // 
-            this.lbLakePict.BackColor = System.Drawing.Color.Aqua;
-            resources.ApplyResources(this.lbLakePict, "lbLakePict");
-            this.lbLakePict.Name = "lbLakePict";
-            this.lbLakePict.TabStop = false;
-            // 
-            // lbMountainsPict
-            // 
-            this.lbMountainsPict.BackColor = System.Drawing.Color.DimGray;
-            resources.ApplyResources(this.lbMountainsPict, "lbMountainsPict");
-            this.lbMountainsPict.Name = "lbMountainsPict";
-            this.lbMountainsPict.TabStop = false;
             // 
             // label1
             // 
@@ -168,15 +177,14 @@ namespace EvoApp
             // chkShowGrid
             // 
             resources.ApplyResources(this.chkShowGrid, "chkShowGrid");
-            this.chkShowGrid.Checked = true;
-            this.chkShowGrid.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkShowGrid.ForeColor = System.Drawing.Color.SpringGreen;
             this.chkShowGrid.Name = "chkShowGrid";
             this.chkShowGrid.UseVisualStyleBackColor = true;
             this.chkShowGrid.CheckedChanged += new System.EventHandler(this.chkShowGrid_CheckedChanged);
             // 
             // evoTitlePanel2
             // 
-            this.evoTitlePanel2.BackColor = System.Drawing.Color.SeaShell;
+            this.evoTitlePanel2.BackColor = System.Drawing.Color.SpringGreen;
             this.evoTitlePanel2.Controls.Add(this.evoTitlePanel);
             resources.ApplyResources(this.evoTitlePanel2, "evoTitlePanel2");
             this.evoTitlePanel2.Name = "evoTitlePanel2";
@@ -198,14 +206,15 @@ namespace EvoApp
             // evoTitle
             // 
             resources.ApplyResources(this.evoTitle, "evoTitle");
-            this.evoTitle.ForeColor = System.Drawing.SystemColors.Control;
+            this.evoTitle.ForeColor = System.Drawing.Color.SpringGreen;
             this.evoTitle.Name = "evoTitle";
             // 
             // btnStart
             // 
             this.btnStart.BackColor = System.Drawing.Color.SteelBlue;
             resources.ApplyResources(this.btnStart, "btnStart");
-            this.btnStart.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnStart.FlatAppearance.BorderColor = System.Drawing.Color.SpringGreen;
+            this.btnStart.ForeColor = System.Drawing.Color.SpringGreen;
             this.btnStart.Name = "btnStart";
             this.btnStart.UseVisualStyleBackColor = false;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
@@ -214,7 +223,8 @@ namespace EvoApp
             // 
             this.btnStop.BackColor = System.Drawing.Color.SteelBlue;
             resources.ApplyResources(this.btnStop, "btnStop");
-            this.btnStop.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnStop.FlatAppearance.BorderColor = System.Drawing.Color.SpringGreen;
+            this.btnStop.ForeColor = System.Drawing.Color.SpringGreen;
             this.btnStop.Name = "btnStop";
             this.btnStop.UseVisualStyleBackColor = false;
             this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
@@ -230,31 +240,17 @@ namespace EvoApp
             resources.ApplyResources(this.lbCellCount, "lbCellCount");
             this.lbCellCount.Name = "lbCellCount";
             // 
-            // lbGrassPict
-            // 
-            this.lbGrassPict.BackColor = System.Drawing.Color.MediumSeaGreen;
-            resources.ApplyResources(this.lbGrassPict, "lbGrassPict");
-            this.lbGrassPict.Name = "lbGrassPict";
-            this.lbGrassPict.TabStop = false;
-            // 
             // lbGrass
             // 
             resources.ApplyResources(this.lbGrass, "lbGrass");
             this.lbGrass.ForeColor = System.Drawing.Color.DarkSeaGreen;
             this.lbGrass.Name = "lbGrass";
             // 
-            // lbTreesPict
+            // lbWood
             // 
-            this.lbTreesPict.BackColor = System.Drawing.Color.DarkGreen;
-            resources.ApplyResources(this.lbTreesPict, "lbTreesPict");
-            this.lbTreesPict.Name = "lbTreesPict";
-            this.lbTreesPict.TabStop = false;
-            // 
-            // lbTrees
-            // 
-            resources.ApplyResources(this.lbTrees, "lbTrees");
-            this.lbTrees.ForeColor = System.Drawing.Color.LimeGreen;
-            this.lbTrees.Name = "lbTrees";
+            resources.ApplyResources(this.lbWood, "lbWood");
+            this.lbWood.ForeColor = System.Drawing.Color.LimeGreen;
+            this.lbWood.Name = "lbWood";
             // 
             // bigEvoPaintTimer
             // 
@@ -266,13 +262,6 @@ namespace EvoApp
             this.lblOffset.ForeColor = System.Drawing.Color.Silver;
             this.lblOffset.Name = "lblOffset";
             // 
-            // lbCurrOffsetPict
-            // 
-            this.lbCurrOffsetPict.BackColor = System.Drawing.Color.Red;
-            resources.ApplyResources(this.lbCurrOffsetPict, "lbCurrOffsetPict");
-            this.lbCurrOffsetPict.Name = "lbCurrOffsetPict";
-            this.lbCurrOffsetPict.TabStop = false;
-            // 
             // lbCurrOffset
             // 
             resources.ApplyResources(this.lbCurrOffset, "lbCurrOffset");
@@ -282,8 +271,7 @@ namespace EvoApp
             // chkShowCoo
             // 
             resources.ApplyResources(this.chkShowCoo, "chkShowCoo");
-            this.chkShowCoo.Checked = true;
-            this.chkShowCoo.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkShowCoo.ForeColor = System.Drawing.Color.SpringGreen;
             this.chkShowCoo.Name = "chkShowCoo";
             this.chkShowCoo.UseVisualStyleBackColor = true;
             this.chkShowCoo.CheckedChanged += new System.EventHandler(this.chkShowCoo_CheckedChanged);
@@ -325,22 +313,6 @@ namespace EvoApp
             resources.ApplyResources(this.lbEvoInitTime, "lbEvoInitTime");
             this.lbEvoInitTime.Name = "lbEvoInitTime";
             // 
-            // evoPanelBig
-            // 
-            this.evoPanelBig.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.evoPanelBig, "evoPanelBig");
-            this.evoPanelBig.Name = "evoPanelBig";
-            this.evoPanelBig.TabStop = false;
-            this.evoPanelBig.Paint += new System.Windows.Forms.PaintEventHandler(this.pictBigEvoPanel_Paint);
-            // 
-            // evoPanelSmall
-            // 
-            this.evoPanelSmall.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.evoPanelSmall, "evoPanelSmall");
-            this.evoPanelSmall.Name = "evoPanelSmall";
-            this.evoPanelSmall.TabStop = false;
-            this.evoPanelSmall.Paint += new System.Windows.Forms.PaintEventHandler(this.pictSmallEvoPanel_Paint);
-            // 
             // lbTimerInterval
             // 
             resources.ApplyResources(this.lbTimerInterval, "lbTimerInterval");
@@ -361,41 +333,365 @@ namespace EvoApp
             resources.ApplyResources(this.lbHeightCell, "lbHeightCell");
             this.lbHeightCell.Name = "lbHeightCell";
             // 
+            // lbWoodEdge
+            // 
+            resources.ApplyResources(this.lbWoodEdge, "lbWoodEdge");
+            this.lbWoodEdge.ForeColor = System.Drawing.Color.LimeGreen;
+            this.lbWoodEdge.Name = "lbWoodEdge";
+            // 
+            // lbBiomCountAll
+            // 
+            resources.ApplyResources(this.lbBiomCountAll, "lbBiomCountAll");
+            this.lbBiomCountAll.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.lbBiomCountAll.Name = "lbBiomCountAll";
+            // 
+            // lbBiomCountHerbivoreSquirrel
+            // 
+            resources.ApplyResources(this.lbBiomCountHerbivoreSquirrel, "lbBiomCountHerbivoreSquirrel");
+            this.lbBiomCountHerbivoreSquirrel.ForeColor = System.Drawing.Color.PaleTurquoise;
+            this.lbBiomCountHerbivoreSquirrel.Name = "lbBiomCountHerbivoreSquirrel";
+            // 
+            // lbBiomCountHerbivoreDeer
+            // 
+            resources.ApplyResources(this.lbBiomCountHerbivoreDeer, "lbBiomCountHerbivoreDeer");
+            this.lbBiomCountHerbivoreDeer.ForeColor = System.Drawing.Color.PaleTurquoise;
+            this.lbBiomCountHerbivoreDeer.Name = "lbBiomCountHerbivoreDeer";
+            // 
+            // lbBiomCountOmniBoar
+            // 
+            resources.ApplyResources(this.lbBiomCountOmniBoar, "lbBiomCountOmniBoar");
+            this.lbBiomCountOmniBoar.ForeColor = System.Drawing.Color.PaleTurquoise;
+            this.lbBiomCountOmniBoar.Name = "lbBiomCountOmniBoar";
+            // 
+            // lbBiomCountOmniBadger
+            // 
+            resources.ApplyResources(this.lbBiomCountOmniBadger, "lbBiomCountOmniBadger");
+            this.lbBiomCountOmniBadger.ForeColor = System.Drawing.Color.PaleTurquoise;
+            this.lbBiomCountOmniBadger.Name = "lbBiomCountOmniBadger";
+            // 
+            // lbBiomCountHerbivoreRabbit
+            // 
+            resources.ApplyResources(this.lbBiomCountHerbivoreRabbit, "lbBiomCountHerbivoreRabbit");
+            this.lbBiomCountHerbivoreRabbit.ForeColor = System.Drawing.Color.PaleTurquoise;
+            this.lbBiomCountHerbivoreRabbit.Name = "lbBiomCountHerbivoreRabbit";
+            // 
+            // lbBiomCountOmniBear
+            // 
+            resources.ApplyResources(this.lbBiomCountOmniBear, "lbBiomCountOmniBear");
+            this.lbBiomCountOmniBear.ForeColor = System.Drawing.Color.PaleTurquoise;
+            this.lbBiomCountOmniBear.Name = "lbBiomCountOmniBear";
+            // 
+            // lbBiomCountHerbivore
+            // 
+            resources.ApplyResources(this.lbBiomCountHerbivore, "lbBiomCountHerbivore");
+            this.lbBiomCountHerbivore.ForeColor = System.Drawing.Color.Chartreuse;
+            this.lbBiomCountHerbivore.Name = "lbBiomCountHerbivore";
+            // 
+            // lbBiomCountRaptor
+            // 
+            resources.ApplyResources(this.lbBiomCountRaptor, "lbBiomCountRaptor");
+            this.lbBiomCountRaptor.ForeColor = System.Drawing.Color.Chartreuse;
+            this.lbBiomCountRaptor.Name = "lbBiomCountRaptor";
+            // 
+            // lbBiomCountVegetable
+            // 
+            resources.ApplyResources(this.lbBiomCountVegetable, "lbBiomCountVegetable");
+            this.lbBiomCountVegetable.ForeColor = System.Drawing.Color.Chartreuse;
+            this.lbBiomCountVegetable.Name = "lbBiomCountVegetable";
+            // 
+            // lbBiomCountRaptorLynx
+            // 
+            resources.ApplyResources(this.lbBiomCountRaptorLynx, "lbBiomCountRaptorLynx");
+            this.lbBiomCountRaptorLynx.ForeColor = System.Drawing.Color.PaleTurquoise;
+            this.lbBiomCountRaptorLynx.Name = "lbBiomCountRaptorLynx";
+            // 
+            // lbBiomCountVegetablePatato
+            // 
+            resources.ApplyResources(this.lbBiomCountVegetablePatato, "lbBiomCountVegetablePatato");
+            this.lbBiomCountVegetablePatato.ForeColor = System.Drawing.Color.PaleTurquoise;
+            this.lbBiomCountVegetablePatato.Name = "lbBiomCountVegetablePatato";
+            // 
+            // lbBiomCountVegetableCarrot
+            // 
+            resources.ApplyResources(this.lbBiomCountVegetableCarrot, "lbBiomCountVegetableCarrot");
+            this.lbBiomCountVegetableCarrot.ForeColor = System.Drawing.Color.PaleTurquoise;
+            this.lbBiomCountVegetableCarrot.Name = "lbBiomCountVegetableCarrot";
+            // 
+            // lbBiomCountRaptorWolf
+            // 
+            resources.ApplyResources(this.lbBiomCountRaptorWolf, "lbBiomCountRaptorWolf");
+            this.lbBiomCountRaptorWolf.ForeColor = System.Drawing.Color.PaleTurquoise;
+            this.lbBiomCountRaptorWolf.Name = "lbBiomCountRaptorWolf";
+            // 
+            // lbBiomCountVegetableMushroom
+            // 
+            resources.ApplyResources(this.lbBiomCountVegetableMushroom, "lbBiomCountVegetableMushroom");
+            this.lbBiomCountVegetableMushroom.ForeColor = System.Drawing.Color.PaleTurquoise;
+            this.lbBiomCountVegetableMushroom.Name = "lbBiomCountVegetableMushroom";
+            // 
+            // lbBiomCountRaptorFox
+            // 
+            resources.ApplyResources(this.lbBiomCountRaptorFox, "lbBiomCountRaptorFox");
+            this.lbBiomCountRaptorFox.ForeColor = System.Drawing.Color.PaleTurquoise;
+            this.lbBiomCountRaptorFox.Name = "lbBiomCountRaptorFox";
+            // 
+            // lbBiomCountVegetableTomato
+            // 
+            resources.ApplyResources(this.lbBiomCountVegetableTomato, "lbBiomCountVegetableTomato");
+            this.lbBiomCountVegetableTomato.ForeColor = System.Drawing.Color.PaleTurquoise;
+            this.lbBiomCountVegetableTomato.Name = "lbBiomCountVegetableTomato";
+            // 
+            // lbBiomCountVilligeBarn
+            // 
+            resources.ApplyResources(this.lbBiomCountVilligeBarn, "lbBiomCountVilligeBarn");
+            this.lbBiomCountVilligeBarn.ForeColor = System.Drawing.Color.Black;
+            this.lbBiomCountVilligeBarn.Name = "lbBiomCountVilligeBarn";
+            // 
+            // lbBiomCountHumanWoman
+            // 
+            resources.ApplyResources(this.lbBiomCountHumanWoman, "lbBiomCountHumanWoman");
+            this.lbBiomCountHumanWoman.ForeColor = System.Drawing.Color.PaleTurquoise;
+            this.lbBiomCountHumanWoman.Name = "lbBiomCountHumanWoman";
+            // 
+            // lbBiomCountHuman
+            // 
+            resources.ApplyResources(this.lbBiomCountHuman, "lbBiomCountHuman");
+            this.lbBiomCountHuman.ForeColor = System.Drawing.Color.Chartreuse;
+            this.lbBiomCountHuman.Name = "lbBiomCountHuman";
+            // 
+            // lbBiomCountVilligeBarnAnimal
+            // 
+            resources.ApplyResources(this.lbBiomCountVilligeBarnAnimal, "lbBiomCountVilligeBarnAnimal");
+            this.lbBiomCountVilligeBarnAnimal.ForeColor = System.Drawing.Color.Black;
+            this.lbBiomCountVilligeBarnAnimal.Name = "lbBiomCountVilligeBarnAnimal";
+            // 
+            // lbBiomCountVilligeHouse
+            // 
+            resources.ApplyResources(this.lbBiomCountVilligeHouse, "lbBiomCountVilligeHouse");
+            this.lbBiomCountVilligeHouse.ForeColor = System.Drawing.Color.Black;
+            this.lbBiomCountVilligeHouse.Name = "lbBiomCountVilligeHouse";
+            // 
+            // lbBiomCountOmni
+            // 
+            resources.ApplyResources(this.lbBiomCountOmni, "lbBiomCountOmni");
+            this.lbBiomCountOmni.ForeColor = System.Drawing.Color.Chartreuse;
+            this.lbBiomCountOmni.Name = "lbBiomCountOmni";
+            // 
+            // lbBiomCountHumanMan
+            // 
+            resources.ApplyResources(this.lbBiomCountHumanMan, "lbBiomCountHumanMan");
+            this.lbBiomCountHumanMan.ForeColor = System.Drawing.Color.PaleTurquoise;
+            this.lbBiomCountHumanMan.Name = "lbBiomCountHumanMan";
+            // 
+            // lbBiomCountHumanChildren
+            // 
+            resources.ApplyResources(this.lbBiomCountHumanChildren, "lbBiomCountHumanChildren");
+            this.lbBiomCountHumanChildren.ForeColor = System.Drawing.Color.PaleTurquoise;
+            this.lbBiomCountHumanChildren.Name = "lbBiomCountHumanChildren";
+            // 
+            // lbBiomCountVillige
+            // 
+            resources.ApplyResources(this.lbBiomCountVillige, "lbBiomCountVillige");
+            this.lbBiomCountVillige.ForeColor = System.Drawing.Color.Black;
+            this.lbBiomCountVillige.Name = "lbBiomCountVillige";
+            // 
+            // lbBiomCountVegetableStrawberry
+            // 
+            resources.ApplyResources(this.lbBiomCountVegetableStrawberry, "lbBiomCountVegetableStrawberry");
+            this.lbBiomCountVegetableStrawberry.ForeColor = System.Drawing.Color.PaleTurquoise;
+            this.lbBiomCountVegetableStrawberry.Name = "lbBiomCountVegetableStrawberry";
+            // 
+            // lbBiomCountVilligeBarnVeg
+            // 
+            resources.ApplyResources(this.lbBiomCountVilligeBarnVeg, "lbBiomCountVilligeBarnVeg");
+            this.lbBiomCountVilligeBarnVeg.ForeColor = System.Drawing.Color.Black;
+            this.lbBiomCountVilligeBarnVeg.Name = "lbBiomCountVilligeBarnVeg";
+            // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.chkShowGrid);
+            this.panel1.Controls.Add(this.chkShowCoo);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            // 
+            // evoPanelBig
+            // 
+            this.evoPanelBig.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.evoPanelBig, "evoPanelBig");
+            this.evoPanelBig.Name = "evoPanelBig";
+            this.evoPanelBig.TabStop = false;
+            this.evoPanelBig.Paint += new System.Windows.Forms.PaintEventHandler(this.pictBigEvoPanel_Paint);
+            // 
+            // evoPanelSmall
+            // 
+            this.evoPanelSmall.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.evoPanelSmall, "evoPanelSmall");
+            this.evoPanelSmall.Name = "evoPanelSmall";
+            this.evoPanelSmall.TabStop = false;
+            this.evoPanelSmall.Paint += new System.Windows.Forms.PaintEventHandler(this.pictSmallEvoPanel_Paint);
+            this.evoPanelSmall.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.evoPanelSmall_MouseDoubleClick);
+            // 
+            // btnDown
+            // 
+            this.btnDown.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnDown.FlatAppearance.BorderColor = System.Drawing.Color.SpringGreen;
+            resources.ApplyResources(this.btnDown, "btnDown");
+            this.btnDown.Name = "btnDown";
+            this.btnDown.UseVisualStyleBackColor = false;
+            this.btnDown.Click += new System.EventHandler(this.btnDown_Click);
+            // 
+            // btnRight
+            // 
+            this.btnRight.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnRight.FlatAppearance.BorderColor = System.Drawing.Color.SpringGreen;
+            resources.ApplyResources(this.btnRight, "btnRight");
+            this.btnRight.Name = "btnRight";
+            this.btnRight.UseVisualStyleBackColor = false;
+            this.btnRight.Click += new System.EventHandler(this.btnRight_Click);
+            // 
+            // btnLeft
+            // 
+            this.btnLeft.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnLeft.FlatAppearance.BorderColor = System.Drawing.Color.SpringGreen;
+            resources.ApplyResources(this.btnLeft, "btnLeft");
+            this.btnLeft.Name = "btnLeft";
+            this.btnLeft.UseVisualStyleBackColor = false;
+            this.btnLeft.Click += new System.EventHandler(this.btnLeft_Click);
+            // 
+            // btnUp
+            // 
+            this.btnUp.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnUp.FlatAppearance.BorderColor = System.Drawing.Color.SpringGreen;
+            resources.ApplyResources(this.btnUp, "btnUp");
+            this.btnUp.Name = "btnUp";
+            this.btnUp.UseVisualStyleBackColor = false;
+            this.btnUp.Click += new System.EventHandler(this.btnUp_Click);
+            // 
+            // lbWoodPict
+            // 
+            this.lbWoodPict.BackColor = System.Drawing.Color.DarkGreen;
+            resources.ApplyResources(this.lbWoodPict, "lbWoodPict");
+            this.lbWoodPict.Name = "lbWoodPict";
+            this.lbWoodPict.TabStop = false;
+            // 
+            // lbWoodEdgePict
+            // 
+            this.lbWoodEdgePict.BackColor = System.Drawing.Color.ForestGreen;
+            resources.ApplyResources(this.lbWoodEdgePict, "lbWoodEdgePict");
+            this.lbWoodEdgePict.Name = "lbWoodEdgePict";
+            this.lbWoodEdgePict.TabStop = false;
+            // 
+            // lbGrassPict
+            // 
+            this.lbGrassPict.BackColor = System.Drawing.Color.MediumSeaGreen;
+            resources.ApplyResources(this.lbGrassPict, "lbGrassPict");
+            this.lbGrassPict.Name = "lbGrassPict";
+            this.lbGrassPict.TabStop = false;
+            // 
+            // lbMountainsPict
+            // 
+            this.lbMountainsPict.BackColor = System.Drawing.Color.DimGray;
+            resources.ApplyResources(this.lbMountainsPict, "lbMountainsPict");
+            this.lbMountainsPict.Name = "lbMountainsPict";
+            this.lbMountainsPict.TabStop = false;
+            // 
+            // lbCurrOffsetPict
+            // 
+            this.lbCurrOffsetPict.BackColor = System.Drawing.Color.Red;
+            resources.ApplyResources(this.lbCurrOffsetPict, "lbCurrOffsetPict");
+            this.lbCurrOffsetPict.Name = "lbCurrOffsetPict";
+            this.lbCurrOffsetPict.TabStop = false;
+            // 
+            // lbLakePict
+            // 
+            this.lbLakePict.BackColor = System.Drawing.Color.Aqua;
+            resources.ApplyResources(this.lbLakePict, "lbLakePict");
+            this.lbLakePict.Name = "lbLakePict";
+            this.lbLakePict.TabStop = false;
+            // 
+            // lbSeaPict
+            // 
+            this.lbSeaPict.BackColor = System.Drawing.Color.MediumBlue;
+            resources.ApplyResources(this.lbSeaPict, "lbSeaPict");
+            this.lbSeaPict.Name = "lbSeaPict";
+            this.lbSeaPict.TabStop = false;
+            // 
+            // lbDisertPict
+            // 
+            this.lbDisertPict.BackColor = System.Drawing.Color.PaleGoldenrod;
+            resources.ApplyResources(this.lbDisertPict, "lbDisertPict");
+            this.lbDisertPict.Name = "lbDisertPict";
+            this.lbDisertPict.TabStop = false;
+            // 
             // EvoAppForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.evoPanelBig);
             this.Controls.Add(this.evoPanelSmall);
             this.Controls.Add(this.richTimerInfo);
             this.Controls.Add(this.lblEntityCount);
             this.Controls.Add(this.lblEvoStep);
+            this.Controls.Add(this.lbBiomCountVilligeBarnVeg);
+            this.Controls.Add(this.lbBiomCountRaptorFox);
+            this.Controls.Add(this.lbBiomCountVegetableStrawberry);
+            this.Controls.Add(this.lbBiomCountHerbivore);
+            this.Controls.Add(this.lbBiomCountVegetableMushroom);
+            this.Controls.Add(this.lbBiomCountVillige);
+            this.Controls.Add(this.lbBiomCountOmniBear);
             this.Controls.Add(this.lbEvoInitTime);
+            this.Controls.Add(this.lbBiomCountRaptorWolf);
+            this.Controls.Add(this.lbBiomCountHumanChildren);
+            this.Controls.Add(this.lbBiomCountHerbivoreRabbit);
             this.Controls.Add(this.lbTimerInterval);
+            this.Controls.Add(this.lbBiomCountVegetableCarrot);
+            this.Controls.Add(this.lbBiomCountHumanMan);
+            this.Controls.Add(this.lbBiomCountOmniBadger);
             this.Controls.Add(this.lbHeightCell);
+            this.Controls.Add(this.lbBiomCountOmni);
+            this.Controls.Add(this.lbBiomCountVegetablePatato);
+            this.Controls.Add(this.lbBiomCountVilligeHouse);
+            this.Controls.Add(this.lbBiomCountOmniBoar);
             this.Controls.Add(this.lbEvoFriquency);
             this.Controls.Add(this.lbEvoTickCount);
+            this.Controls.Add(this.lbBiomCountVilligeBarnAnimal);
+            this.Controls.Add(this.lbBiomCountRaptorLynx);
+            this.Controls.Add(this.lbBiomCountHuman);
+            this.Controls.Add(this.lbBiomCountHerbivoreDeer);
             this.Controls.Add(this.lbEntityCount);
+            this.Controls.Add(this.lbBiomCountVegetable);
+            this.Controls.Add(this.lbBiomCountHumanWoman);
+            this.Controls.Add(this.lbBiomCountHerbivoreSquirrel);
             this.Controls.Add(this.lbWidthCell);
             this.Controls.Add(this.lbEvoTickTime);
             this.Controls.Add(this.vSlider);
+            this.Controls.Add(this.lbBiomCountVilligeBarn);
+            this.Controls.Add(this.lbBiomCountRaptor);
+            this.Controls.Add(this.lbBiomCountVegetableTomato);
+            this.Controls.Add(this.lbBiomCountAll);
             this.Controls.Add(this.lblOffset);
             this.Controls.Add(this.lbCellCount);
             this.Controls.Add(this.lblinit);
+            this.Controls.Add(this.btnDown);
             this.Controls.Add(this.btnStop);
+            this.Controls.Add(this.btnRight);
+            this.Controls.Add(this.btnLeft);
+            this.Controls.Add(this.btnUp);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.evoTitlePanel2);
-            this.Controls.Add(this.chkShowCoo);
-            this.Controls.Add(this.chkShowGrid);
-            this.Controls.Add(this.lbTrees);
+            this.Controls.Add(this.lbWoodEdge);
+            this.Controls.Add(this.lbWood);
             this.Controls.Add(this.lbGrass);
             this.Controls.Add(this.lbMountains);
             this.Controls.Add(this.lbLake);
             this.Controls.Add(this.lbCurrOffset);
             this.Controls.Add(this.lbSea);
             this.Controls.Add(this.lbDisert);
-            this.Controls.Add(this.lbTreesPict);
+            this.Controls.Add(this.lbWoodPict);
+            this.Controls.Add(this.lbWoodEdgePict);
             this.Controls.Add(this.lbGrassPict);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbMountainsPict);
@@ -410,18 +706,21 @@ namespace EvoApp
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.EvoAppForm_Paint);
             ((System.ComponentModel.ISupportInitialize)(this.hSlider)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vSlider)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lbDisertPict)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lbSeaPict)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lbLakePict)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lbMountainsPict)).EndInit();
             this.evoTitlePanel2.ResumeLayout(false);
             this.evoTitlePanel.ResumeLayout(false);
             this.evoTitlePanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lbGrassPict)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lbTreesPict)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lbCurrOffsetPict)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.evoPanelBig)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.evoPanelSmall)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbWoodPict)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbWoodEdgePict)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbGrassPict)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbMountainsPict)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbCurrOffsetPict)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbLakePict)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbSeaPict)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbDisertPict)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -437,7 +736,7 @@ namespace EvoApp
         private System.Windows.Forms.PictureBox lbLakePict;
         private System.Windows.Forms.PictureBox lbMountainsPict;
         private System.Windows.Forms.PictureBox lbGrassPict;
-        private System.Windows.Forms.PictureBox lbTreesPict;
+        private System.Windows.Forms.PictureBox lbWoodEdgePict;
         private System.Windows.Forms.CheckBox chkShowGrid;
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Button btnStop;
@@ -451,7 +750,7 @@ namespace EvoApp
         private System.Windows.Forms.Label evoTitle;
         private System.Windows.Forms.Label evoTitleVersion;
         private System.Windows.Forms.Label lbGrass;        
-        private System.Windows.Forms.Label lbTrees;
+        private System.Windows.Forms.Label lbWood;
         private System.Windows.Forms.Timer bigEvoPaintTimer;
         private System.Windows.Forms.Label lblOffset;
         private System.Windows.Forms.PictureBox lbCurrOffsetPict;
@@ -471,6 +770,41 @@ namespace EvoApp
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lbWidthCell;
         private System.Windows.Forms.Label lbHeightCell;
+        private System.Windows.Forms.Label lbWoodEdge;
+        private System.Windows.Forms.PictureBox lbWoodPict;
+        private System.Windows.Forms.Label lbBiomCountAll;
+        private System.Windows.Forms.Label lbBiomCountHerbivoreSquirrel;
+        private System.Windows.Forms.Label lbBiomCountHerbivoreDeer;
+        private System.Windows.Forms.Label lbBiomCountOmniBoar;
+        private System.Windows.Forms.Label lbBiomCountOmniBadger;
+        private System.Windows.Forms.Label lbBiomCountHerbivoreRabbit;
+        private System.Windows.Forms.Label lbBiomCountOmniBear;
+        private System.Windows.Forms.Label lbBiomCountHerbivore;
+        private System.Windows.Forms.Label lbBiomCountRaptor;
+        private System.Windows.Forms.Label lbBiomCountVegetable;
+        private System.Windows.Forms.Label lbBiomCountRaptorLynx;
+        private System.Windows.Forms.Label lbBiomCountVegetablePatato;
+        private System.Windows.Forms.Label lbBiomCountVegetableCarrot;
+        private System.Windows.Forms.Label lbBiomCountRaptorWolf;
+        private System.Windows.Forms.Label lbBiomCountVegetableMushroom;
+        private System.Windows.Forms.Label lbBiomCountRaptorFox;
+        private System.Windows.Forms.Label lbBiomCountVegetableTomato;
+        private System.Windows.Forms.Label lbBiomCountVilligeBarn;
+        private System.Windows.Forms.Label lbBiomCountHumanWoman;
+        private System.Windows.Forms.Label lbBiomCountHuman;
+        private System.Windows.Forms.Label lbBiomCountVilligeBarnAnimal;
+        private System.Windows.Forms.Label lbBiomCountVilligeHouse;
+        private System.Windows.Forms.Label lbBiomCountOmni;
+        private System.Windows.Forms.Label lbBiomCountHumanMan;
+        private System.Windows.Forms.Label lbBiomCountHumanChildren;
+        private System.Windows.Forms.Label lbBiomCountVillige;
+        private System.Windows.Forms.Label lbBiomCountVegetableStrawberry;
+        private System.Windows.Forms.Label lbBiomCountVilligeBarnVeg;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnUp;
+        private System.Windows.Forms.Button btnLeft;
+        private System.Windows.Forms.Button btnDown;
+        private System.Windows.Forms.Button btnRight;
     }
 }
 
