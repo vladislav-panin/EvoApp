@@ -12,6 +12,12 @@ namespace EvoApp
         protected List<FastFoodAnimal> smokedMeatList = new List<FastFoodAnimal>();
         protected List<FastFoodVeg>    pickleList     = new List<FastFoodVeg>();
 
+        // нужно, что бы упорядочить обитателей в списке юнитов ячейки по размеру изображения - при отрисовке будем рисовать сначала больших, потом маленьких.
+        override public int GetIcoExtentOrder()
+        {
+            return 200;
+        }
+
         // *************************************************************************************************************************************************
         public VillageBarn(long id) : base(id, EUnitType.EVilligeBarn)
         {

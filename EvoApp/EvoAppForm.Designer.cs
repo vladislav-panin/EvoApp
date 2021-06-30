@@ -109,6 +109,7 @@ namespace EvoApp
             this.lbLakePict = new System.Windows.Forms.PictureBox();
             this.lbSeaPict = new System.Windows.Forms.PictureBox();
             this.lbDisertPict = new System.Windows.Forms.PictureBox();
+            this.lbSpawnAreaCoo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.hSlider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vSlider)).BeginInit();
             this.evoTitlePanel2.SuspendLayout();
@@ -624,6 +625,12 @@ namespace EvoApp
             this.lbDisertPict.Name = "lbDisertPict";
             this.lbDisertPict.TabStop = false;
             // 
+            // lbSpawnAreaCoo
+            // 
+            resources.ApplyResources(this.lbSpawnAreaCoo, "lbSpawnAreaCoo");
+            this.lbSpawnAreaCoo.ForeColor = System.Drawing.Color.Silver;
+            this.lbSpawnAreaCoo.Name = "lbSpawnAreaCoo";
+            // 
             // EvoAppForm
             // 
             resources.ApplyResources(this, "$this");
@@ -672,6 +679,7 @@ namespace EvoApp
             this.Controls.Add(this.lbBiomCountRaptor);
             this.Controls.Add(this.lbBiomCountVegetableTomato);
             this.Controls.Add(this.lbBiomCountAll);
+            this.Controls.Add(this.lbSpawnAreaCoo);
             this.Controls.Add(this.lblOffset);
             this.Controls.Add(this.lbCellCount);
             this.Controls.Add(this.lblinit);
@@ -805,6 +813,7 @@ namespace EvoApp
         private System.Windows.Forms.Button btnLeft;
         private System.Windows.Forms.Button btnDown;
         private System.Windows.Forms.Button btnRight;
+        private System.Windows.Forms.Label lbSpawnAreaCoo;
     }
 }
 

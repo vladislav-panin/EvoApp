@@ -13,6 +13,11 @@ namespace EvoApp
 
         protected List<Child> children = new List<Child>();
 
+        // нужно, что бы упорядочить обитателей в списке юнитов ячейки по размеру изображения - при отрисовке будем рисовать сначала больших, потом маленьких.
+        override public int GetIcoExtentOrder()
+        {
+            return 300;
+        }
         // *************************************************************************************************************************************************
         public VillageHouse(long id) : base(id, EUnitType.EVilligeHouse)
         {

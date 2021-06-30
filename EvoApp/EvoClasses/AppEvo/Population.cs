@@ -2,15 +2,16 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Linq;
 using System.Resources;
 
 namespace EvoApp
 {
-    public class Population
-    {
-		public static AppInitInfo appInfo = new AppInitInfo();
+	public class Population
+	{
+		public static AppInfo appInfo = new AppInfo();
 
-		public BiomBitmapCreator BMPs { get; set; } = new BiomBitmapCreator();
+		public BitmapCreator BMPs { get; set; } = new BitmapCreator();
 
 		public UnitContainer _herbivores;
 		public UnitContainer _omnis;
@@ -25,87 +26,141 @@ namespace EvoApp
 		public UnitContainer _barn;
 		public UnitContainer _fastFood;
 
-		public static int startCount_of_biom_Herbivore  = 500;
-		public static int startCount_of_biom_Omni       = 500;
-		public static int startCount_of_biom_Raptor     = 500;
-		public static int startCount_of_biom_Vegetables = 500;
+		public static int startId_of_Herbivore = 1000;
+		public static int startId_of_Omni = 1000;
+		public static int startId_of_Raptor = 1000;
+		public static int startId_of_Vegetables = 1000;
 
-		public static int startCount_of_biom_Human      = 500;
+		public static int startId_of_Human = 1000;
 
-		public static int startCount_of_biom_House      = 0;
-		public static int startCount_of_biom_Villadge   = 0;
+		public static int startId_of_House = 1000;
+		public static int startId_of_Villadge = 1000;
 
-		public static int startCount_of_biom_Barn       = 0;
-		public static int startCount_of_biom_FastFood   = 0;		
+		public static int startId_of_Barn = 1000;
+		public static int startId_of_FastFood = 1000;
+
+		public static Point ptSpawnOrigin = new Point(130, 200);
+		public static Size szSpawnArea = new Size(200, 400);
+
+		// ***********************************************************************************************************************************
+
+		public int cellCountToSpawn = 10_000; // количество ячеек, предназначенных для начального размещения юнитов (должно быть меньше 20 000)
+		public List<DeskCell> initialOccupation = new List<DeskCell>(); // список ячеек для начального размещения юнитов
 		// ***********************************************************************************************************************************
 
 		public Population() {
 
-			_herbivores = new  UnitContainer (startCount_of_biom_Herbivore );
-			_omnis      = new  UnitContainer (startCount_of_biom_Omni      );
-			_raptors    = new  UnitContainer (startCount_of_biom_Raptor    );
-			_vegetables = new  UnitContainer (startCount_of_biom_Vegetables);
+			_herbivores = new UnitContainer(startId_of_Herbivore);
+			_omnis = new UnitContainer(startId_of_Omni);
+			_raptors = new UnitContainer(startId_of_Raptor);
+			_vegetables = new UnitContainer(startId_of_Vegetables);
 
-			_humans = new UnitContainer(startCount_of_biom_Human);
+			_humans = new UnitContainer(startId_of_Human);
 
-			_house   = new UnitContainer (startCount_of_biom_House);
-			_villadge = new UnitContainer(startCount_of_biom_Villadge);
+			_house = new UnitContainer(startId_of_House);
+			_villadge = new UnitContainer(startId_of_Villadge);
 
-			_barn     = new UnitContainer(startCount_of_biom_Barn);
-			_fastFood = new UnitContainer (startCount_of_biom_FastFood);			
+			_barn = new UnitContainer(startId_of_Barn);
+			_fastFood = new UnitContainer(startId_of_FastFood);
 		}
 		// ***********************************************************************************************************************************
 
 		public static GeoEx geo() {
-            return Program.app.getDesk().geoEx;
-        }
+			return Program.app.getDesk().geoEx;
+		}
 
-        public static List<List<DeskCell>> Cells() {
-            return Program.app.getDesk().cellTable;
-        }
-        
-        public void Generate()
+		public static List<List<DeskCell>> Cells() {
+			return Program.app.getDesk().cellTable;
+		}
+		// ***********************************************************************************************************************************
+
+		public void Generate()
         {
 			BMPs.Load();
 
-			SpawnPopulation();
-			//InitialPlacePopulation();
-        }
-        // ***********************************************************************************************************************************
+			defineInitialCells();
+			Spawn ();
 
-        public void SpawnPopulation()
-        {
-            for (int idxRow = 0; idxRow < geo().rowCount; idxRow++) {
-                for (int idxColumn = 0; idxColumn < geo().colCount; idxColumn++) {
-
-					//CreateAndInitUnit (idxRow, idxColumn);
-                    //if (biomByID.Count >= entityMaxCount)
-                        return;
-                }
-            }
-        }
-		// ***********************************************************************************************************************************
-
-		// idxRow, idxColumn - индексы стороки и колонки ячейки, куда нужно поместить новорожденного обитателя Desk
-		// Возвращает юнита - новорожденного обитателя указанного типа
-		public UnitBase CreateAndInitUnit (int idxRow, int idxColumn, EUnitType type)
-        {
-			UnitBase entity = null;/* createUnit(type);
-			DeskCell cell = Cells()[idxRow][idxColumn];
-
-			cell. BiomAdd (entity);
-
-			SetUnitOnCell();*/
-
-			return entity;
-        }
-		// ***********************************************************************************************************************************
-
-		protected void SetUnitOnCell()
-		{ 
+			//Spawn_debug();
 		}
-
 		// ***********************************************************************************************************************************
+
+		public void defineInitialCells()
+		{
+			for (int idxRow = ptSpawnOrigin.Y;   idxRow < ptSpawnOrigin.Y + szSpawnArea.Height;   idxRow += 2) {
+
+				for (int idxColumn = ptSpawnOrigin.X;   idxColumn < ptSpawnOrigin.X + szSpawnArea.Width;    idxColumn += 2) {
+
+					initialOccupation.Add (Cells()[idxRow][idxColumn]);
+				}
+			}
+		}
+		// ***********************************************************************************************************************************
+
+		public void Spawn()
+		{
+			DeskCell cell;			
+			UnitBase ub = null;
+
+			for (int i = 0; i < initialOccupation.Count - 50; i++) 
+			{
+                    ub = createUnit (EUnitType. EHerbivoreDeer        , EUnitSex.EMale   );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+					ub = createUnit (EUnitType. EHerbivoreDeer        , EUnitSex.EFemale );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+					ub = createUnit (EUnitType. EHerbivoreRabbit      , EUnitSex.EMale   );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+					ub = createUnit (EUnitType. EHerbivoreRabbit      , EUnitSex.EFemale );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+					ub = createUnit (EUnitType. EHerbivoreSquirrel    , EUnitSex.EMale   );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+					ub = createUnit (EUnitType. EHerbivoreSquirrel    , EUnitSex.EFemale );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+																																						
+					ub = createUnit (EUnitType. EHerbivoreDeer        , EUnitSex.EMale   );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+					ub = createUnit (EUnitType. EHerbivoreDeer        , EUnitSex.EFemale );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+					ub = createUnit (EUnitType. EHerbivoreRabbit      , EUnitSex.EMale   );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+					ub = createUnit (EUnitType. EHerbivoreRabbit      , EUnitSex.EFemale );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+					ub = createUnit (EUnitType. EHerbivoreSquirrel    , EUnitSex.EMale   );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+					ub = createUnit (EUnitType. EHerbivoreSquirrel    , EUnitSex.EFemale );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow); 
+																																						
+					ub = createUnit (EUnitType. EOmniBadger           , EUnitSex.EMale   );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+					ub = createUnit (EUnitType. EOmniBadger           , EUnitSex.EFemale );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+					ub = createUnit (EUnitType. EOmniBear             , EUnitSex.EMale   );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+					ub = createUnit (EUnitType. EOmniBear             , EUnitSex.EFemale );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+					ub = createUnit (EUnitType. EOmniBoar             , EUnitSex.EMale   );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+					ub = createUnit (EUnitType. EOmniBoar             , EUnitSex.EFemale );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+																																						
+					ub = createUnit (EUnitType. ERaptorFox            , EUnitSex.EMale   );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+					ub = createUnit (EUnitType. ERaptorFox            , EUnitSex.EFemale );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+					ub = createUnit (EUnitType. ERaptorLynx           , EUnitSex.EMale   );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+					ub = createUnit (EUnitType. ERaptorLynx           , EUnitSex.EFemale );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+					ub = createUnit (EUnitType. ERaptorWolf           , EUnitSex.EMale   );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+					ub = createUnit (EUnitType. ERaptorWolf           , EUnitSex.EFemale );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+																																						
+					ub = createUnit (EUnitType. EVegetableCarrot      , EUnitSex.none    );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+					ub = createUnit (EUnitType. EVegetableMushroom    , EUnitSex.none    );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+					ub = createUnit (EUnitType. EVegetablePatato      , EUnitSex.none    );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+					ub = createUnit (EUnitType. EVegetableStrawberry  , EUnitSex.none    );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+					ub = createUnit (EUnitType. EVegetableTomato      , EUnitSex.none    );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+																																						
+					ub = createUnit (EUnitType. EVegetableCarrot      , EUnitSex.none    );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+					ub = createUnit (EUnitType. EVegetableMushroom    , EUnitSex.none    );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+					ub = createUnit (EUnitType. EVegetablePatato      , EUnitSex.none    );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+					ub = createUnit (EUnitType. EVegetableStrawberry  , EUnitSex.none    );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+					ub = createUnit (EUnitType. EVegetableTomato      , EUnitSex.none    );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+								    																													
+					ub = createUnit (EUnitType. EVegetableCarrot      , EUnitSex.none    );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+					ub = createUnit (EUnitType. EVegetableMushroom    , EUnitSex.none    );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+					ub = createUnit (EUnitType. EVegetablePatato      , EUnitSex.none    );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+					ub = createUnit (EUnitType. EVegetableStrawberry  , EUnitSex.none    );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+					ub = createUnit (EUnitType. EVegetableTomato      , EUnitSex.none    );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+																																						
+					ub = createUnit (EUnitType. EHumanMen             , EUnitSex.EFemale );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+					ub = createUnit (EUnitType. EHumanWoman           , EUnitSex.EMale   );    cell = initialOccupation [i++];   cell. UnitAdd (ub);  ub.SetCoo (cell.idxCol, cell.idxRow);
+																																									
+					if (i > cellCountToSpawn)
+						break;
+			}
+
+			initialOccupation.RemoveAll(s => true);  // 10 тысяч юнитов
+		}
+		// ***********************************************************************************************************************************
+
 		protected UnitBase createUnit(EUnitType type, EUnitSex sex)
 		{
 			UnitBase unit = null;

@@ -15,15 +15,16 @@ namespace EvoApp
         double oneColWidthPx; // количество ячеек по ширине в одном пикселе малой панели
         double oneRowHeightPx;  // количество ячеек по высоте в одном пикселе малой панели
 
-        int widthAreaPx;  // ширина малой панели в пикселях
-        int heightAreaPx; // высота малой панели в пикселях
+        int indicatorWidthPx = 0;  // ширина индикатора в пикселях
+        int indicatorHeightPx = 0; // высота индикатора в пикселях
 
-        SolidBrush indicatorBbrush = null;
         Rectangle indicatorRect = new Rectangle (0, 0, 0, 0);
 
         // bkGround - здесь буду использовать под карта Эволюции без индикатора
         private Bitmap   bkGround_dblBuff = null; // карта мира с индикатором
         private Graphics graphObj_dblBuff = null;
+
+        private Rectangle rectSpawn; // рисуем контур области первичного расселения юнитов
 
         // **************************************************************************************************        
         public PainterEvoPanelSmall() {
@@ -41,8 +42,17 @@ namespace EvoApp
             this.colBigPanel = PainterEvoPanelBig.colCount;
             this.rowBigPanel = PainterEvoPanelBig.rowCount;
 
-            this.widthAreaPx = (int)(oneColWidthPx * this.colBigPanel);
-            this.heightAreaPx = (int)(oneRowHeightPx * this.rowBigPanel);
+            this.indicatorWidthPx = (int)(oneColWidthPx * this.colBigPanel);
+            this.indicatorHeightPx = (int)(oneRowHeightPx * this.rowBigPanel);
+
+            // вычисляем проекцию контура первичного расселения юнитов
+            int X = (widthPx * Population.ptSpawnOrigin.X) / Program.app.getDesk().geoEx.colCount;
+            int Y = (heightPx * Population.ptSpawnOrigin.Y) / Program.app.getDesk().geoEx.rowCount;
+
+            int width = (widthPx * Population.szSpawnArea.Width) / Program.app.getDesk().geoEx.colCount;
+            int height = (heightPx * Population.szSpawnArea.Height) / Program.app.getDesk().geoEx.rowCount;
+
+            rectSpawn = new Rectangle(X, Y, width, height);
         }
 
         // **************************************************************************************************
@@ -56,11 +66,8 @@ namespace EvoApp
 
             this.indicatorRect.X = 0;
             this.indicatorRect.Y = 0;
-            this.indicatorRect.Width = this.widthAreaPx;
-            this.indicatorRect.Height = this.heightAreaPx;
-
-            this.indicatorBbrush = new SolidBrush(Color.Red);
-            this.graphObj_dblBuff.FillRectangle(this.indicatorBbrush, this.indicatorRect);
+            this.indicatorRect.Width = this.indicatorWidthPx;
+            this.indicatorRect.Height = this.indicatorHeightPx;
         }
 
         // **************************************************************************************************
@@ -69,6 +76,7 @@ namespace EvoApp
         {
             // весь битмап копируем на всю панель. 
             panelCanvasGraph.DrawImage(this.bkGround_dblBuff, 0, 0);
+            panelCanvasGraph.DrawRectangle(Pens.LightGray, rectSpawn);
         }
 
         // **************************************************************************************************
@@ -92,7 +100,7 @@ namespace EvoApp
             this.indicatorRect.Y = yOrigin;
 
             this.graphObj_dblBuff.DrawImage(bkGround, 0, 0); // Копируем карту мира без индикатора на битмап с индикатором
-            this.graphObj_dblBuff.FillRectangle(this.indicatorBbrush, this.indicatorRect); // заливаем индикатор
+            this.graphObj_dblBuff.FillRectangle(Brushes.Red, this.indicatorRect); // заливаем индикатор
         }
         // **************************************************************************************************
     }

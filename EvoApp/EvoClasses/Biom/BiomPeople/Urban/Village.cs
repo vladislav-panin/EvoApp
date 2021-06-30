@@ -11,8 +11,12 @@ namespace EvoApp
     {
         protected Dictionary <long, VillageBarn> dictBarn = new Dictionary <long, VillageBarn> ();  // словарь амбаров по ID
         protected Dictionary<long, VillageHouse> dictHouse = new Dictionary<long, VillageHouse>();  // словарь домов по ID
-        
 
+        // нужно, что бы упорядочить обитателей в списке юнитов ячейки по размеру изображения - при отрисовке будем рисовать сначала больших, потом маленьких.
+        override  public int GetIcoExtentOrder()
+        {
+            return 400;
+        }
         // *************************************************************************************************************************************************
         public Village(long id) : base(id, EUnitType.EVillige)
         {

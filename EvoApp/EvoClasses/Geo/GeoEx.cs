@@ -35,8 +35,8 @@ namespace EvoApp
     */
     public class GeoEx
     {        
-        public int rowCount { get; } = 1000; // количество строк (ячеек всей игры) на поле программы 
-        public int colCount { get; } = 1000; // количество столбцов(ячеек всей игры) на поле программы 
+        public int rowCount { get; } = 1000; // количество строк (ячеек всей игры) на поле Эволюции 
+        public int colCount { get; } = 1000; // количество столбцов(ячеек всей игры) на поле Эволюции
 
 
         public static int widthSea       { get; set; } = 50; // ширина полосы моря

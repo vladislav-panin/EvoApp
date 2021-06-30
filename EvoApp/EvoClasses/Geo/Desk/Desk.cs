@@ -10,6 +10,8 @@ namespace EvoApp
         public List<List<DeskCell>> cellTable { get; set; } = null;        
         public GeoEx                geoEx     { get; set; } = null;
 
+        protected Population population = null;
+
         // ****************************************************************************************
         public Desk()
         {
@@ -19,8 +21,10 @@ namespace EvoApp
 
         // ****************************************************************************************
         //инициализация ячеек игрового поля 1000*1000
-        public int Init()
+        public int Init(Population population)
         {
+            this.population = population;
+
             int cellCount =  CreateCells();
             SetLandscape();
 
@@ -72,17 +76,69 @@ namespace EvoApp
 
         // ****************************************************************************************  
         // вызывается в потоке App.evoThread
-        public void CalcNextTick()
+        public void CalcNextTick_slow()
         {
             for (int idxRow = 0; idxRow < geoEx.rowCount; idxRow++) {
 
                 for (int idxColumn = 0; idxColumn < geoEx.colCount; idxColumn++) {
 
-                    cellTable [idxRow] [idxColumn]. BiomCalcNextStepAll ();
+                    cellTable [idxRow] [idxColumn]. UnitCalcNextStepAll ();
                 }
             }
         }
+        // ****************************************************************************************       
+        public void CalcNextTick()
+        {
+            // дома, амбары, деревни и еда - не иттерируются. Они создаются переносятся в другие ячейки действиями людей 
 
+            foreach (var pair in population._vegetables.unitByID)
+            {
+                long id = pair.Key;
+                UnitBase ub = pair.Value;
+
+                ub.CalcNextStep(UnitBase.Cells()[ub.idxCol][ub.idxRow]);
+            }
+
+            foreach (var pair in population._humans.unitByID)
+            {
+                long id = pair.Key;
+                UnitBase ub = pair.Value;
+
+                ub.CalcNextStep(UnitBase.Cells()[ub.idxCol][ub.idxRow]);
+            }
+
+            foreach (var pair in population._raptors.unitByID)
+            {
+                long id = pair.Key;
+                UnitBase ub = pair.Value;
+
+                ub.CalcNextStep(UnitBase.Cells()[ub.idxCol][ub.idxRow]);
+            }
+
+            foreach (var pair in population._omnis.unitByID)
+            {
+                long id = pair.Key;
+                UnitBase ub = pair.Value;
+
+                ub.CalcNextStep(UnitBase.Cells()[ub.idxCol][ub.idxRow]);
+            }
+
+            foreach (var pair in population._herbivores.unitByID)
+            {
+                long id = pair.Key;
+                UnitBase ub = pair.Value;
+
+                ub.CalcNextStep(UnitBase.Cells()[ub.idxCol][ub.idxRow]);
+            }
+
+            foreach (var pair in population._herbivores.unitByID)
+            {
+                long id = pair.Key;
+                UnitBase ub = pair.Value;
+
+                ub.CalcNextStep(UnitBase.Cells()[ub.idxCol][ub.idxRow]);
+            }
+        }
         // ****************************************************************************************       
     }
 }

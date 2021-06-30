@@ -18,6 +18,8 @@ namespace EvoApp
 
         public List<UnitBase> lstEntity { get; set; } = new List<UnitBase>();
 
+        public SortedList<int, UnitBase> lstEntitySorted { get; set; } = new SortedList<int, UnitBase>();
+
         public int BiomCount()
         {
             return lstEntity.Count;
@@ -28,22 +30,22 @@ namespace EvoApp
             return lstEntity.Contains (ent);
         }
 
-        public void BiomAdd(UnitBase ent)
+        public void UnitAdd(UnitBase ent)
         {
             lstEntity.Add(ent);
         }
 
-        public bool BiomRemove(UnitBase ent)
+        public bool UnitRemove(UnitBase ent)
         {
             return lstEntity.Remove(ent);
         }
 
-        public void BiomRemoveAll()
+        public void UnitRemoveAll()
         {
             lstEntity.Clear();
         }
 
-        public void BiomCalcNextStepAll()
+        public void UnitCalcNextStepAll ()
         {
             for (int i = 0; i < lstEntity.Count; i++)
             {

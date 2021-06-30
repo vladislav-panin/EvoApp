@@ -46,8 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EvoClasses\AppEvo\BiomInfo.cs" />
     <Compile Include="EvoClasses\AppEvo\AppThreadInfo.cs" />
-    <Compile Include="EvoClasses\AppEvo\AppInitInfo.cs" />
+    <Compile Include="EvoClasses\AppEvo\AppInfo.cs" />
     <Compile Include="EvoClasses\AppEvo\EvoSpeed.cs" />
     <Compile Include="EvoClasses\AppEvo\App.cs" />
     <Compile Include="EvoClasses\Biom\BiomAnimal\Herbivore\HerbivoreSquirrel.cs" />
@@ -79,8 +80,7 @@
     <Compile Include="EvoClasses\Biom\BiomVegetables\VegetableCarrot.cs" />
     <Compile Include="EvoClasses\Biom\BiomVegetables\VegetableTomato.cs" />
     <Compile Include="EvoClasses\Biom\BiomVegetables\VegetableMushroom .cs" />
-    <Compile Include="EvoClasses\Biom\_BiomPainter\BaseBiomPainter.cs" />
-    <Compile Include="EvoClasses\Biom\_BiomPainter\BiomBitmapCreator.cs" />
+    <Compile Include="EvoClasses\AppEvo\BitmapCreator.cs" />
     <Compile Include="EvoClasses\Biom\BiomAnimal\Omni\Omni.cs" />
     <Compile Include="EvoClasses\Biom\BiomAnimal\Raptors\Raptor.cs" />
     <Compile Include="EvoClasses\Utils\EUnitType.cs" />
@@ -124,7 +124,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

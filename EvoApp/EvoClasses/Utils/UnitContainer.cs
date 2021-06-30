@@ -9,7 +9,9 @@ namespace EvoApp
     public class UnitContainer
     {
 		public LongIdCreator idGen;
-		public int startUnitCount = 0;		
+		protected int startId = 0;		
+
+
 		public SortedDictionary<long, UnitBase> unitByID 
 		{ 
 			get; 
@@ -18,10 +20,11 @@ namespace EvoApp
 			= new SortedDictionary<long, UnitBase>();		
 		// ***********************************************************************************************************************************
 
-		public UnitContainer(int startUnitCount)
+		public UnitContainer(int startId)
 		{
-			this.startUnitCount = startUnitCount;
+			this.startId = startId;
 			this.idGen = new LongIdCreator(unitByID);
 		}
+		// ***********************************************************************************************************************************
 	}
 }

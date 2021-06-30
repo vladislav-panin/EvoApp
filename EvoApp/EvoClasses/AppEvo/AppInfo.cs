@@ -4,7 +4,7 @@ using System.Threading;
 
 namespace EvoApp
 {
-    public class AppInitInfo
+    public class AppInfo
     {
         public String sTimerInfo  { get; set; } = "";        
         public long   evoInitTime { get; set; } = 0;
@@ -36,6 +36,7 @@ namespace EvoApp
         public int countBiomVillige            = 0;
         public int countBiomVilligeHouse       = 0;
         public int countBiomVilligeBarn        = 0;
+
         public int countBiomVilligeBarnAnimal  = 0;
         public int countBiomVilligeBarnVeg     = 0;
 
@@ -113,7 +114,7 @@ namespace EvoApp
 
         // ******************************************************************************************************
 
-        public AppInitInfo () {
+        public AppInfo () {
             getTimerInfo();
         }
 

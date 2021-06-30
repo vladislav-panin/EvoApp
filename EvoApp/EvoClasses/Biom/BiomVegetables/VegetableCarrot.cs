@@ -8,6 +8,11 @@ namespace EvoApp
 {
     public class VegetableCarrot : Vegetable
     {
+        // нужно, что бы упорядочить обитателей в списке юнитов ячейки по размеру изображения - при отрисовке будем рисовать сначала больших, потом маленьких.
+        override public int GetIcoExtentOrder()
+        {
+            return 10;
+        }
         // *************************************************************************************************************************************************
         protected override int getMaxAllowed_X_Shift() {
             return 4;

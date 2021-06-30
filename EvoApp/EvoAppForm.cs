@@ -11,17 +11,7 @@ namespace EvoApp
     public partial class EvoAppForm : Form
     {
         // ****************************************************************************************
-        ResourceManager resMgr = Resources.ResourceManager;
-
-        Bitmap bmpBtnColoredDown  ;
-        Bitmap bmpBtnColoredLeft  ;
-        Bitmap bmpBtnColoredRight ;
-        Bitmap bmpBtnColoredUp    ;
-
-        Bitmap bmpBtnGrayDown    ;
-        Bitmap bmpBtnGrayLeft    ;
-        Bitmap bmpBtnGrayRight   ;
-        Bitmap bmpBtnGrayUp      ;
+        ResourceManager resMgr = Resources.ResourceManager;        
         // ****************************************************************************************
         private bool isAppInited = false;
 
@@ -63,16 +53,7 @@ namespace EvoApp
         }
         
         protected void InitBtns()
-        {
-                this.bmpBtnColoredDown  = (Bitmap)resMgr.GetObject("btnDown16withBg");
-                this.bmpBtnColoredLeft  = (Bitmap)resMgr.GetObject("btnLeft16withBg");
-                this.bmpBtnColoredRight = (Bitmap)resMgr.GetObject("btnRight16withBg");
-                this.bmpBtnColoredUp    = (Bitmap)resMgr.GetObject("btnUp16withBg");
-
-                this.bmpBtnGrayDown     = (Bitmap)resMgr.GetObject("btnDown16");
-                this.bmpBtnGrayLeft     = (Bitmap)resMgr.GetObject("btnLeft16");
-                this.bmpBtnGrayRight    = (Bitmap)resMgr.GetObject("btnRight16");
-                this.bmpBtnGrayUp       = (Bitmap)resMgr.GetObject("btnUp16");
+        {               
         }
         // ****************************************************************************************
 
@@ -110,7 +91,7 @@ namespace EvoApp
         // этот метод будет выполнятся асинхронно (в другом потоке?) на объекте bgWorkerForInit
         private void bgWorkerForInit_DoWork(object sender, DoWorkEventArgs e)
         {
-            AppInitInfo res = this.InitGame();
+            AppInfo res = this.InitGame();
             e.Result = res;
         }
 
@@ -119,7 +100,7 @@ namespace EvoApp
         // этом потоке будет запущен на выполнение этот метод
         private void bgWorkerForInit_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-            AppInitInfo res = (AppInitInfo)e.Result;
+            AppInfo res = (AppInfo)e.Result;
             SetAppIsInited(res);
         }
 
@@ -131,14 +112,14 @@ namespace EvoApp
         }
 
         // ****************************************************************************************
-        public AppInitInfo InitGame()
+        public AppInfo InitGame()
         {
-            AppInitInfo res = Program.app.Init();
+            AppInfo res = Program.app.Init();
             return res;
         }
 
         // ****************************************************************************************
-        public void SetAppIsInited(AppInitInfo res)
+        public void SetAppIsInited(AppInfo res)
         {
             // "переворачиваю" вертикальный слайдер, в соответствии с вертикальной нумерацией ячеек - она растет сверху вниз
             painterEvoPanelBig.VSlider_Val = vSlider.Maximum; // одновременно будет инициирован оффсет
@@ -169,40 +150,46 @@ namespace EvoApp
             lbWidthCell.Text = "Ширина ячейки  в пикселях: " + painterEvoPanelBig.cellWidthPx;
             lbHeightCell.Text = "Высота ячейки  в пикселях: " + painterEvoPanelBig.cellWidthPx;
 
+            lbSpawnAreaCoo.Text = "Область первчного размещения популяции (point): (" +
+
+                Population.ptSpawnOrigin.X + ", " +
+                Population.ptSpawnOrigin.Y + ", " +
+                Population.szSpawnArea.Width + ", " +
+                Population.szSpawnArea.Height + ")";
 
             updateEvoPanels();
         }
         // ****************************************************************************************       
 
-        private void setAppInfoPanel(AppInitInfo res)
+        private void setAppInfoPanel(AppInfo res)
         { 
             lbBiomCountAll                .Text = "Общее число юнитов биома (шт): " + res. countBiomAll () ;
 										  
 			lbBiomCountHerbivore          .Text = "Травоядные (шт): " + res. countBiomHerbivore();
-            lbBiomCountHerbivoreSquirrel  .Text = "Белки (шт): " + res. countBiomHerbivoreSquirrel  ;   
+            lbBiomCountHerbivoreSquirrel  .Text = "Белки  (шт): " + res. countBiomHerbivoreSquirrel  ;   
             lbBiomCountHerbivoreDeer      .Text = "Олени (шт): " + res. countBiomHerbivoreDeer      ;
 			lbBiomCountHerbivoreRabbit    .Text = "Зайцы (шт): " + res. countBiomHerbivoreRabbit    ; 
 										  
 			lbBiomCountOmni               .Text = "Всеядные (шт): " + res. countBiomOmni();
-            lbBiomCountOmniBoar           .Text = "Кабаны (шт): " + res. countBiomOmniBoar           ;
-            lbBiomCountOmniBadger         .Text = "Барсуки (шт): " + res. countBiomOmniBadger         ;
+            lbBiomCountOmniBoar           .Text = "Кабаны   (шт): " + res. countBiomOmniBoar           ;
+            lbBiomCountOmniBadger         .Text = "Барсуки  (шт): " + res. countBiomOmniBadger         ;
             lbBiomCountOmniBear           .Text = "Медведи (шт): " + res. countBiomOmniBear           ;
 										  
             lbBiomCountRaptor             .Text = "Хищники (шт): " + res. countBiomRaptor();
-            lbBiomCountRaptorLynx         .Text = "Рыси (шт): " + res. countBiomRaptorLynx         ;
+            lbBiomCountRaptorLynx         .Text = "Рыси  (шт): " + res. countBiomRaptorLynx         ;
             lbBiomCountRaptorWolf         .Text = "Волки (шт): " + res. countBiomRaptorWolf         ;
-			lbBiomCountRaptorFox          .Text = "Лисы (шт): " + res. countBiomRaptorFox          ;
+			lbBiomCountRaptorFox          .Text = "Лисы  (шт): " + res. countBiomRaptorFox          ;
 										  
 			lbBiomCountVegetable          .Text = "Овощи (шт): " + res. countBiomVegetable();
-			lbBiomCountVegetablePatato    .Text = "Картошка (шт): " + res. countBiomVegetablePatato    ; 
+			lbBiomCountVegetablePatato    .Text = "Картошка  (шт): " + res. countBiomVegetablePatato    ; 
             lbBiomCountVegetableCarrot    .Text = "Морковка (шт): " + res. countBiomVegetableCarrot    ; 
-            lbBiomCountVegetableMushroom  .Text = "Грибы (шт): " + res. countBiomVegetableMushroom  ;               
+            lbBiomCountVegetableMushroom  .Text = "Грибы       (шт): " + res. countBiomVegetableMushroom  ;               
             lbBiomCountVegetableTomato    .Text = "Помидоры (шт): " + res. countBiomVegetableTomato    ; 
-			lbBiomCountVegetableStrawberry.Text = "Клубника (шт): " + res. countBiomVegetableStrawberry;              
+			lbBiomCountVegetableStrawberry.Text = "Клубника  (шт): " + res. countBiomVegetableStrawberry;              
 										  
 			lbBiomCountHuman              .Text = "Люди (шт): " + res. countBiomHuman();
             lbBiomCountHumanWoman         .Text = "Женщины (шт): " + res. countBiomHumanWoman         ;        
-            lbBiomCountHumanMan           .Text = "Мужчины (шт): " + res. countBiomHumanMan           ;
+            lbBiomCountHumanMan           .Text = "Мужчины  (шт): " + res. countBiomHumanMan           ;
             lbBiomCountHumanChildren      .Text = "Дети (шт): " + res. countBiomHumanChildren      ;
 										  
             lbBiomCountVillige            .Text = "Деревни (шт): " + res. countBiomVillige;     
@@ -270,6 +257,7 @@ namespace EvoApp
         protected static bool isEvoStopped = true;
         public void EvoStart()
         {
+
             if (!isEvoStopped)
                 return;
 
@@ -309,6 +297,8 @@ namespace EvoApp
 
             lbWidthCell.Text = "Ширина ячейки  в пикселях: " + painterEvoPanelBig.cellWidthPx;
             lbHeightCell.Text = "Высота ячейки  в пикселях: " +  painterEvoPanelBig.cellWidthPx;
+
+            setAppInfoPanel(Population.appInfo);
 
             // вызываем рорисовку большой и малой панелей на каждый тик таймера
             updateEvoPanels();

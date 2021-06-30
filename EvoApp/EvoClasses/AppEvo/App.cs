@@ -7,8 +7,7 @@ namespace EvoApp
     // вся логика Эволюции - агрегирована в этом классе. Частично здесь и логика прорисовки юнитов.
     public class App
     {
-        //  информация, которая передается из потока ассинхронной инициализации Evo в поток объекта главной формы приложения. Там она отрисовывется в метках
-        public AppInitInfo appInitInfo = new AppInitInfo();
+        public static BiomInfo biomInfo = new BiomInfo ();
 
         //  информация, которая передается после выполнения каждого шага Эволюции в поток объекта главной формы приложения. Там она отрисовывется в метках
         public AppThreadInfo appThreadInfo = new AppThreadInfo();
@@ -64,57 +63,21 @@ namespace EvoApp
         // Этот метод запускается в потоке асинхронной задачи главной формы приложения
         // Этот поток, и поток App.evoThread, будут конкурировать за ресурс evoDesk.cellTable
         // поэтому evoDesk нужно защитить, и сделаю это с использованием  лока на lockerObjForEvoDesk
-        public AppInitInfo Init()
+        public AppInfo Init()
         {
             watcher.Start();
 
-                int cellCount = this.evoDesk.Init();
-                population.Generate();
-                
-            watcher.Stop();  
-            
-            long milli = watcher.ElapsedMilliseconds;
+            int cellCount = this.evoDesk.Init(population);
+            population.Generate();
 
-            appInitInfo.cellCount   = cellCount;
-            appInitInfo.evoInitTime = milli;
+            watcher.Stop();
 
-            //appInitInfo.countOf_Herbivore  = population.biom_HerbivoreByID.Count;
-            //appInitInfo.countOf_Omni       = population.biom_OmniByID.Count;
-            //appInitInfo.countOf_Raptor     = population.biom_RaptorByID.Count;
-            //appInitInfo.countOf_Human      = population.biom_HumanByID.Count;
-            //appInitInfo.countOf_Realty     = population.biom_RealtyByID.Count;
-            //appInitInfo.countOf_Vegetables = population.biom_VegetablesByID.Count;
+            Population.appInfo.cellCount = cellCount;
+            Population.appInfo.evoInitTime = watcher.ElapsedMilliseconds; ;
 
-            appInitInfo.countBiomHerbivoreSquirrel = 0;
-            appInitInfo.countBiomHerbivoreDeer = 0;
-            appInitInfo.countBiomHerbivoreRabbit = 0;
-
-            appInitInfo.countBiomOmniBoar = 0;
-            appInitInfo.countBiomOmniBadger = 0;
-            appInitInfo.countBiomOmniBear = 0;
-
-            appInitInfo.countBiomRaptorLynx = 0;
-            appInitInfo.countBiomRaptorWolf = 0;
-            appInitInfo.countBiomRaptorFox = 0;
-
-            appInitInfo.countBiomVegetablePatato = 0;
-            appInitInfo.countBiomVegetableCarrot = 0;
-            appInitInfo.countBiomVegetableMushroom = 0;
-            appInitInfo.countBiomVegetableTomato = 0;
-            appInitInfo.countBiomVegetableStrawberry = 0;
-
-            appInitInfo.countBiomHumanWoman = 0;
-            appInitInfo.countBiomHumanMan = 0;
-            appInitInfo.countBiomHumanChildren = 0;
-
-            appInitInfo.countBiomVilligeHouse = 0;
-            appInitInfo.countBiomVilligeBarn = 0;
-            appInitInfo.countBiomVilligeBarnAnimal = 0;
-            appInitInfo.countBiomVilligeBarnVeg = 0;
-
-            return appInitInfo;
+            return Population.appInfo;
         }
-
+        
         // ****************************************************************************************               
         // создает и запускает новый поток вычисления шага Эволюции.
         // после выполнения расчета шага, поток завершает свою работу. Для рассчета следующего шага - метод Run () вызывается снова - то еснова будет создан и запущен на выполнение поток.
@@ -130,17 +93,15 @@ namespace EvoApp
         // Этот метод запускается в потоке App.evoThread этого класса, экземпляр которого создается в потоке главной формы приложения
         public static void DoEvoThread (object this_app_obj)
         {
-            Stopwatch evoThreadWatcher = new Stopwatch();
-
-            App app = (App)this_app_obj; 
-            evoThreadWatcher.Restart();
+            App app = (App)this_app_obj;
+            app.watcher.Start();
 
                  app.evoDesk.CalcNextTick();  // вызов этого метода считает шаг эволюции, остальной код - собирает информацию для отображения на форме приложения
 
-            evoThreadWatcher.Stop();
+            app.watcher.Stop();
 
             app.appThreadInfo.evoCycleCounter++;
-            app.appThreadInfo.evoCycleTime_millisec = evoThreadWatcher.ElapsedMilliseconds;
+            app.appThreadInfo.evoCycleTime_millisec = app.watcher.ElapsedMilliseconds;
         }
 
         // ****************************************************************************************               
